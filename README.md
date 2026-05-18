@@ -1,0 +1,2 @@
+## Closed-Loop Synthetic Data Pipeline
+Generate synthetic Q&A training data, evaluate quality with LLM-as-Judge, analyze failure patterns, fix templates upstream, re-evaluate. Applied to Home DIY Repair. 
