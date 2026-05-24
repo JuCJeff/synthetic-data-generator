@@ -5,7 +5,10 @@ description = "Synthetic data generation and evaluation pipeline for Home DIY re
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "dspy>=3.2.1",
+    "instructor>=1.15.1",
+    "logfire[openai]>=4.33.0",
+    "openai>=1.0.0",
     "pydantic>=2.13.3",
+    "python-dotenv>=1.0.0",
     "rich>=14.3.4",
 ]

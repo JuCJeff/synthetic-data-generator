@@ -4,7 +4,7 @@ Pydantic schemas used across the DIY repair pipeline.
 Single source of truth for:
 - Data shapes (RepairQA, LabelRecord, GeneratedRecord)
 - Generation planning (GenerationTask, PromptConfig)
-- Type aliases (Category, Difficulty)
+- Type aliases (Category)
 """
 
 from typing import Literal
@@ -51,9 +51,6 @@ CATEGORY_SUBCATEGORIES: dict[Category, list[str]] = {
     ],
 }
 
-Difficulty = Literal["beginner", "intermediate", "advanced"]
-DIFFICULTIES: list[Difficulty] = ["beginner", "intermediate", "advanced"]
-
 
 class RepairQA(BaseModel):
     """A single DIY home repair Q&A training item."""
@@ -78,7 +75,9 @@ class RepairQA(BaseModel):
         description="Practical tips to make the repair easier or more reliable",
         min_length=1,
     )
-    difficulty: Difficulty = Field(description="Repair difficulty tier")
+    chosen_subcategory: str = Field(
+        description="The subcategory from the provided list that this item focuses on"
+    )
 
 
 class GeneratedRecord(BaseModel):
@@ -92,9 +91,6 @@ class GeneratedRecord(BaseModel):
     )
     subcategory: str = Field(
         description="The specific equipment or repair type within the category"
-    )
-    difficulty: Difficulty = Field(
-        description="The difficulty tier used to generate this item"
     )
     prompt_variant: str = Field(description="Which generation prompt template was used")
     prompt_hash: str = Field(
@@ -164,8 +160,6 @@ class GenerationTask(BaseModel):
     """A single planned generation. Built before any LLM calls happen"""
 
     category: Category
-    subcategory: str
-    difficulty: Difficulty
     variant: int = Field(
         description="Counter for multiple items of the same combination"
     )
