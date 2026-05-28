@@ -1,7 +1,7 @@
 """
 Shared Rich console and CLI print helpers.
 
-All Rich markup lives here — other modules import functions, not markup strings.
+All Rich markup lives here.
 """
 
 from pathlib import Path
