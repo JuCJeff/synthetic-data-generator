@@ -2,13 +2,15 @@
 Pydantic schemas used across the DIY repair pipeline.
 
 Single source of truth for:
-- Data shapes (RepairQA, LabelRecord, GeneratedRecord)
-- Generation planning (GenerationTask, PromptConfig)
-- Type aliases (Category)
+- Data shapes
+- Generation planning
+- Type aliases
 """
 
+import json
 from typing import Literal
-from pydantic import BaseModel, Field
+
+from pydantic import BaseModel, Field, field_validator
 
 Category = Literal[
     "Appliance Repair",
@@ -78,6 +80,14 @@ class RepairQA(BaseModel):
     chosen_subcategory: str = Field(
         description="The subcategory from the provided list that this item focuses on"
     )
+
+    # Small models sometimes returns list fields as JSON strings — parse them back to list
+    @field_validator("tools_required", "steps", "tips", mode="before")
+    @classmethod
+    def parse_stringified_list(cls, v: str | list) -> list:
+        if isinstance(v, str):
+            return json.loads(v)
+        return v
 
 
 class GeneratedRecord(BaseModel):

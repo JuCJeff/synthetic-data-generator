@@ -1,6 +1,6 @@
 """
 Builds a flat generation plan from the taxonomy in schemas.py, then executes
-one LLM call per task using Instructor + OpenRouter (Llama 3.1 8B). The LLM
+one LLM call per task using Instructor + OpenRouter (mistral-small-3.2-24b). The LLM
 picks a specific subcategory from a provided menu on each call. Validates output
 against the RepairQA Pydantic schema and saves results to JSONL.
 
@@ -9,44 +9,46 @@ Run:
 """
 
 import hashlib
-import logfire
 import json
+import os
 import uuid
 from datetime import datetime, timezone
 from pathlib import Path
 
-
-import os
 import instructor
+import logfire
 from dotenv import load_dotenv
 from openai import OpenAI
+
+from src.config import (
+    GENERATION_MODEL_V1,
+    GENERATION_TEMPERATURE_V1,
+    MAX_RETRIES_V1,
+    OPENROUTER_BASE_URL,
+    PROJECT_ROOT,
+    SYSTEM_PROMPT_V1,
+)
+from src.instrumentation import configure_logfire
 from src.schemas import (
     CATEGORY_SUBCATEGORIES,
     GeneratedRecord,
     GenerationTask,
     RepairQA,
 )
-
-
-from rich.console import Console
-from rich.progress import (
-    BarColumn,
-    MofNCompleteColumn,
-    Progress,
-    SpinnerColumn,
-    TextColumn,
-    TimeElapsedColumn,
-    TimeRemainingColumn,
+from src.ui import (
+    console,
+    make_progress_bar,
+    print_batch_summary,
+    print_generation_error,
+    print_save_confirmation,
 )
+from src.util import save_jsonl
 
-MODEL_USED = "meta-llama/llama-3.1-8b-instruct"
-OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
-PROMPT_VARIANT = "baseline_v1"
-TEMPERATURE = 0.7
-MAX_RETRIES = 2
+_GENERATION_DIR = PROJECT_ROOT / "data" / "generated"
+_GENERATION_OUTPUT_PATH = _GENERATION_DIR / "batch_v1.jsonl"
+_CACHE_DIR = _GENERATION_DIR / "cache"
 
-_DEFAULT_OUTPUT_PATH = "data/batch_v1.jsonl"
-_CACHE_DIR = Path("data/cache")
+_PROMPT_VARIANT = "v1"
 
 load_dotenv()
 
@@ -55,46 +57,22 @@ _openai_client = OpenAI(
     api_key=os.environ["OPENROUTER_API_KEY"],
     base_url=OPENROUTER_BASE_URL,
 )
+configure_logfire(_openai_client)
 
 # Wrap it with Instructor for structured output
 _client = instructor.from_openai(_openai_client)
-
-logfire.configure(
-    service_name="diy-pipeline",
-    service_version="0.1.0",
-    send_to_logfire="if-token-present",
-    console=False,
-)
-logfire.instrument_openai(_openai_client)
-
-
-# For commandline ui
-console = Console()
-
-
-_SYSTEM_PROMPT = """You are a home repair expert generating training data for a DIY repair assistant.
-
-Generate one realistic DIY repair Q&A item for the given repair category.
-
-Pick ONE subcategory from the provided list to focus on, and report your choice
-in the chosen_subcategory field.
-
-The safety_info field must name the SPECIFIC hazard and the SPECIFIC precaution for this
-exact repair — generic phrases like 'be careful' or 'stay safe' are unacceptable.
-
-Tips must be non-obvious advice a beginner would not know — not a restatement of a step."""
 
 
 def _build_user_prompt(
     category: str,
     subcategory_options: list[str],
-    variant_hint: str,
+    variant: int,
 ) -> str:
     options = ", ".join(subcategory_options)
     return (
         f"Category: {category}\n"
         f"Choose one subcategory from this list to focus on: {options}\n"
-        f"{variant_hint}\n\n"
+        f"{build_variant_hint(variant)}\n"
         f"Generate a complete, realistic DIY repair Q&A item."
     )
 
@@ -102,7 +80,7 @@ def _build_user_prompt(
 def generate_repair_qa(
     category: str,
     subcategory_options: list[str],
-    variant_hint: str,
+    variant: int,
 ) -> RepairQA | None:
     """
     Generate one validated RepairQA item via Instructor + OpenRouter.
@@ -110,36 +88,42 @@ def generate_repair_qa(
     """
     try:
         return _client.chat.completions.create(
-            model=MODEL_USED,
+            model=GENERATION_MODEL_V1,
             response_model=RepairQA,
-            max_retries=MAX_RETRIES,
-            temperature=TEMPERATURE,
+            max_retries=MAX_RETRIES_V1,
+            temperature=GENERATION_TEMPERATURE_V1,
             messages=[
-                {"role": "system", "content": _SYSTEM_PROMPT},
+                {"role": "system", "content": SYSTEM_PROMPT_V1},
                 {
                     "role": "user",
                     "content": _build_user_prompt(
-                        category, subcategory_options, variant_hint
+                        category, subcategory_options, variant
                     ),
                 },
             ],
         )
     except Exception as e:
-        console.print(f"  [red][!] Generation failed ({category}): {e}[/red]")
-        return None
+        print_generation_error(category, e)
 
 
 # --- Caching ---
 
 
-def hash_prompt(task: GenerationTask, prompt_variant: str) -> str:
-    raw = f"{prompt_variant}|{task.category}|{task.variant}"
-    return hashlib.md5(raw.encode()).hexdigest()[:12]
+def hash_prompt(task: GenerationTask) -> str:
+    raw = f"{task.category}|{task.variant}"
+    return hashlib.md5(raw.encode()).hexdigest()[:8]
 
 
 def cache_path(prompt_hash: str) -> Path:
     """Where a cached response for this prompt hash lives on disk."""
     return _CACHE_DIR / f"{prompt_hash}.json"
+
+
+def save_to_cache(prompt_hash: str, item: RepairQA) -> None:
+    """Save a generated item to disk so future runs can skip the LLM call."""
+    _CACHE_DIR.mkdir(parents=True, exist_ok=True)
+    cache_path = _CACHE_DIR / f"{prompt_hash}.json"
+    cache_path.write_text(item.model_dump_json(indent=2))
 
 
 def load_from_cache(prompt_hash: str) -> RepairQA | None:
@@ -149,14 +133,9 @@ def load_from_cache(prompt_hash: str) -> RepairQA | None:
     try:
         data = json.loads(path.read_text())
         return RepairQA.model_validate(data)
-    except Exception:
+    except Exception as error:
+        logfire.warning("Cache read failed, skipping", path=str(path), error=str(error))
         return None
-
-
-def save_to_cache(prompt_hash: str, item: RepairQA) -> None:
-    """Save a generated item to disk so future runs can skip the LLM call."""
-    _CACHE_DIR.mkdir(parents=True, exist_ok=True)
-    cache_path(prompt_hash).write_text(item.model_dump_json(indent=2))
 
 
 # --- Planning ---
@@ -173,18 +152,15 @@ def build_variant_hint(variant: int) -> str:
     )
 
 
-# --- Planning ---
-
-
-def build_generation_plan(items_per_combo: int = 12) -> list[GenerationTask]:
+def build_generation_plan(items_per_category: int = 10) -> list[GenerationTask]:
     """
     Flatten category × variant into a list of tasks.
-    With items_per_combo=12: 5 categories × 12 variants = 60 tasks total.
+    With items_per_category=10: 5 categories × 10 variants = 50 tasks total.
     """
     tasks: list[GenerationTask] = []
 
     for category in CATEGORY_SUBCATEGORIES.keys():
-        for variant in range(items_per_combo):
+        for variant in range(items_per_category):
             tasks.append(
                 GenerationTask(
                     category=category,
@@ -205,16 +181,24 @@ def generate_one(task: GenerationTask) -> GeneratedRecord | None:
         category=task.category,
         variant=task.variant,
     ):
-        prompt_hash = hash_prompt(task, PROMPT_VARIANT)
+        prompt_hash = hash_prompt(task)
 
         item = load_from_cache(prompt_hash)
-        if item is None:
+
+        if item is not None:
+            logfire.info("Cache hit", category=task.category, prompt_hash=prompt_hash)
+        else:
             item = generate_repair_qa(
                 category=task.category,
                 subcategory_options=CATEGORY_SUBCATEGORIES[task.category],
-                variant_hint=build_variant_hint(task.variant),
+                variant=task.variant,
             )
             if item is None:
+                logfire.warning(
+                    "Generation failed",
+                    category=task.category,
+                    variant=task.variant,
+                )
                 return None
             save_to_cache(prompt_hash, item)
 
@@ -222,56 +206,41 @@ def generate_one(task: GenerationTask) -> GeneratedRecord | None:
             trace_id=f"qa_{uuid.uuid4().hex[:8]}",
             category=task.category,
             subcategory=item.chosen_subcategory,
-            prompt_variant=PROMPT_VARIANT,
+            prompt_variant=_PROMPT_VARIANT,
             prompt_hash=prompt_hash,
-            model_used=MODEL_USED,
+            model_used=GENERATION_MODEL_V1,
             generation_timestamp=datetime.now(timezone.utc).isoformat(),
             record=item,
         )
 
 
-def generate_dataset(items_per_combo: int = 12) -> list[GeneratedRecord]:
+def generate_dataset(items_per_category: int = 10) -> list[GeneratedRecord]:
     """Build the plan, then execute it. Returns validated records."""
     logfire.info(
         "Starting baseline generation run",
-        items_per_combo=items_per_combo,
-        prompt_variant=PROMPT_VARIANT,
-        model=MODEL_USED,
+        items_per_category=items_per_category,
+        model=GENERATION_MODEL_V1,
     )
 
-    with logfire.span("generate_dataset", items_per_combo=items_per_combo):
-        tasks = build_generation_plan(items_per_combo=items_per_combo)
+    with logfire.span("generate_dataset", items_per_category=items_per_category):
+        tasks = build_generation_plan(items_per_category)
         results: list[GeneratedRecord] = []
         failed_count = 0
 
-        progress = Progress(
-            SpinnerColumn(),
-            TextColumn("[bold blue]{task.description}"),
-            BarColumn(),
-            MofNCompleteColumn(),
-            TextColumn("[progress.percentage]{task.percentage:>3.0f}%"),
-            TimeElapsedColumn(),
-            TimeRemainingColumn(),
-            console=console,
-        )
-
-        with progress:
+        with make_progress_bar() as progress:
             bar = progress.add_task("Generating QA items", total=len(tasks))
             for task in tasks:
                 progress.update(
                     bar, description=f"{task.category} (v{task.variant + 1})"
                 )
-                record = generate_one(task)  # ← no generator arg
+                record = generate_one(task)
                 if record is None:
                     failed_count += 1
                 else:
                     results.append(record)
                 progress.advance(bar)
 
-        console.print(
-            f"\n[bold green]✓ Batch complete:[/bold green] "
-            f"{len(results)} generated, [red]{failed_count} failed[/red]"
-        )
+        print_batch_summary(len(results), failed_count)
         return results
 
 
@@ -280,30 +249,25 @@ def generate_dataset(items_per_combo: int = 12) -> list[GeneratedRecord]:
 
 def save_dataset(
     records: list[GeneratedRecord],
-    path: str = _DEFAULT_OUTPUT_PATH,
+    path: Path = _GENERATION_OUTPUT_PATH,
 ) -> None:
-    Path("data").mkdir(exist_ok=True)
-    with open(path, "w") as f:
-        for record in records:
-            f.write(record.model_dump_json() + "\n")
-    console.print(f"[bold]Saved[/bold] {len(records)} records → [cyan]{path}[/cyan]")
+    save_jsonl(records, path, lambda r: r.model_dump_json())
+    print_save_confirmation(len(records), path.relative_to(PROJECT_ROOT))
 
 
 if __name__ == "__main__":
     # Quick test — generate one item to verify Instructor + OpenRouter works
-    test_item = generate_repair_qa(
-        category="Plumbing Repair",
-        subcategory_options=CATEGORY_SUBCATEGORIES["Plumbing Repair"],
-        variant_hint="This is the first item for this category.",
-    )
-    if test_item:
-        console.print("[bold green]✓ Test generation succeeded[/bold green]")
-        console.print(f"Question: {test_item.question}")
-        console.print(f"Safety: {test_item.safety_info}")
-    else:
-        console.print("[red]Test generation failed[/red]")
+    # test_item = generate_repair_qa(
+    #     category="Plumbing Repair",
+    #     subcategory_options=CATEGORY_SUBCATEGORIES["Plumbing Repair"],
+    # )
+    # if test_item:
+    #     console.print("[bold green]✓ Test generation succeeded[/bold green]")
+    #     console.print(f"Question: {test_item.question}")
+    #     console.print(f"Safety: {test_item.safety_info}")
+    # else:
+    #     console.print("[red]Test generation failed[/red]")
 
     # Full run — uncomment when the test passes
-    # records = generate_dataset(items_per_combo=12)
-    # save_dataset(records)
-    # console.print(f"Total generated: {len(records)}")
+    records = generate_dataset(items_per_category=10)
+    save_dataset(records)
