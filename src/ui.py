@@ -25,9 +25,7 @@ from rich.theme import Theme
 from src.util import root_cause
 
 # Custom theme
-custom_theme = Theme(
-    {"info": "#f5f5dc", "success": "#99cc33", "warning": "#ffcc00", "danger": "#cc3300"}
-)
+custom_theme = Theme({"success": "#99cc33", "warning": "#ffcc00", "danger": "#cc3300"})
 
 console = Console(theme=custom_theme)
 
@@ -61,16 +59,16 @@ def print_generation_error(category: str, error: Exception) -> None:
 
 
 def print_batch_summary(success: int, failed: int) -> None:
-    failed_generation_style = "danger" if failed > 0 else ""
-
+    failed_style = "danger" if failed > 0 else "default"
     console.print(
         f"\n[success]✓ Batch complete:[/success] "
-        f"{success} generated, [{failed_generation_style}]{failed} failed[/{failed_generation_style}]"
+        f"{success} generated, [{failed_style}]{failed} failed[/{failed_style}]"
     )
 
 
 def print_save_confirmation(count: int, path: Path) -> None:
     console.print(f"[bold]Saved[/bold] {count} records → [cyan]{path}[/cyan]")
+    console.print(f"Total generated: {count}")
 
 
 def print_error(error_title: str, error_message: str, suggestion: str = "") -> None:
