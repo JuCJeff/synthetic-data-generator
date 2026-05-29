@@ -1,0 +1,26 @@
+{
+  "question": "How do I clean the air vents in my attic to ensure proper airflow and reduce dust in my home?",
+  "answer": "To clean the air vents in your attic, you'll need a vacuum cleaner with a hose attachment, a soft-bristled brush, and a trash bag. Start by turning off the power to the HVAC system at the circuit breaker. Then, remove the vent covers and vacuum out any debris or dust using the hose attachment. Next, use the soft-bristled brush to gently sweep away any remaining dust or cobwebs. Finally, dispose of the debris in a trash bag and replace the vent covers. Remember to turn the power back on at the circuit breaker before restarting your HVAC system. It's also a good idea to schedule regular cleaning to maintain optimal airflow and reduce dust in your home.",
+  "equipment_problem": "blocked air vents",
+  "tools_required": [
+    "vacuum cleaner with hose attachment",
+    "soft-bristled brush",
+    "trash bag",
+    "ladder stabilizer",
+    "dust mask"
+  ],
+  "steps": [
+    "Turn off the power to the HVAC system at the circuit breaker.",
+    "Remove the vent covers and vacuum out any debris or dust using the hose attachment.",
+    "Use the soft-bristled brush to gently sweep away any remaining dust or cobwebs.",
+    "Dispose of the debris in a trash bag.",
+    "Replace the vent covers.",
+    "Turn the power back on at the circuit breaker and restart your HVAC system."
+  ],
+  "safety_info": "Hazard: Electrical shock from the HVAC system. Precaution: Turn off the power at the circuit breaker before starting the cleaning process.",
+  "tips": [
+    "Consider using a ladder stabilizer for added safety when accessing the attic.",
+    "Use a dust mask when vacuuming to avoid inhaling dust and debris."
+  ],
+  "chosen_subcategory": "vent cleaning"
+}

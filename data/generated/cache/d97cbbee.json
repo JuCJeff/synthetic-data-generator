@@ -1,0 +1,25 @@
+{
+  "question": "My grandma's antique cabinet door won't close properly because the screws that hold the hinge pins are rusted. Can I fix this without destroying the door?",
+  "answer": "To fix the cabinet door, you'll need to adjust the hinge pins. First, remove the screws holding the hinges in place and set them aside. Next, use a hinge pin puller to gently remove the pin from the hinge. You can purchase a hinge pin puller at most hardware stores. Once the pin is removed, use a screwdriver to remove any remaining rust from the screw holes. Then, reattach the pin and reattach the hinge to the cabinet door. Tighten the screws securely, but be careful not to overtighten. Finally, test the door to ensure it closes properly.",
+  "equipment_problem": "adjusting hinge pins on a cabinet door with rusted screws",
+  "tools_required": [
+    "hinge pin puller",
+    "screwdriver",
+    "screw extractor or drill with screw extractor bit",
+    "new screws (if necessary)"
+  ],
+  "steps": [
+    "Remove the screws holding the hinges in place",
+    "Use a hinge pin puller to remove the pin from the hinge",
+    "Remove any remaining rust from the screw holes",
+    "Reattach the pin and reattach the hinge to the cabinet door",
+    "Tighten the screws securely",
+    "Test the door to ensure it closes properly"
+  ],
+  "safety_info": "Specific hazard: Stripping the screw head with a rusty screw. Specific precaution: Use a screw extractor or a drill with a screw extractor bit to remove the rusty screw.",
+  "tips": [
+    "If the screw is severely rusted, consider replacing it with a new screw",
+    "Use a hinge pin puller with a long handle to avoid straining your back"
+  ],
+  "chosen_subcategory": "basic carpentry"
+}

@@ -1,0 +1,26 @@
+{
+  "question": "How do I replace a standard light fixture with a dimmer switch that integrates with my smart home system?",
+  "answer": "To replace a standard light fixture with a dimmer switch that integrates with your smart home system, start by turning off the power to the circuit at the main electrical panel. Remove the old light fixture and any existing dimmer switch. Next, connect the smart dimmer switch to your smart home hub according to the manufacturer's instructions. Mount the dimmer switch in the same location as the old light fixture, making sure it is securely fastened. Finally, connect the dimmer switch to the new smart light bulb and test the system to ensure proper function.",
+  "equipment_problem": "installing a dimmer switch with a smart home hub",
+  "tools_required": [
+    "non-contact voltage tester",
+    "screwdriver",
+    "wire strippers",
+    "smart dimmer switch",
+    "smart light bulb"
+  ],
+  "steps": [
+    "Turn off the power to the circuit at the main electrical panel",
+    "Remove the old light fixture and any existing dimmer switch",
+    "Connect the smart dimmer switch to your smart home hub according to the manufacturer's instructions",
+    "Mount the dimmer switch in the same location as the old light fixture, making sure it is securely fastened",
+    "Connect the dimmer switch to the new smart light bulb",
+    "Test the system to ensure proper function"
+  ],
+  "safety_info": "Hazard: Electrical shock from live wires. Precaution: Use a non-contact voltage tester to verify the power is off before starting work.",
+  "tips": [
+    "Use a dimmer switch with a built-in smart home hub to simplify the installation process",
+    "Make sure to update the smart home hub software before installing the dimmer switch"
+  ],
+  "chosen_subcategory": "light fixture installation"
+}

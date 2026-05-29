@@ -1,0 +1,29 @@
+{
+  "question": "My window unit's condensate drain is clogged, and I'm getting water damage on the floor. How do I fix this problem?",
+  "answer": "Clear the clog by using a wire coat hanger or a drain snake to remove any blockages. Next, mix equal parts water and white vinegar in the drain, and let it sit for 30 minutes. After soaking, use a soft brush to scrub the sides of the drain, then rinse with clean water. Reassemble the drain and check for leaks. To prevent future clogs, make sure the drain is level and the unit is installed correctly.",
+  "equipment_problem": "condensate drain clog",
+  "tools_required": [
+    "wire coat hanger",
+    "drain snake",
+    "soft brush",
+    "bucket or tray",
+    "water",
+    "white vinegar"
+  ],
+  "steps": [
+    "Disconnect the power to the unit and let it cool completely",
+    "Use a wire coat hanger or drain snake to remove any blockages from the condensate drain",
+    "Mix equal parts water and white vinegar in the drain and let it sit for 30 minutes",
+    "Use a soft brush to scrub the sides of the drain",
+    "Rinse the drain with clean water",
+    "Reassemble the drain and check for leaks",
+    "Ensure the drain is level and the unit is installed correctly"
+  ],
+  "safety_info": "The specific hazard for this repair is electrical shock from getting water near electrical components. The specific precaution is to unplug the unit and ensure it is completely dry before starting the repair.",
+  "tips": [
+    "Make sure to check the drain regularly to prevent clogs from building up",
+    "Consider using a drain screen or filter to catch debris and prevent clogs",
+    "Use a bucket or tray to catch any water that may leak out during the repair"
+  ],
+  "chosen_subcategory": "vent cleaning"
+}

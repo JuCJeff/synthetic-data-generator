@@ -1,0 +1,23 @@
+{
+  "question": "My ancient window AC unit is blowing warm air instead of cool air. I know I need to clean the condenser coils, but I don't know where to start. Can you walk me through the process?",
+  "answer": "Cleaning the condenser coils can be a straightforward process that requires minimal tools and effort. First, ensure the AC unit is turned off and unplugged from the power source. Next, use a soft-bristled brush or a garden hose with a gentle spray setting to remove any dirt or debris that may be obstructing airflow through the coils. If the coils appear damaged or corroded, it may be necessary to replace them entirely. In some cases, a coil cleaning brush may be used to gently remove any stubborn debris or grime. After cleaning the coils, inspect the AC unit's performance to ensure it is functioning properly.",
+  "equipment_problem": "condenser coils are dirty and obstructed",
+  "tools_required": [
+    "soft-bristled brush",
+    "garden hose",
+    "coil cleaning brush"
+  ],
+  "steps": [
+    "Locate the condenser coils on the back or side of the window AC unit",
+    "Unplug the unit and ensure the area is clear of any debris or obstructions",
+    "Use a soft-bristled brush or a garden hose with a gentle spray setting to remove dirt and debris from the coils",
+    "Inspect the coils for any visible damage or corrosion",
+    "Replace the coils if necessary, or clean the existing ones with a coil cleaning brush"
+  ],
+  "safety_info": "When cleaning condenser coils, wear protective gloves and eyewear to avoid exposure to sharp metal and possible electrical shock. Avoid using high-pressure washes, as they can damage the coil",
+  "tips": [
+    "When cleaning the condenser coils, avoid using harsh chemicals or abrasive materials, as they can damage the coil's surface",
+    "Consider using a coil cleaning brush to remove any stubborn debris or grime, as it can be more effective than a garden hose"
+  ],
+  "chosen_subcategory": "vent cleaning"
+}

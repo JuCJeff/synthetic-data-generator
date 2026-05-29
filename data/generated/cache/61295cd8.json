@@ -1,0 +1,21 @@
+{
+  "question": "How do I replace the filter in my HVAC system?",
+  "answer": "To replace the filter, locate it in your HVAC system, pull it out, and discard the old filter. Install a new filter in the same direction as the old one, making sure it is securely fastened. Check your filter every 1-3 months to ensure optimal air quality and system efficiency.",
+  "equipment_problem": "HVAC system filter needs replacement",
+  "tools_required": [
+    "screwdriver",
+    "filter removal tool"
+  ],
+  "steps": [
+    "Locate the filter in your HVAC system.",
+    "Pull out the old filter and discard it.",
+    "Install a new filter in the same direction as the old one.",
+    "Secure the new filter firmly in place."
+  ],
+  "safety_info": "When handling the filter, be aware of potential allergens and dust. Wear a mask and gloves to prevent exposure. ",
+  "tips": [
+    "Use a filter with a MERV rating suitable for your home's needs.",
+    "Consider upgrading to a smart filter that monitors its condition and alerts you when it needs replacement."
+  ],
+  "chosen_subcategory": "filter changes"
+}

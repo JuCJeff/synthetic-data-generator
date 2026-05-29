@@ -1,0 +1,29 @@
+{
+  "question": "I have a loose stair tread on my second floor stairs. How do I tighten it so it doesn't keep coming loose?",
+  "answer": "To tighten a loose stair tread, first, ensure you have the correct screws for your stair tread type. If using a screw-in tread, remove the existing screws and replace them with longer screws. If using a nail-in tread, you'll need to tap new screws into place. Use a drill to countersink the screws for a flush finish. Apply wood glue to the screw holes for added stability. Tighten the screws firmly, but avoid overtightening, which can damage the tread or surrounding wood. If your stair tread is held by nails, you'll need to remove the old nails and replace them with screws for a more secure hold. For both types, it's a good idea to add wood shims under the loose tread to fill any gaps and provide extra support.",
+  "equipment_problem": "loose stair tread",
+  "tools_required": [
+    "drill",
+    "screwdriver",
+    "hammer",
+    "tape measure",
+    "level",
+    "ladder or step stool"
+  ],
+  "steps": [
+    "Remove any furniture or rugs from the area to ensure a clear working space",
+    "Identify the type of stair tread you have and the type of fasteners used",
+    "Remove the existing screws or nails from the loose tread",
+    "Replace the screws or nails with the correct type for your tread",
+    "Apply wood glue to the screw holes for added stability",
+    "Tighten the screws firmly but avoid overtightening",
+    "Add wood shims under the loose tread to fill any gaps and provide extra support"
+  ],
+  "safety_info": "Specific hazard: Falling from the stairs due to a loose tread. Specific precaution: Use a ladder or step stool with a secure base and always maintain three points of contact (two hands and one foot, or two feet and one hand).",
+  "tips": [
+    "Consider using a stair tread reinforcement kit for added stability and peace of mind",
+    "If your stair tread is particularly old or damaged, it may be best to replace it entirely",
+    "When working with power tools, always wear safety glasses and keep loose clothing tied back"
+  ],
+  "chosen_subcategory": "basic carpentry"
+}

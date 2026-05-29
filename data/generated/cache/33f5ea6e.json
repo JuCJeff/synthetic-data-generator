@@ -1,0 +1,25 @@
+{
+  "question": "I recently bought a dimmable smart light fixture and want to replace my existing kitchen light. However, I have no experience with electrical work. Can I install this new fixture myself?",
+  "answer": "Replacing a light fixture can be a bit tricky, but it's definitely doable with the right steps. First, turn off the power to the circuit at the main electrical panel. Then, remove the old fixture by taking out the screws that hold it in place. Next, disconnect the wires from the old fixture and connect them to the new fixture, making sure to match the wire colors. Finally, screw the new fixture into place and turn the power back on. If you're not comfortable with this process, it's always best to hire a licensed electrician.",
+  "equipment_problem": "Installing a dimmable smart light fixture in a kitchen",
+  "tools_required": [
+    "Voltage tester",
+    "Screwdriver",
+    "Wire strippers",
+    "Needle-nose pliers"
+  ],
+  "steps": [
+    "Turn off the power to the circuit at the main electrical panel",
+    "Remove the old fixture by taking out the screws that hold it in place",
+    "Disconnect the wires from the old fixture",
+    "Connect the wires to the new fixture, matching the wire colors",
+    "Screw the new fixture into place",
+    "Turn the power back on"
+  ],
+  "safety_info": "Specific hazard: Electric shock from misconnected wires. Specific precaution: Use a voltage tester to ensure the power is off before starting the repair.",
+  "tips": [
+    "Use a wiring diagram to ensure you're connecting the wires correctly",
+    "Make sure to purchase a smart light fixture that's compatible with your home's electrical system"
+  ],
+  "chosen_subcategory": "light fixture installation"
+}

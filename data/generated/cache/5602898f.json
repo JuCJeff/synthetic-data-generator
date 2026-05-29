@@ -1,0 +1,26 @@
+{
+  "question": "I have an older oven that has been giving me trouble with inconsistent cooking times. I've checked the thermostat, but nothing seems to be out of place. What could be the issue and how do I fix it?",
+  "answer": "A faulty temperature sensor is the likely culprit. You'll need to replace it with a new one. Be cautious of electrical shock, as you'll be working with exposed wiring. Use a multimeter to verify the sensor's voltage output is within the correct range. If it's not, proceed to replace it with a new one, taking care to disconnect the power supply before making any connections.",
+  "equipment_problem": "oven temperature sensor not working",
+  "tools_required": [
+    "Multimeter",
+    "Needle-nose pliers",
+    "Socket wrench",
+    "Wire cutters"
+  ],
+  "steps": [
+    "Disconnect the power supply to the oven",
+    "Locate the temperature sensor, usually marked with a 'T' or 'Temp' label",
+    "Use a multimeter to verify the sensor's voltage output is within the correct range",
+    "Disconnect the sensor's electrical connections",
+    "Remove the old sensor",
+    "Install the new sensor, ensuring it's securely connected",
+    "Reconnect the power supply and test the oven's temperature control"
+  ],
+  "safety_info": "Electrical shock from exposed wiring; ensure the power supply is disconnected before working on the sensor.",
+  "tips": [
+    "Use thermal paste to ensure good thermal contact between the sensor and the oven's heating element",
+    "Check for any signs of wear or damage on the new sensor before installation"
+  ],
+  "chosen_subcategory": "ovens"
+}

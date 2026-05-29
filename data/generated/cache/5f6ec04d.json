@@ -1,0 +1,24 @@
+{
+  "question": "How do I replace a light switch that doesn't work?",
+  "answer": "To replace a light switch, first turn off the power to the switch at the main electrical panel. Then, remove the faceplate and any screws holding the switch in place. Gently pull the switch out of the electrical box. Disconnect the wires from the old switch and connect them to the new switch. Make sure the wires are securely attached and the connections are tight. Finally, put everything back together in the reverse order that you took it apart.",
+  "equipment_problem": "non-functional light switch",
+  "tools_required": [
+    "screwdriver",
+    "needle-nose pliers",
+    "voltage tester"
+  ],
+  "steps": [
+    "Turn off the power to the switch at the main electrical panel.",
+    "Remove the faceplate and any screws holding the switch in place.",
+    "Gently pull the switch out of the electrical box.",
+    "Disconnect the wires from the old switch and connect them to the new switch.",
+    "Make sure the wires are securely attached and the connections are tight.",
+    "Put everything back together in the reverse order that you took it apart."
+  ],
+  "safety_info": "Electrical shock hazard. Turn off power to the switch at the main electrical panel before starting the repair.",
+  "tips": [
+    "Use a voltage tester to ensure the power is off before starting the repair.",
+    "Consider hiring a licensed electrician if you're not comfortable with electrical repairs."
+  ],
+  "chosen_subcategory": "switch repair"
+}

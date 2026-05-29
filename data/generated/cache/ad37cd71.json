@@ -1,0 +1,24 @@
+{
+  "question": "I have a ceiling fan with a new dimmer switch that I want to install. The fan is controlled by a chain, and I'm not sure how to wire it to the dimmer switch.",
+  "answer": "To install a dimmer switch on a ceiling fan, you'll need to first turn off the power to the circuit at the main electrical panel. Then, remove the old switch and any existing wiring. Next, identify the three wires coming from the ceiling: the black wire (hot), the white wire (neutral), and the copper wire (ground). Connect the black wire to the dimmer switch's hot terminal, the white wire to the dimmer switch's neutral terminal, and the copper wire to the dimmer switch's ground terminal. Finally, replace the ceiling fan's chain control with the new dimmer switch and turn the power back on at the main electrical panel. Test the dimmer switch to make sure it's working properly.",
+  "equipment_problem": "installing a dimmer switch on a ceiling fan",
+  "tools_required": [
+    "non-contact voltage tester",
+    "wire strippers",
+    "needle-nose pliers",
+    "screwdriver"
+  ],
+  "steps": [
+    "Turn off the power to the circuit at the main electrical panel",
+    "Remove the old switch and any existing wiring",
+    "Identify the three wires coming from the ceiling and connect them to the dimmer switch's terminals",
+    "Replace the ceiling fan's chain control with the new dimmer switch",
+    "Turn the power back on at the main electrical panel and test the dimmer switch"
+  ],
+  "safety_info": "Hazard: Electric shock from incorrect wiring. Precaution: Turn off the power to the circuit at the main electrical panel before starting the repair.",
+  "tips": [
+    "Use a non-contact voltage tester to ensure the power is off before starting the repair",
+    "Label the wires before connecting them to the dimmer switch to avoid confusion"
+  ],
+  "chosen_subcategory": "light fixture installation"
+}

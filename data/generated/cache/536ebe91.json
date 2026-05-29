@@ -1,0 +1,29 @@
+{
+  "question": "My pipe under my slab has burst due to freezing temperatures, how do I repair it?",
+  "answer": "To repair a burst copper pipe under a concrete slab, first, you'll need to locate the leak. You may need to use a thermal imaging camera to detect the heat loss from the damaged pipe. Once you've found the leak, shut off the water supply and drain the system. You'll then need to remove the concrete slab using a jackhammer or sawzall to expose the pipe. Use a pipe cutter to remove the damaged section of pipe. Clean and deburr the ends of the cut pipe, then apply flux to the ends and solder a new copper coupling in place. Replace the concrete slab and refill the area with concrete.",
+  "equipment_problem": "Frozen and burst copper pipe under a concrete slab",
+  "tools_required": [
+    "Thermal imaging camera",
+    "Pipe cutter",
+    "Soldering iron and flux",
+    "Jackhammer or sawzall",
+    "Concrete saw or diamond blade",
+    "HEPA respirator and protective gear"
+  ],
+  "steps": [
+    "Locate the leak using a thermal imaging camera",
+    "Shut off the water supply and drain the system",
+    "Remove the concrete slab using a jackhammer or sawzall",
+    "Use a pipe cutter to remove the damaged section of pipe",
+    "Clean and deburr the ends of the cut pipe",
+    "Apply flux to the ends and solder a new copper coupling in place",
+    "Replace the concrete slab and refill the area with concrete"
+  ],
+  "safety_info": "specific hazard: Asbestos may be present in older homes and can be disturbed during the repair process, specific precaution: Use a HEPA respirator and protective gear when disturbing asbestos-containing materials.",
+  "tips": [
+    "Use a thermal imaging camera to detect heat loss and locate the leak more efficiently",
+    "Consider using a pipe repair kit with a flexible coupling to make the repair easier",
+    "If you're not comfortable with soldering, consider hiring a professional plumber"
+  ],
+  "chosen_subcategory": "pipe problems"
+}

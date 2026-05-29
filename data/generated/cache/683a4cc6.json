@@ -1,0 +1,24 @@
+{
+  "question": "I have a floorboard that feels loose under my feet. How can I fix it?",
+  "answer": "To fix a loose floorboard, first, ensure the floor is clear of any debris or obstructions. Then, locate the loose board and remove the nails or screws holding it in place. Gently pry the board away from the subfloor, taking care not to damage the surrounding boards. Check the subfloor for any rot or damage and replace the board if necessary. Reattach the loose board using new nails or screws, making sure they are countersunk into the board.",
+  "equipment_problem": "loose floorboard",
+  "tools_required": [
+    "pry bar",
+    "hammer",
+    "tape measure",
+    "level"
+  ],
+  "steps": [
+    "Ensure the floor is clear of any debris or obstructions",
+    "Locate the loose board and remove the nails or screws holding it in place",
+    "Gently pry the board away from the subfloor, taking care not to damage the surrounding boards",
+    "Check the subfloor for any rot or damage and replace the board if necessary",
+    "Reattach the loose board using new nails or screws, making sure they are countersunk into the board"
+  ],
+  "safety_info": "Be aware of the risk of tripping or falling when working with loose floorboards. Wear protective gloves and safety glasses to prevent injury from sharp edges or falling debris.",
+  "tips": [
+    "Use a pry bar with a curved end to avoid damaging the surrounding boards",
+    "If the loose board is due to a larger issue, such as a sagging joist, consider consulting a professional for repair"
+  ],
+  "chosen_subcategory": "flooring"
+}

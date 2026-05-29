@@ -1,0 +1,26 @@
+{
+  "question": "My bedroom is getting colder than the rest of the house, and I noticed the supply vent has a thick layer of dust. How do I clean the clogged supply vent?",
+  "answer": "Cleaning the clogged supply vent is a relatively simple process that can be done with basic tools. First, turn off the HVAC system and let it cool down. Next, remove the vent cover by unscrewing the screws and gently pulling it away from the wall. Use a soft-bristled brush or a vacuum cleaner with a flexible hose to remove the dust and debris from the vent. If the clog is severe, you may need to use a long-handled brush or a specialized vent cleaning tool. Finally, reassemble the vent and turn the HVAC system back on. This should improve airflow and heat distribution in your bedroom.",
+  "equipment_problem": "clogged supply vent",
+  "tools_required": [
+    "Soft-bristled brush",
+    "Vacuum cleaner",
+    "Flexible hose",
+    "Dust mask or respirator",
+    "Long-handled brush",
+    "Specialized vent cleaning tool"
+  ],
+  "steps": [
+    "Turn off the HVAC system and let it cool down",
+    "Remove the vent cover by unscrewing the screws and gently pulling it away from the wall",
+    "Use a soft-bristled brush or a vacuum cleaner with a flexible hose to remove the dust and debris from the vent",
+    "If the clog is severe, use a long-handled brush or a specialized vent cleaning tool",
+    "Reassemble the vent and turn the HVAC system back on"
+  ],
+  "safety_info": "Specific hazard: Dust and allergens may become airborne during vent cleaning. Specific precaution: Wear a dust mask or respirator to prevent inhaling dust and allergens. Additionally, use a vacuum cleaner with a HEPA filter to trap 99.97% of particles as small as 0.3 microns.",
+  "tips": [
+    "Consider using a camera or a flashlight to inspect the vent and identify the source of the clog",
+    "If you have a pet, consider using a pet hair remover or a lint roller to remove pet hair from the vent"
+  ],
+  "chosen_subcategory": "vent cleaning"
+}

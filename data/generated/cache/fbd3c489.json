@@ -1,0 +1,23 @@
+{
+  "question": "How do I replace the thermostat in my oven if it's not working correctly?",
+  "answer": "To replace the thermostat in your oven, first disconnect the power to the oven at the circuit breaker or fuse box. Next, remove the oven knobs and faceplate to access the thermostat. Use a screwdriver to remove the screws holding the thermostat in place, then carefully lift it out. Install the new thermostat, making sure it's securely fastened with screws. Finally, reconnect the power and test the oven to ensure the new thermostat is working correctly.",
+  "equipment_problem": "faulty thermostat",
+  "tools_required": [
+    "screwdriver",
+    "non-contact voltage tester",
+    "multimeter"
+  ],
+  "steps": [
+    "Disconnect the power to the oven at the circuit breaker or fuse box.",
+    "Remove the oven knobs and faceplate to access the thermostat.",
+    "Use a screwdriver to remove the screws holding the thermostat in place, then carefully lift it out.",
+    "Install the new thermostat, making sure it's securely fastened with screws.",
+    "Reconnect the power and test the oven to ensure the new thermostat is working correctly."
+  ],
+  "safety_info": "When working with electrical appliances, always disconnect the power first to avoid electrical shock. Wear oven mitts or gloves to protect your hands from burns when handling hot components.",
+  "tips": [
+    "Use a multimeter to test the thermostat before replacing it to ensure it's not just a faulty sensor.",
+    "When handling electrical components, always use a non-contact voltage tester to ensure the power is off."
+  ],
+  "chosen_subcategory": "ovens"
+}

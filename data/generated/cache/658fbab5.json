@@ -1,0 +1,30 @@
+{
+  "question": "How do I fix uneven deck boards that are only about 1 inch out of alignment?",
+  "answer": "To fix uneven deck boards, start by checking the deck frame for any signs of damage or rot. If the frame is damaged, you'll need to replace it before proceeding. Next, use a spirit level to determine the high and low points of the deck. Then, mark the location of the high point with a pencil. Use a pry bar to carefully lift the high point, and insert shims underneath it to level it out. Repeat this process for each high point, working your way across the deck. Once the deck is level, use a hammer and nails to secure the boards in place. Finally, apply a coat of deck stain to protect the wood.",
+  "equipment_problem": "uneven deck boards",
+  "tools_required": [
+    "spirit level",
+    "pry bar",
+    "shims",
+    "hammer",
+    "nails",
+    "deck stain",
+    "ladder stabilizer"
+  ],
+  "steps": [
+    "Check the deck frame for damage or rot",
+    "Determine the high and low points of the deck using a spirit level",
+    "Mark the location of the high point with a pencil",
+    "Use a pry bar to carefully lift the high point and insert shims underneath",
+    "Repeat the process for each high point, working your way across the deck",
+    "Secure the boards in place with a hammer and nails",
+    "Apply a coat of deck stain to protect the wood"
+  ],
+  "safety_info": "Specific hazard: Falling from the deck. Specific precaution: Always use a ladder stabilizer and consider hiring a professional if you're not comfortable with heights. Wear gloves and safety glasses to protect yourself from falling debris.",
+  "tips": [
+    "Use a laser level to help you find the high and low points of the deck",
+    "Consider using deck screws instead of nails for a more secure hold",
+    "If the deck is badly damaged, consider hiring a professional to repair it"
+  ],
+  "chosen_subcategory": "basic carpentry"
+}

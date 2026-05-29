@@ -1,0 +1,23 @@
+{
+  "question": "I have a strange gurgling sound coming from my washing machine's drain hose after a cycle. It seems to be leaking water at the connection to the wall drain. How can I fix this?",
+  "answer": "To repair the leaking drain hose connection, you'll need a drain hose connector wrench, Teflon tape, and a replacement drain hose connector. First, turn off the washing machine and unplug it from power. Next, disconnect the drain hose from the wall drain and remove the old connector. Apply Teflon tape to the new connector and screw it onto the drain hose. Finally, reconnect the drain hose to the wall drain and test the connection for leaks. Tips: Use a bucket to catch any remaining water in the drain hose, and consider upgrading to a braided stainless steel drain hose for added durability. Tools required: drain hose connector wrench, Teflon tape, replacement drain hose connector. Steps: 1. Disconnect the drain hose from the wall drain. 2. Remove the old connector. 3. Apply Teflon tape to the new connector. 4. Screw the new connector onto the drain hose. 5. Reconnect the drain hose to the wall drain. Tips: Use a bucket to catch any remaining water in the drain hose, and consider upgrading to a braided stainless steel drain hose for added durability.",
+  "equipment_problem": "leaking drain hose connection",
+  "tools_required": [
+    "drain hose connector wrench",
+    "Teflon tape",
+    "replacement drain hose connector"
+  ],
+  "steps": [
+    "Disconnect the drain hose from the wall drain.",
+    "Remove the old connector.",
+    "Apply Teflon tape to the new connector.",
+    "Screw the new connector onto the drain hose.",
+    "Reconnect the drain hose to the wall drain."
+  ],
+  "safety_info": "Risk of water damage and electrical shock if not properly disconnected from power. Make sure to turn off the washing machine and unplug it before starting the repair.",
+  "tips": [
+    "Use a bucket to catch any remaining water in the drain hose.",
+    "Consider upgrading to a braided stainless steel drain hose for added durability."
+  ],
+  "chosen_subcategory": "pipe problems"
+}

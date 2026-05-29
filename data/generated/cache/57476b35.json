@@ -1,0 +1,26 @@
+{
+  "question": "How do I replace a corroded galvanized water supply pipe under my house that's causing low water pressure?",
+  "answer": "To replace a corroded galvanized water supply pipe under your house, you'll need to first shut off the main water supply and drain the system. Next, locate the corroded section and disconnect the pipes from the corroded pipe. Use a pipe cutter to cut the corroded pipe, then use a pipe wrench to remove the corroded section. Install new PVC pipe and reconnect the pipes to the new section, making sure to use pipe tape and fittings. Finally, turn on the water supply and check for leaks. Safety info: Be aware of gas and electricity lines that may be nearby, and take necessary precautions to avoid damaging them. Use a non-contact voltage tester to ensure the area is safe to work in. Tips: Use a pipe wrench with a long handle to gain more leverage when removing corroded pipe sections. Apply pipe sealant to the threads of the new fittings to prevent leaks. Tools required: pipe cutter, pipe wrench, PVC pipe, pipe tape, non-contact voltage tester",
+  "equipment_problem": "corroded galvanized water supply pipe under the house",
+  "tools_required": [
+    "pipe cutter",
+    "pipe wrench",
+    "PVC pipe",
+    "pipe tape",
+    "non-contact voltage tester"
+  ],
+  "steps": [
+    "Shut off the main water supply and drain the system",
+    "Locate the corroded section and disconnect the pipes from the corroded pipe",
+    "Use a pipe cutter to cut the corroded pipe",
+    "Use a pipe wrench to remove the corroded section",
+    "Install new PVC pipe and reconnect the pipes to the new section",
+    "Turn on the water supply and check for leaks"
+  ],
+  "safety_info": "Be aware of nearby gas and electricity lines, and use a non-contact voltage tester to ensure the area is safe to work in.",
+  "tips": [
+    "Use a pipe wrench with a long handle to gain more leverage when removing corroded pipe sections",
+    "Apply pipe sealant to the threads of the new fittings to prevent leaks"
+  ],
+  "chosen_subcategory": "pipe problems"
+}

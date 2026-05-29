@@ -1,0 +1,23 @@
+{
+  "question": "My front door is making a creaking noise when I open or close it. What can I do to fix it?",
+  "answer": "To fix a creaky door, you'll need to adjust the hinges. First, remove the hinge pins using a punch or a screwdriver. Then, loosen the screws that hold the hinges to the door and the frame. Next, use a hinge adjustment tool to change the hinge alignment. Finally, reattach the hinges with the screws and replace the hinge pins.",
+  "equipment_problem": "creaking door",
+  "tools_required": [
+    "punch or screwdriver",
+    "hinge adjustment tool",
+    "screwdriver",
+    "silicone spray or powder"
+  ],
+  "steps": [
+    "Remove the hinge pins using a punch or a screwdriver.",
+    "Loosen the screws that hold the hinges to the door and the frame.",
+    "Use a hinge adjustment tool to change the hinge alignment.",
+    "Reattach the hinges with the screws and replace the hinge pins."
+  ],
+  "safety_info": "Be aware of the door's weight and make sure the hinge pins are securely in place to avoid any accidents. Use a hinge adjustment tool to avoid damaging the hinges.",
+  "tips": [
+    "Use a lubricant like silicone spray or powder to reduce friction between the door and the frame.",
+    "Consider replacing the hinges if they're old or worn out."
+  ],
+  "chosen_subcategory": "basic carpentry"
+}

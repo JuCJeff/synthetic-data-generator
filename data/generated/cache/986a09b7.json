@@ -1,0 +1,25 @@
+{
+  "question": "How do I replace a GFCI outlet in my kitchen that keeps tripping?",
+  "answer": "To replace a GFCI outlet, first turn off the power to the outlet at the main electrical panel. Remove the outlet cover plate and any screws holding the outlet in place. Carefully pull the outlet out of the electrical box. Disconnect the wires from the old outlet and connect them to the new outlet. Make sure to match the wires to the correct terminals. Replace the outlet in the electrical box and secure it with screws. Finally, replace the outlet cover plate and turn the power back on at the main electrical panel.",
+  "equipment_problem": "Faulty GFCI outlet",
+  "tools_required": [
+    "Non-contact voltage tester",
+    "Screwdriver",
+    "Needle-nose pliers",
+    "Wire nuts"
+  ],
+  "steps": [
+    "Turn off the power to the outlet at the main electrical panel",
+    "Remove the outlet cover plate and any screws holding the outlet in place",
+    "Carefully pull the outlet out of the electrical box",
+    "Disconnect the wires from the old outlet and connect them to the new outlet",
+    "Replace the outlet in the electrical box and secure it with screws",
+    "Finally, replace the outlet cover plate and turn the power back on at the main electrical panel"
+  ],
+  "safety_info": "When working with electrical systems, always turn off the power at the main electrical panel to avoid electrical shock. When removing the outlet cover plate, be careful not to touch any of the electrical components inside.",
+  "tips": [
+    "When replacing a GFCI outlet, make sure to test it after installation to ensure it is working properly",
+    "If you are not comfortable working with electrical systems, consider hiring a licensed electrician"
+  ],
+  "chosen_subcategory": "light fixture installation"
+}

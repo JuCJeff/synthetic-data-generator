@@ -1,0 +1,24 @@
+{
+  "question": "My oven won't light, and I've checked the power cord and outlet. What could be causing the problem and how can I fix it?",
+  "answer": "A broken oven igniter is a common issue that can be caused by a faulty igniter or a clogged burner. To fix this, you'll need to replace the igniter or clean the burner. Start by turning off the power to the oven and letting it cool down. Next, remove the burner grates and clean the burner caps with a soft brush to remove any debris. If this doesn't work, you'll need to replace the igniter. This involves removing the oven knobs, disconnecting the electrical connections, and removing the screws that hold the igniter in place. Once you've removed the old igniter, take the new one and connect the electrical connections, replace the screws, and put the oven knobs back on. Turn the power back on and test the oven.",
+  "equipment_problem": "broken oven igniter",
+  "tools_required": [
+    "voltage tester",
+    "screwdriver",
+    "soft brush",
+    "new igniter"
+  ],
+  "steps": [
+    "Turn off the power to the oven and let it cool down.",
+    "Remove the burner grates and clean the burner caps with a soft brush.",
+    "Replace the igniter by disconnecting the electrical connections, removing the screws that hold it in place, and taking out the old igniter.",
+    "Connect the electrical connections to the new igniter, replace the screws, and put the oven knobs back on.",
+    "Turn the power back on and test the oven."
+  ],
+  "safety_info": "When working with electrical components, always turn off the power to the appliance and let it cool down before starting the repair. The specific hazard in this case is electrical shock, and the specific precaution is to use a voltage tester to ensure the power is off before starting the repair.",
+  "tips": [
+    "Use a voltage tester to ensure the power is off before starting the repair.",
+    "Make sure to purchase a replacement igniter that matches the specifications of your oven model."
+  ],
+  "chosen_subcategory": "ovens"
+}

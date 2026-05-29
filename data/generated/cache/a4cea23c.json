@@ -1,0 +1,33 @@
+{
+  "question": "My oven won't light. I've tried replacing the igniter, but it still won't turn on. What could be the problem?",
+  "answer": "To troubleshoot an oven that won't light, check for any signs of damage or wear on the igniter and verify it's properly connected to the oven's wiring. Also, check for any blockages in the igniter's airflow and clean the igniter's electrodes. If the issue persists, check the oven's thermostat for proper function and the igniter control module for any issues. If none of these steps resolve the issue, replace the igniter.",
+  "equipment_problem": "burnt-out oven igniter",
+  "tools_required": [
+    "screwdriver",
+    "wrench",
+    "multimeter",
+    "pliers",
+    "soldering iron"
+  ],
+  "steps": [
+    "Remove the oven range top to access the igniter",
+    "Check for any signs of damage or wear on the igniter",
+    "Verify the igniter is properly connected to the oven's wiring",
+    "Check for any blockages in the igniter's airflow",
+    "Clean the igniter's electrodes",
+    "Check the oven's thermostat for proper function",
+    "Check for any issues with the oven's igniter control module",
+    "Replace the igniter if necessary",
+    "Reassemble the oven range top",
+    "Test the oven's igniter",
+    "Verify the oven is working properly",
+    "Check for any error codes on the oven's display"
+  ],
+  "safety_info": "Specific hazard: Electrical shock from improper handling of wires. Precaution: When handling wires, always turn off the power to the oven at the circuit breaker or fuse box and verify the wires are de-energized before working on them.",
+  "tips": [
+    "When cleaning the igniter's electrodes, use a small brush to gently remove any debris or food particles",
+    "When checking the oven's thermostat, make sure it's set to the correct temperature range",
+    "When replacing the igniter, make sure to properly dispose of the old igniter to avoid any electrical shock hazards"
+  ],
+  "chosen_subcategory": "ovens"
+}

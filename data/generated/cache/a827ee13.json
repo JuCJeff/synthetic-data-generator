@@ -1,0 +1,23 @@
+{
+  "question": "My shower head is leaking and I need to replace it. How do I do it?",
+  "answer": "To replace a shower head, first shut off the water supply to the shower by locating the shut-off valves under the sink and turning them clockwise. Then, use a wrench to loosen the nut holding the shower head in place. Once loose, lift the shower head off the stem and remove any old Teflon tape from the threads. Apply new Teflon tape to the threads of the new shower head and screw it back onto the stem. Finally, turn the water supply back on and test the shower for leaks.",
+  "equipment_problem": "shower head",
+  "tools_required": [
+    "wrench",
+    "Teflon tape"
+  ],
+  "steps": [
+    "Shut off the water supply to the shower",
+    "Loosen the nut holding the shower head in place",
+    "Lift the shower head off the stem and remove old Teflon tape",
+    "Apply new Teflon tape to the threads of the new shower head",
+    "Screw the new shower head back onto the stem",
+    "Turn the water supply back on and test the shower for leaks"
+  ],
+  "safety_info": "Hazard: Scalding water. Precaution: Make sure the water supply is turned off before starting the repair.",
+  "tips": [
+    "Use a wrench to loosen the nut to avoid rounding the threads",
+    "Apply new Teflon tape in a clockwise direction to ensure it seals properly"
+  ],
+  "chosen_subcategory": "fixture repairs"
+}

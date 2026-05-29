@@ -1,0 +1,23 @@
+{
+  "question": "My oven is baking some foods unevenly. I've checked the temperature and it's correct, but the heat seems to be concentrated on one side. Why is this happening and how can I fix it?",
+  "answer": "Oven heating elements can degrade over time, causing uneven heating. Check the heating elements for signs of wear or damage. If they're damaged, replace them. Make sure the oven racks are properly aligned and that the oven door is closing properly. If the issue persists, check the oven's thermostat for accuracy.",
+  "equipment_problem": "uneven oven heating",
+  "tools_required": [
+    "screwdriver",
+    "wrench",
+    "multimeter"
+  ],
+  "steps": [
+    "Turn off the power to the oven at the circuit breaker or fuse box.",
+    "Remove the oven racks and shelves.",
+    "Check the heating elements for signs of wear or damage. If they're damaged, replace them.",
+    "Check the oven's thermostat for accuracy.",
+    "Realign the oven racks and ensure the oven door is closing properly."
+  ],
+  "safety_info": "Electrical shock hazard. Turn off the power to the oven at the circuit breaker or fuse box before attempting any repairs. Wear protective gloves and safety glasses when handling electrical components.",
+  "tips": [
+    "To prevent uneven heating, make sure to rotate your food while it's baking.",
+    "Check the oven's user manual for recommended maintenance and cleaning procedures."
+  ],
+  "chosen_subcategory": "ovens"
+}

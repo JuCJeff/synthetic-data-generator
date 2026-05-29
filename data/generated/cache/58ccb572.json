@@ -1,0 +1,23 @@
+{
+  "question": "How do I repair a small hole in my drywall?",
+  "answer": "To repair a small hole in your drywall, start by marking the area around the hole with a pencil. Then, cut a drywall patch slightly larger than the hole. Apply joint compound to the patch and press it into place. Finally, smooth the compound with a putty knife. For best results, use a drywall repair kit and apply multiple thin coats of compound for a smoother finish.",
+  "equipment_problem": "repairing a small hole",
+  "tools_required": [
+    "drywall patch",
+    "joint compound",
+    "putty knife",
+    "dust mask"
+  ],
+  "steps": [
+    "Mark the area around the hole with a pencil",
+    "Cut a drywall patch slightly larger than the hole",
+    "Apply joint compound to the patch and press it into place",
+    "Smooth the compound with a putty knife"
+  ],
+  "safety_info": "Risk of drywall dust inhalation; use a dust mask and keep the area well-ventilated.",
+  "tips": [
+    "Use a drywall repair kit for best results",
+    "Apply multiple thin coats of compound for a smoother finish"
+  ],
+  "chosen_subcategory": "drywall"
+}

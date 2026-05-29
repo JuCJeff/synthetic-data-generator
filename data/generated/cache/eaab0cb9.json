@@ -1,0 +1,29 @@
+{
+  "question": "I have a wooden picture frame that has an uneven joint where two pieces of wood meet. How can I fix it so that it looks like new?",
+  "answer": "To fix an uneven joint in a wooden frame, start by disassembling the frame and cleaning the affected area. Then, apply a small amount of wood glue to the joint and clamp it together using bar clamps or a C-clamp. Let it dry for several hours or overnight. Once dry, use a fine-grit sandpaper to smooth out the joint. If necessary, use a wood filler to fill any gaps. Finally, reassemble the frame and apply a coat of clear wood finish to protect the repair. The key to a successful repair is to make sure the joint is securely clamped and the glue is fully dry before sanding.",
+  "equipment_problem": "uneven joint in a wooden frame",
+  "tools_required": [
+    "bar clamps",
+    "C-clamp",
+    "fine-grit sandpaper",
+    "wood glue",
+    "wood filler",
+    "clear wood finish"
+  ],
+  "steps": [
+    "Disassemble the frame and clean the affected area",
+    "Apply a small amount of wood glue to the joint",
+    "Clamp the joint together using bar clamps or a C-clamp",
+    "Let it dry for several hours or overnight",
+    "Use a fine-grit sandpaper to smooth out the joint",
+    "If necessary, use a wood filler to fill any gaps",
+    "Reassemble the frame",
+    "Apply a coat of clear wood finish to protect the repair"
+  ],
+  "safety_info": "Specific hazard: Exposure to wood glue fumes. Specific precaution: Work in a well-ventilated area and avoid inhaling the fumes. Specific hazard: Sharp edges or splinters from the sandpaper. Specific precaution: Wear protective gloves and safety glasses when sanding.",
+  "tips": [
+    "To ensure a strong bond, make sure the wood surfaces are completely clean and free of dust before applying glue. If the joint is particularly stubborn, try applying a small amount of glue to the surrounding area to help hold it in place while it dries.",
+    "When reassembling the frame, use a rubber mallet to gently tap the pieces into place to avoid applying too much pressure and causing further damage."
+  ],
+  "chosen_subcategory": "basic carpentry"
+}

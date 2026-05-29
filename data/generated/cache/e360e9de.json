@@ -1,0 +1,26 @@
+{
+  "question": "My toilet is constantly running and wasting water. I think it's the flapper, but I've never replaced one before. How do I replace the flapper on my toilet tank?",
+  "answer": "Replacing the flapper on your toilet tank is a relatively simple process that can be completed with a few basic tools. First, turn off the water supply to the toilet by locating the shut-off valve behind the toilet and turning it clockwise. Next, flush the toilet to drain the tank. Then, use a wrench to loosen the nut holding the old flapper in place. Carefully lift the flapper out of the tank and dispose of it. Take the new flapper and insert the rubber valve into the hole in the tank. Align the hole in the flapper with the valve and press the flapper into place. Tighten the nut to secure the flapper. Turn the water supply back on and test the flapper by flushing the toilet several times. If the flapper is not sealing properly, you may need to adjust the nut or replace the flapper again.",
+  "equipment_problem": "faulty toilet flapper not sealing",
+  "tools_required": [
+    "wrench",
+    "new flapper",
+    "shut-off valve"
+  ],
+  "steps": [
+    "Turn off the water supply to the toilet by locating the shut-off valve behind the toilet and turning it clockwise.",
+    "Flush the toilet to drain the tank.",
+    "Loosen the nut holding the old flapper in place with a wrench.",
+    "Carefully lift the flapper out of the tank and dispose of it.",
+    "Take the new flapper and insert the rubber valve into the hole in the tank.",
+    "Align the hole in the flapper with the valve and press the flapper into place.",
+    "Tighten the nut to secure the flapper.",
+    "Turn the water supply back on and test the flapper by flushing the toilet several times."
+  ],
+  "safety_info": "The specific hazard for this repair is water damage from a constantly running toilet. The specific precaution is to turn off the water supply to the toilet before starting the repair to avoid water damage.",
+  "tips": [
+    "Use a wrench to loosen the nut holding the old flapper in place, as it can be stuck due to mineral buildup.",
+    "When installing the new flapper, make sure the rubber valve is properly seated in the hole in the tank to ensure a watertight seal."
+  ],
+  "chosen_subcategory": "fixture repairs"
+}

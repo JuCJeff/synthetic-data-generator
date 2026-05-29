@@ -1,0 +1,23 @@
+{
+  "question": "My outdoor AC unit has been malfunctioning, and I suspect it's because the condenser coils are clogged with debris. What should I do to fix it?",
+  "answer": "Inspect and clean the condenser coils on your outdoor AC unit to ensure proper airflow and temperature regulation. This is typically a straightforward process that can be completed in under an hour.",
+  "equipment_problem": "clogged condenser coils",
+  "tools_required": [
+    "soft-bristled brush",
+    "garden hose",
+    "screwdriver"
+  ],
+  "steps": [
+    "Locate the outdoor unit and access the condenser coils, typically located at the back or bottom of the unit.",
+    "Remove any debris, leaves, or dirt from the coils using a soft brush or a garden hose.",
+    "Inspect the coils for any signs of damage or corrosion, and replace them if necessary.",
+    "Reassemble the outdoor unit and ensure all connections are secure.",
+    "Turn on the HVAC system and check for proper airflow and temperature regulation."
+  ],
+  "safety_info": "When handling refrigerant, avoid direct skin contact and inhalation of vapors; use protective gloves and a face mask.",
+  "tips": [
+    "Check your local weather forecast to ensure you're not cleaning the coils during a heatwave, which can cause the unit to work harder and potentially overheat.",
+    "Consider using a coil cleaning brush with soft bristles to prevent damaging the coils."
+  ],
+  "chosen_subcategory": "vent cleaning"
+}

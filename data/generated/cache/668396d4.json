@@ -1,0 +1,28 @@
+{
+  "question": "My gas range oven igniter is not lighting, and I need to replace it. Can you guide me through the process?",
+  "answer": "To replace the oven igniter on a gas range, first ensure the oven is cool and disconnected from power. Remove the oven racks and bottom panel. Locate the igniter, which is usually a small ceramic or metal rod near the burners. Disconnect the electrical connection and remove any screws holding it in place. Pull out the old igniter and discard. Install the new igniter, ensuring it's securely fastened and the electrical connection is reattached. Reassemble the oven in reverse order. Finally, turn the oven on and check for proper ignition.",
+  "equipment_problem": "igniter not lighting",
+  "tools_required": [
+    "screwdriver",
+    "needle-nose pliers",
+    "torx screwdriver"
+  ],
+  "steps": [
+    "Disconnect the oven from power",
+    "Remove the oven racks and bottom panel",
+    "Locate the igniter and disconnect the electrical connection",
+    "Remove any screws holding the igniter in place",
+    "Pull out the old igniter and discard",
+    "Install the new igniter, ensuring it's securely fastened",
+    "Reattach the electrical connection",
+    "Reassemble the oven in reverse order",
+    "Turn the oven on and check for proper ignition"
+  ],
+  "safety_info": "When working with electrical components, avoid touching any metal parts to prevent short circuits. Also, be cautious when handling sharp objects like screws and panel edges.",
+  "tips": [
+    "Use a screwdriver with a magnetic tip to retrieve dropped screws",
+    "Take photos of the igniter's electrical connection for reference during reassembly",
+    "Consider replacing the igniter's spark module if it's malfunctioning"
+  ],
+  "chosen_subcategory": "ovens"
+}

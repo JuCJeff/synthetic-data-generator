@@ -1,0 +1,29 @@
+{
+  "question": "How do I replace the light kit on my ceiling fan?",
+  "answer": "Replacing a ceiling fan light kit is a relatively straightforward process that requires a few basic tools and some caution. First, make sure to turn off the power to the ceiling fan at the electrical panel or breaker box. Remove the glass cover or shade from the light kit, and then take out the screws that hold the light kit to the fan. Gently pull the light kit away from the fan, taking care not to touch any of the electrical components. Disconnect the old light kit from the fan's electrical terminals, and then connect the new light kit in the same manner. Replace the screws and glass cover, and turn the power back on at the electrical panel or breaker box. Test the light kit to make sure it's working properly.",
+  "equipment_problem": "replacing a ceiling fan light kit",
+  "tools_required": [
+    "screwdriver",
+    "needle-nose pliers",
+    "voltage tester",
+    "wire strippers"
+  ],
+  "steps": [
+    "Turn off the power to the ceiling fan at the electrical panel or breaker box",
+    "Remove the glass cover or shade from the light kit",
+    "Take out the screws that hold the light kit to the fan",
+    "Gently pull the light kit away from the fan",
+    "Disconnect the old light kit from the fan's electrical terminals",
+    "Connect the new light kit to the fan's electrical terminals",
+    "Replace the screws and glass cover",
+    "Turn the power back on at the electrical panel or breaker box",
+    "Test the light kit to make sure it's working properly"
+  ],
+  "safety_info": "The specific hazard for this repair is electrical shock from the ceiling fan's electrical components. The specific precaution to take is to turn off the power to the ceiling fan at the electrical panel or breaker box before starting work.",
+  "tips": [
+    "Use a voltage tester to ensure the power is off before starting work",
+    "Label the wires and electrical components before disconnecting the old light kit",
+    "Make sure the new light kit is compatible with the ceiling fan's electrical system"
+  ],
+  "chosen_subcategory": "light fixture installation"
+}

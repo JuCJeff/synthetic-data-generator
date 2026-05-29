@@ -1,0 +1,27 @@
+{
+  "question": "My heat pump is running but the air blowing through the vents is barely warm, and the compressor is making a weird humming noise. What could be wrong?",
+  "answer": "A low air flow condition on a heat pump is often caused by a dirty or clogged air filter, a malfunctioning blower motor, or a clogged condenser coil. First, check and replace the air filter. If that doesn't resolve the issue, inspect the blower motor for any blockages or worn-out bearings. If the issue persists, locate the condenser coil and inspect it for any blockages or debris. If it's dirty, clean it with a garden hose. If the humming noise persists, it may be a sign of a more serious issue, such as a faulty compressor or capacitor, and it's recommended to call a professional.",
+  "equipment_problem": "a low air flow condition on a heat pump",
+  "tools_required": [
+    "multimeter",
+    "screwdriver",
+    "garden hose",
+    "thermometer",
+    "protective gloves and eyewear"
+  ],
+  "steps": [
+    "Turn off the power to the heat pump at the circuit breaker or fuse box.",
+    "Locate and inspect the air filter, and replace it if dirty.",
+    "Inspect the blower motor for any blockages or worn-out bearings.",
+    "Locate and inspect the condenser coil, and clean it with a garden hose if dirty.",
+    "Check the compressor and capacitor for any signs of malfunction.",
+    "Call a professional if the issue persists or if you're unsure about any part of the process."
+  ],
+  "safety_info": "Specific hazard: Electrical shock from exposed wiring when inspecting the blower motor. Specific precaution: Turn off the power to the heat pump at the circuit breaker or fuse box before inspecting the blower motor. Wear protective gloves and eyewear when handling electrical components.",
+  "tips": [
+    "Use a multimeter to check for voltage at the blower motor before attempting to replace it.",
+    "When cleaning the condenser coil, use a gentle spray and avoid using high-pressure washes, which can damage the coil.",
+    "Consider using a thermometer to measure the air flow temperature before and after cleaning the condenser coil to ensure it's within the recommended range."
+  ],
+  "chosen_subcategory": "basic troubleshooting"
+}

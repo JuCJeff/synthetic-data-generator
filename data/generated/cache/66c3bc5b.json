@@ -1,0 +1,33 @@
+{
+  "question": "My refrigerator has stopped cooling properly. I suspect a faulty evaporator fan motor. How do I diagnose and replace it?",
+  "answer": "The likely cause of the issue is a faulty evaporator fan motor. To diagnose, check the fan for rotation. If it is not rotating, replace the motor. To replace the motor, first disconnect the power to the refrigerator. Remove the back panel and locate the evaporator fan motor. Disconnect the electrical connections and remove the motor mounting screws. Gently pull the motor out of its mounting bracket. Remove the old motor and discard. Install the new motor, ensuring it is securely fastened with the mounting screws. Reconnect the electrical connections and replace the back panel. Restore power to the refrigerator.",
+  "equipment_problem": "replacing a faulty evaporator fan motor in a refrigerator",
+  "tools_required": [
+    "Torx screwdriver",
+    "Non-contact voltage tester",
+    "Socket wrench",
+    "Pliers",
+    "Safety glasses",
+    "Protective gloves"
+  ],
+  "steps": [
+    "Disconnect power to the refrigerator",
+    "Remove the back panel",
+    "Locate the evaporator fan motor",
+    "Disconnect electrical connections",
+    "Remove motor mounting screws",
+    "Pull out the motor",
+    "Remove the old motor and discard",
+    "Install the new motor",
+    "Reconnect electrical connections",
+    "Replace the back panel",
+    "Restore power to the refrigerator"
+  ],
+  "safety_info": "Hazards: electrical shock, physical injury from sharp edges or points. Precautions: Disconnect power to the refrigerator before starting work. Use a non-contact voltage tester to ensure the power is off. Wear protective gloves and safety glasses when working with electrical components and sharp edges.",
+  "tips": [
+    "Use a Torx screwdriver to remove the motor mounting screws, as they are likely Torx-headed.",
+    "If you're not comfortable working with electrical components, consider consulting a professional.",
+    "Make sure the new motor is the correct replacement part for your specific refrigerator model."
+  ],
+  "chosen_subcategory": "refrigerators"
+}

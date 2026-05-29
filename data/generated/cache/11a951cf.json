@@ -1,0 +1,21 @@
+{
+  "question": "My washing machine is leaking water all over the floor. What should I do?",
+  "answer": "To fix a leaky washing machine, start by unplugging the machine and locating the leak. Check the hoses and connections for any signs of damage or wear. If the leak is coming from a hose, replace it with a new one. If the leak is coming from a connection, tighten the connection or replace it if necessary.",
+  "equipment_problem": "leaking washing machine",
+  "tools_required": [
+    "Socket wrench",
+    "Teflon tape",
+    "New hose or connection"
+  ],
+  "steps": [
+    "Unplug the washing machine from the power outlet.",
+    "Locate the leak and identify the source.",
+    "Replace the hose or connection as needed."
+  ],
+  "safety_info": "Electrical shock hazard: Be careful not to touch any electrical components while working on the machine. Water hazard: Make sure the area around the machine is clear of any flammable materials or electrical appliances.",
+  "tips": [
+    "Use a bucket to catch any water that may leak out while you're working on the machine.",
+    "Consider replacing the entire machine if it's old or has other problems."
+  ],
+  "chosen_subcategory": "washing machines"
+}

@@ -1,0 +1,28 @@
+{
+  "question": "My home was built on a hill, and the water pressure is low in the upstairs bathroom. I noticed that the toilet is constantly running and the tank is filling with water from the supply lines. I need to install a pressure-balancing valve to stabilize the water pressure. What are the steps to install this valve?",
+  "answer": "To install a pressure-balancing valve, you'll need to shut off the water supply to the bathroom and drain the supply lines. Next, locate the supply lines under the sink and identify the correct orientation for the pressure-balancing valve. Install the valve, making sure to secure it to the wall with the provided mounting bracket. Then, reconnect the supply lines and turn on the water supply. Test the valve by flushing the toilet and checking the pressure gauge. Finally, adjust the valve as needed to achieve a balanced water pressure. It's essential to note that this repair may require additional plumbing connections or modifications, so ensure you're comfortable with the task before proceeding. Consider consulting a professional if you're unsure.",
+  "equipment_problem": "low water pressure due to a high-rise home",
+  "tools_required": [
+    "adjustable wrench",
+    "Teflon tape",
+    "pipe cutter (if necessary)",
+    "pressure-balancing valve"
+  ],
+  "steps": [
+    "Shut off the water supply to the bathroom",
+    "Drain the supply lines",
+    "Locate the supply lines under the sink",
+    "Identify the correct orientation for the pressure-balancing valve",
+    "Install the valve",
+    "Secure the valve to the wall with the provided mounting bracket",
+    "Reconnect the supply lines",
+    "Turn on the water supply",
+    "Test the valve by flushing the toilet and checking the pressure gauge",
+    "Adjust the valve as needed"
+  ],
+  "safety_info": "When working with water supply lines, be aware of the risk of water hammer, which can cause pipes to burst or water to spray unexpectedly. To mitigate this, use a wrench to slowly open the shut-off valve and avoid sudden movements.",
+  "tips": [
+    "When selecting a pressure-balancing valve, consider the flow rate and pressure rating to ensure it's suitable for your bathroom's specific needs. Also, keep in mind that installing a pressure-balancing valve may require additional plumbing connections or modifications, so be prepared to adapt your plumbing setup as needed."
+  ],
+  "chosen_subcategory": "pipe problems"
+}

@@ -1,0 +1,24 @@
+{
+  "question": "My bathroom faucet is dripping constantly and I don't know how to fix it. Can you help me?",
+  "answer": "To fix a dripping faucet, you'll need to disassemble the faucet and inspect the O-rings and gaskets for signs of wear or damage. If they're damaged, replace them with new ones. Apply a small amount of plumber's grease to the new O-rings and gaskets, and then reassemble the faucet in the reverse order that it was disassembled. Finally, turn the water supply back on and check for leaks.",
+  "equipment_problem": "dripping faucet",
+  "tools_required": [
+    "adjustable wrench",
+    "plumber's tape",
+    "O-ring or gasket replacement kit"
+  ],
+  "steps": [
+    "Turn off the water supply to the faucet by locating the shut-off valves under the sink and turning them clockwise.",
+    "Disassemble the faucet by removing the handle and any decorative caps or escutcheons.",
+    "Inspect the O-rings and gaskets for signs of wear or damage, and replace them if necessary.",
+    "Apply a small amount of plumber's grease to the new O-rings and gaskets.",
+    "Reassemble the faucet in the reverse order that it was disassembled, making sure to tighten any loose connections.",
+    "Turn the water supply back on and check for leaks."
+  ],
+  "safety_info": "Excessive water usage can lead to flooding, so turn off the water supply to the faucet before starting the repair. Use a bucket or tray to catch any water that may still leak during the repair.",
+  "tips": [
+    "Make sure to use a bucket or tray to catch any water that may still leak during the repair, as this can help prevent flooding.",
+    "Consider replacing the entire faucet if it's old or damaged, as this can be a more cost-effective solution in the long run."
+  ],
+  "chosen_subcategory": "leaks"
+}

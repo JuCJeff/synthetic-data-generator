@@ -1,0 +1,24 @@
+{
+  "question": "My oven's burner igniter isn't clicking when I turn the knob.  Can you tell me how to fix it?",
+  "answer": "To fix your oven's burner igniter not clicking, first, remove the lower panel to access the igniter circuit. Then, disconnect the electrical connector from the igniter and loosen the gas shut-off valve. Check the spark gap and clean or replace it if necessary. Finally, reassemble everything in reverse order and test the igniter.",
+  "equipment_problem": "burner igniter not clicking",
+  "tools_required": [
+    "screwdriver",
+    "wrench",
+    "voltage tester",
+    "needle-nose pliers"
+  ],
+  "steps": [
+    "Remove the oven's lower panel to access the igniter circuit. This usually involves removing screws and gently prying the panel off.",
+    "Identify and disconnect the igniter's electrical connector. Use a wrench to loosen the gas shut-off valve.",
+    "Check the igniter's spark gap and clean or replace it as needed. A dirty or worn-out spark gap can prevent the igniter from clicking.",
+    "Reassemble everything in reverse order, reconnecting the igniter's electrical connector and restoring power to the oven.",
+    "Test the igniter to ensure it's working properly."
+  ],
+  "safety_info": "Be aware of the electrical shock hazard from the igniter circuit. Turn off the oven's power at the circuit breaker before starting this repair. Use a voltage tester to ensure the power is off.",
+  "tips": [
+    "Make sure the oven is cool before starting this repair to avoid burns. Use a wrench to loosen the gas shut-off valve to avoid stripping the threads.",
+    "If you're not comfortable working with electrical circuits or gas appliances, it's recommended to hire a professional for this repair."
+  ],
+  "chosen_subcategory": "ovens"
+}

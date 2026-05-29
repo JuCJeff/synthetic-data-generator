@@ -1,0 +1,23 @@
+{
+  "question": "How do I fix a door that is sagging and almost falling off its hinges?",
+  "answer": "To fix a loose door hinge, first loosen the hinge pins with a screwdriver and pull the hinge away from the door frame. Then, use a drill to screw in new hinge screws and reattach the hinge to the door frame.",
+  "equipment_problem": "loose door hinge",
+  "tools_required": [
+    "screwdriver",
+    "drill",
+    "hinge screws"
+  ],
+  "steps": [
+    "Loosen the hinge pins with a screwdriver.",
+    "Pull the hinge away from the door frame.",
+    "Use a drill to screw in new hinge screws.",
+    "Reattach the hinge to the door frame.",
+    "Test the door to make sure it is securely attached."
+  ],
+  "safety_info": "When working with power tools, always wear safety goggles to protect your eyes from flying debris. Additionally, make sure the door is securely blocked in place to avoid it falling and causing injury.",
+  "tips": [
+    "Use a level to ensure the door is properly aligned before reattaching the hinge.",
+    "Consider replacing the old hinge screws with longer ones for added stability."
+  ],
+  "chosen_subcategory": "basic carpentry"
+}

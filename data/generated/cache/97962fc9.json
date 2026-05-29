@@ -1,0 +1,24 @@
+{
+  "question": "How do I clean a clogged dryer vent on my gas dryer that's causing my clothes to take longer to dry?",
+  "answer": "Cleaning a clogged dryer vent is a relatively simple process that can be done with basic tools. First, unplug the dryer and locate the venting system. You'll need to remove the vent cover and use a vacuum cleaner or a specialized dryer vent brush to remove any lint and debris that's clogging the vent. Be careful not to push any debris further into the vent. Next, use a cloth or a brush to clean out the venting system, making sure to remove any remaining lint and debris. Finally, reassemble the venting system and plug the dryer back in. This should solve the problem and get your clothes drying in no time. Remember to check and clean your dryer vent regularly to prevent clogs and ensure safe operation.",
+  "equipment_problem": "cleaning a clogged dryer vent",
+  "tools_required": [
+    "Vacuum cleaner",
+    "Dryer vent brush",
+    "Cloth or brush",
+    "Tape measure or ruler",
+    "Screwdriver or nut driver"
+  ],
+  "steps": [
+    "Unplug the dryer and locate the venting system",
+    "Remove the vent cover and use a vacuum cleaner or a specialized dryer vent brush to remove any lint and debris",
+    "Use a cloth or a brush to clean out the venting system",
+    "Reassemble the venting system and plug the dryer back in"
+  ],
+  "safety_info": "Specific hazard: Fire hazard due to lint buildup in the dryer vent. Specific precaution: Make sure to unplug the dryer before starting the cleaning process to avoid any accidental starts. Also, be careful not to push any debris further into the vent, as this can cause a blockage that can lead to a fire.",
+  "tips": [
+    "Use a dryer vent brush with flexible bristles to reach into tight spaces and clean the vent more effectively",
+    "Consider using a dryer vent cleaning kit that includes a brush, vacuum, and other tools to make the process easier"
+  ],
+  "chosen_subcategory": "vent cleaning"
+}

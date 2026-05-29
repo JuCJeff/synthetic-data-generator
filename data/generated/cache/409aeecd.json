@@ -1,0 +1,25 @@
+{
+  "question": "My floor feels spongy in one area, and I think it might be due to a loose floor joist. How can I fix it?",
+  "answer": "To fix a loose floor joist, you'll need to secure it to the surrounding joists and ensure the subfloor is level. Start by identifying the loose joist and marking its location. Then, use a reciprocating saw to cut a notch in the top of the joist, about 1 inch deep and 2 inches wide. Next, drill holes for 3-inch screws and attach a 2x4 bracket to the joist, making sure it's flush with the surrounding joists. Finally, drive the screws to secure the bracket and check the subfloor for levelness. If necessary, adjust the joist or add shims to level the subfloor.",
+  "equipment_problem": "loose floor joist",
+  "tools_required": [
+    "reciprocating saw",
+    "drill",
+    "screws",
+    "2x4 lumber",
+    "level"
+  ],
+  "steps": [
+    "Identify the loose joist and mark its location.",
+    "Cut a notch in the top of the joist.",
+    "Drill holes for 3-inch screws and attach a 2x4 bracket.",
+    "Drive the screws to secure the bracket.",
+    "Check the subfloor for levelness and adjust as necessary."
+  ],
+  "safety_info": "When working with power tools, always wear safety glasses and keep loose clothing tied back. When cutting notches in wood, be careful not to slip and injure yourself. Use a level to ensure the subfloor is level before finishing.",
+  "tips": [
+    "Use a stud finder to locate the surrounding joists and ensure the bracket is secure.",
+    "Consider adding additional support to the subfloor, such as installing plywood or oriented strand board (OSB)."
+  ],
+  "chosen_subcategory": "basic carpentry"
+}

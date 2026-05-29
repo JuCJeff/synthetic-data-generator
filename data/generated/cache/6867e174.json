@@ -1,0 +1,23 @@
+{
+  "question": "My GFCI outlet in my kitchen is not working and I need to replace it. What are the steps I need to take?",
+  "answer": "To replace a GFCI outlet, first turn off the power to the outlet at the circuit breaker panel. Then, remove the outlet cover plate and any screws holding the outlet in place. Carefully pull the outlet out of the electrical box and disconnect the wires. Connect the wires to the new outlet, making sure to match the color-coding of the wires. Finally, screw the new outlet into place and replace the outlet cover plate.",
+  "equipment_problem": "GFCI outlet not working",
+  "tools_required": [
+    "Voltage tester",
+    "Screwdriver",
+    "Needle-nose pliers"
+  ],
+  "steps": [
+    "Turn off the power to the outlet at the circuit breaker panel",
+    "Remove the outlet cover plate and any screws holding the outlet in place",
+    "Carefully pull the outlet out of the electrical box and disconnect the wires",
+    "Connect the wires to the new outlet, making sure to match the color-coding of the wires",
+    "Screw the new outlet into place and replace the outlet cover plate"
+  ],
+  "safety_info": "When working with electrical outlets, always turn off the power to the circuit at the breaker panel to avoid electrical shock. Wear protective gloves and safety glasses to prevent injury from electrical shock or flying debris.",
+  "tips": [
+    "Use a voltage tester to ensure the power is off before starting the repair",
+    "Label the wires before disconnecting them to make it easier to connect them to the new outlet"
+  ],
+  "chosen_subcategory": "light fixture installation"
+}
