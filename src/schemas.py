@@ -119,7 +119,13 @@ class LabelRecord(BaseModel):
     trace_id: str = Field(
         description="Unique identifier linking this label to its source RepairQA item"
     )
-    labeler: str = Field(description="Who produced this label — 'human' or 'llm_judge'")
+    labeler: Literal["human", "llm_judge"] = Field(
+        description="Who produced this label"
+    )
+    timestamp: str = Field(
+        default_factory=lambda: datetime.now(timezone.utc).isoformat(),
+        description="UTC timestamp when this label was produced",
+    )
 
     answer_completeness: int = Field(
         description="1 if answer gives enough detail to complete the repair, 0 if it stops short",
