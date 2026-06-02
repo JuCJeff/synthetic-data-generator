@@ -8,9 +8,10 @@ Single source of truth for:
 """
 
 import json
-from typing import Literal
+from typing import Literal, TypedDict
+from datetime import datetime, timezone
 
-from pydantic import BaseModel, Field, field_validator
+from pydantic import BaseModel, Field, computed_field, field_validator
 
 Category = Literal[
     "Appliance Repair",
@@ -52,6 +53,39 @@ CATEGORY_SUBCATEGORIES: dict[Category, list[str]] = {
         "basic carpentry",
     ],
 }
+
+
+class EvaluationDimension(TypedDict):
+    dimension: str
+    requirement: str
+
+
+EVALUATION_DIMENSIONS: list[EvaluationDimension] = [
+    {
+        "dimension": "Answer Completeness",
+        "requirement": "The answer contains enough detail for a homeowner to actually complete the repair end to end (tools, concrete steps, safety, a useful tip). Answers that stop short or omit key stages fail.",
+    },
+    {
+        "dimension": "Safety Specificity",
+        "requirement": "safety_info names the specific hazard of this repair and the specific precaution to take. Generic phrases ('be careful', 'use caution', 'stay safe') fail.",
+    },
+    {
+        "dimension": "Tool Realism",
+        "requirement": "Every item in tools_required is something a typical homeowner already owns or could buy at a general hardware store for under $50. No professional, specialty, or trade-only tools.",
+    },
+    {
+        "dimension": "Scope Appropriateness",
+        "requirement": "The repair is within realistic DIY capability. If professional help is genuinely needed (e.g., gas lines, panel work), the answer says so clearly rather than giving amateur instructions.",
+    },
+    {
+        "dimension": "Context Clarity",
+        "requirement": "question and answer contain enough context to understand the problem, and the answer directly addresses the specific equipment_problem.",
+    },
+    {
+        "dimension": "Tip Usefulness",
+        "requirement": "tips provide non-obvious, task-specific advice that adds value beyond the steps. Tips that merely restate a step or offer generic encouragement fail.",
+    },
+]
 
 
 class RepairQA(BaseModel):
@@ -158,6 +192,7 @@ class LabelRecord(BaseModel):
         le=1,
     )
 
+    @computed_field
     @property
     def overall_pass(self) -> bool:
         return all(
