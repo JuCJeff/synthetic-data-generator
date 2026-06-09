@@ -369,7 +369,7 @@ if __name__ == "__main__":
     report_path.write_text(json.dumps(report.summary(), indent=2))
 
     console.print(
-        f"Gate complete: {report.valid_count} passed, "
-        f"{report.rejected_count} rejected, "
+        f"Gate complete: [success]{report.valid_count} passed[/success], "
+        f"[error]{report.rejected_count} rejected[/error], "
         f"{report.duplicate_count} duplicates removed"
     )

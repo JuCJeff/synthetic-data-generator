@@ -252,7 +252,11 @@ def save_qa_dataset(
     path: Path = _GENERATION_OUTPUT_PATH,
 ) -> None:
     save_jsonl(records, path, lambda r: r.model_dump_json())
-    print_save_confirmation(len(records), path.relative_to(PROJECT_ROOT))
+    console.print(
+        f"[bold]Saved[/bold] generated {len(records)} records → [cyan]{path.relative_to(PROJECT_ROOT)}[/cyan]"
+    )
+
+
 
 
 if __name__ == "__main__":
