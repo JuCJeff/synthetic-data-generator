@@ -11,7 +11,6 @@ Run:
 import hashlib
 import json
 import os
-import uuid
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -42,7 +41,7 @@ from src.ui import (
     print_generation_error,
     print_save_confirmation,
 )
-from src.util import save_jsonl
+from src.util import generate_uuid, save_jsonl
 
 _GENERATION_DIR = PROJECT_ROOT / "data" / "generated"
 _GENERATION_OUTPUT_PATH = _GENERATION_DIR / "batch_v1.jsonl"
@@ -203,7 +202,7 @@ def generate_one(task: GenerationTask) -> GeneratedRecord | None:
             save_to_cache(prompt_hash, item)
 
         return GeneratedRecord(
-            trace_id=f"qa_{uuid.uuid4().hex[:8]}",
+            trace_id=f"qa_{generate_uuid()}",
             category=task.category,
             subcategory=item.chosen_subcategory,
             prompt_variant=_PROMPT_VARIANT,

@@ -4,6 +4,11 @@ Shared pipeline utilities.
 
 from pathlib import Path
 from typing import Any, Callable
+import uuid
+
+
+def generate_uuid():
+    return uuid.uuid4().hex[:8]
 
 
 def save_jsonl(
@@ -15,7 +20,7 @@ def save_jsonl(
             output_file.write(serializer(record) + "\n")
 
 
-def root_cause(error: Exception) -> BaseException:
+def print_root_cause(error: Exception) -> BaseException:
     """Unwrap exception chains including tenacity's RetryError.last_attempt."""
     cause: BaseException = error.__cause__ or error
     last_attempt = getattr(cause, "last_attempt", None)
