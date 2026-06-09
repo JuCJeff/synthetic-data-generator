@@ -67,11 +67,11 @@ EVALUATION_DIMENSIONS: list[EvaluationDimension] = [
     },
     {
         "dimension": "Safety Specificity",
-        "requirement": "safety_info names the specific hazard of this repair and the specific precaution to take. Generic phrases ('be careful', 'use caution', 'stay safe') fail.",
+        "requirement": "safety info names the specific hazard of this repair and the specific precaution to take. Generic phrases ('be careful', 'use caution', 'stay safe') fail.",
     },
     {
         "dimension": "Tool Realism",
-        "requirement": "Every item in tools_required is something a typical homeowner already owns or could buy at a general hardware store for under $50. No professional, specialty, or trade-only tools.",
+        "requirement": "Every item in tools required is something a typical homeowner already owns or could buy at a general hardware store for under $50. No professional, specialty, or trade-only tools.",
     },
     {
         "dimension": "Scope Appropriateness",
@@ -79,14 +79,13 @@ EVALUATION_DIMENSIONS: list[EvaluationDimension] = [
     },
     {
         "dimension": "Context Clarity",
-        "requirement": "question and answer contain enough context to understand the problem, and the answer directly addresses the specific equipment_problem.",
+        "requirement": "question and answer contain enough context to understand the problem, and the answer directly addresses the specific equipment problem.",
     },
     {
         "dimension": "Tip Usefulness",
         "requirement": "tips provide non-obvious, task-specific advice that adds value beyond the steps. Tips that merely restate a step or offer generic encouragement fail.",
     },
 ]
-
 
 class RepairQA(BaseModel):
     """A single DIY home repair Q&A training item."""
@@ -167,7 +166,7 @@ class LabelRecord(BaseModel):
         le=1,
     )
     safety_specificity: int = Field(
-        description="1 if safety_info names the specific hazard and precaution, 0 if generic",
+        description="1 if safety info names the specific hazard and precaution, 0 if generic",
         ge=0,
         le=1,
     )
