@@ -214,7 +214,7 @@ def generate_one(task: GenerationTask) -> GeneratedRecord | None:
         )
 
 
-def generate_dataset(items_per_category: int = 10) -> list[GeneratedRecord]:
+def generate_qa_dataset(items_per_category: int = 10) -> list[GeneratedRecord]:
     """Build the plan, then execute it. Returns validated records."""
     logfire.info(
         "Starting baseline generation run",
@@ -247,7 +247,7 @@ def generate_dataset(items_per_category: int = 10) -> list[GeneratedRecord]:
 # --- Persistence ---
 
 
-def save_dataset(
+def save_qa_dataset(
     records: list[GeneratedRecord],
     path: Path = _GENERATION_OUTPUT_PATH,
 ) -> None:
@@ -256,18 +256,5 @@ def save_dataset(
 
 
 if __name__ == "__main__":
-    # Quick test — generate one item to verify Instructor + OpenRouter works
-    # test_item = generate_repair_qa(
-    #     category="Plumbing Repair",
-    #     subcategory_options=CATEGORY_SUBCATEGORIES["Plumbing Repair"],
-    # )
-    # if test_item:
-    #     console.print("[bold green]✓ Test generation succeeded[/bold green]")
-    #     console.print(f"Question: {test_item.question}")
-    #     console.print(f"Safety: {test_item.safety_info}")
-    # else:
-    #     console.print("[red]Test generation failed[/red]")
-
-    # Full run — uncomment when the test passes
-    records = generate_dataset(items_per_category=10)
-    save_dataset(records)
+    records = generate_qa_dataset(items_per_category=10)
+    save_qa_dataset(records)

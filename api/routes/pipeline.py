@@ -6,7 +6,7 @@ from fastapi import APIRouter, BackgroundTasks, HTTPException
 from pydantic import BaseModel
 
 from src.config import GENERATED_OUTPUTS_PATH
-from src.generator import generate_dataset, save_dataset
+from src.generator import generate_qa_dataset, save_qa_dataset
 from src.validator import (
     REJECTED_OUTPUT_PATH,
     VALIDATED_OUTPUT_PATH,
@@ -44,8 +44,8 @@ class GenerateRequest(BaseModel):
 def _run_generation(job_id: str, items_per_category: int) -> None:
     try:
         _jobs[job_id]["status"] = "running"
-        records = generate_dataset(items_per_category=items_per_category)
-        save_dataset(records)
+        records = generate_qa_dataset(items_per_category=items_per_category)
+        save_qa_dataset(records)
         _jobs[job_id].update({"status": "done", "count": len(records)})
     except Exception as error:
         _jobs[job_id].update({"status": "error", "error": str(error)})
