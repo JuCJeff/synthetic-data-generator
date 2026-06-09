@@ -1,26 +1,27 @@
 {
-  "question": "How do I clean the air vents in my attic to ensure proper airflow and reduce dust in my home?",
-  "answer": "To clean the air vents in your attic, you'll need a vacuum cleaner with a hose attachment, a soft-bristled brush, and a trash bag. Start by turning off the power to the HVAC system at the circuit breaker. Then, remove the vent covers and vacuum out any debris or dust using the hose attachment. Next, use the soft-bristled brush to gently sweep away any remaining dust or cobwebs. Finally, dispose of the debris in a trash bag and replace the vent covers. Remember to turn the power back on at the circuit breaker before restarting your HVAC system. It's also a good idea to schedule regular cleaning to maintain optimal airflow and reduce dust in your home.",
-  "equipment_problem": "blocked air vents",
+  "question": "My pool heater has been malfunctioning after a recent power outage. It was working fine until the outage, but now it won't turn on. What could be the issue?",
+  "answer": "A common problem like this is often due to a tripped circuit breaker or a blown fuse. Check your electrical panel and reset or replace the necessary breaker or fuse. If that doesn't work, verify that the outdoor power supply is functioning, and try checking for any signs of physical damage to the heater's electrical connections.",
+  "equipment_problem": "pool heater not turning on after power outage",
   "tools_required": [
-    "vacuum cleaner with hose attachment",
-    "soft-bristled brush",
-    "trash bag",
-    "ladder stabilizer",
-    "dust mask"
+    "multimeter",
+    "screwdriver",
+    "needle-nose pliers",
+    "wire strippers"
   ],
   "steps": [
-    "Turn off the power to the HVAC system at the circuit breaker.",
-    "Remove the vent covers and vacuum out any debris or dust using the hose attachment.",
-    "Use the soft-bristled brush to gently sweep away any remaining dust or cobwebs.",
-    "Dispose of the debris in a trash bag.",
-    "Replace the vent covers.",
-    "Turn the power back on at the circuit breaker and restart your HVAC system."
+    "Turn off the power at the circuit breaker to avoid electrical shock",
+    "Check the tripped circuit breaker or blown fuse and reset or replace it as necessary",
+    "Verify that the outdoor power supply is functioning",
+    "Inspect the heater's electrical connections for signs of physical damage",
+    "Replace any damaged connections or wiring"
   ],
-  "safety_info": "Hazard: Electrical shock from the HVAC system. Precaution: Turn off the power at the circuit breaker before starting the cleaning process.",
+  "safety_info": "When working with electrical systems, be aware of the risk of electrical shock, and take precautions like turning off the power at the circuit breaker before making any repairs. Also, watch out for any signs of physical damage to the electrical connections, such as frayed wires or loose terminals.",
   "tips": [
-    "Consider using a ladder stabilizer for added safety when accessing the attic.",
-    "Use a dust mask when vacuuming to avoid inhaling dust and debris."
+    "When dealing with electrical issues, always turn off the power at the circuit breaker before making any repairs to avoid electrical shock.",
+    "Use a multimeter to test the voltage and current flow in the electrical connections to identify any issues.",
+    "Don't forget to check the power supply to the heater, as a dead battery or faulty wiring can cause the issue.",
+    "If you're unsure about how to proceed with the repair, consider consulting a professional.",
+    "Keep in mind that some pool heaters may require a specific sequence of steps to reset after a power outage, so consult your owner's manual for guidance."
   ],
-  "chosen_subcategory": "vent cleaning"
+  "chosen_subcategory": "basic troubleshooting"
 }

@@ -1,26 +1,23 @@
 {
-  "question": "How do I fix a leaky toilet fill valve?",
-  "answer": "To fix a leaking toilet fill valve, first shut off the water supply to the toilet by locating the shut-off valve behind the toilet and turning it clockwise. Next, flush the toilet to drain the tank. Then, disconnect the water supply line from the fill valve and loosen the adjusting screw on the float arm. Pull the float arm down to adjust the water level, and then reassemble everything in the reverse order. Finally, turn the water supply back on and test the toilet for leaks.",
-  "equipment_problem": "leaking toilet fill valve",
+  "question": "My outdoor hosebib is leaking and I want to fix it. What are the steps to follow?",
+  "answer": "To fix a dripping outdoor hosebib, first shut off the water supply by locating the shut-off valves behind the faucet and turning them clockwise. Next, disconnect the hose from the hosebib and remove any visible mineral buildup. Apply a thread sealant to the threads of the hosebib and reattach the hose. Finally, turn the water supply back on and check for leaks.",
+  "equipment_problem": "dripping outdoor hosebib",
   "tools_required": [
-    "Adjusting wrench",
-    "Channel-type pliers",
-    "Socket wrench",
-    "Teflon tape"
+    "adjustable wrench",
+    "thread sealant",
+    "hose bib key"
   ],
   "steps": [
-    "Shut off the water supply to the toilet",
-    "Flush the toilet to drain the tank",
-    "Disconnect the water supply line from the fill valve",
-    "Loosen the adjusting screw on the float arm",
-    "Pull the float arm down to adjust the water level",
-    "Reassemble everything in the reverse order",
-    "Turn the water supply back on and test the toilet for leaks"
+    "Shut off the water supply by locating the shut-off valves behind the faucet and turning them clockwise.",
+    "Disconnect the hose from the hosebib and remove any visible mineral buildup.",
+    "Apply a thread sealant to the threads of the hosebib and reattach the hose.",
+    "Turn the water supply back on and check for leaks."
   ],
-  "safety_info": "When working with toilet tanks, be aware of the risk of electrical shock from the fill valve's electric eye. To mitigate this risk, turn off the power to the toilet at the circuit breaker or fuse box before starting work.",
+  "safety_info": "Be aware of the risk of water electrocution when working with outdoor plumbing. Make sure the power to any nearby outdoor outlets is turned off before starting the repair.",
   "tips": [
-    "Use a bucket to catch any water that may spill when disconnecting the water supply line",
-    "Consider replacing the entire fill valve if it's old or corroded"
+    "Use a wrench to loosen any corroded or stuck parts.",
+    "Consider replacing the hosebib if it's old or corroded.",
+    "Make sure to tighten the shut-off valves securely after turning the water supply back on."
   ],
-  "chosen_subcategory": "fixture repairs"
+  "chosen_subcategory": "pipe problems"
 }

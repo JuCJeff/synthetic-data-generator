@@ -1,25 +1,27 @@
 {
-  "question": "My grandma's antique cabinet door won't close properly because the screws that hold the hinge pins are rusted. Can I fix this without destroying the door?",
-  "answer": "To fix the cabinet door, you'll need to adjust the hinge pins. First, remove the screws holding the hinges in place and set them aside. Next, use a hinge pin puller to gently remove the pin from the hinge. You can purchase a hinge pin puller at most hardware stores. Once the pin is removed, use a screwdriver to remove any remaining rust from the screw holes. Then, reattach the pin and reattach the hinge to the cabinet door. Tighten the screws securely, but be careful not to overtighten. Finally, test the door to ensure it closes properly.",
-  "equipment_problem": "adjusting hinge pins on a cabinet door with rusted screws",
+  "question": "How do I install a new strike plate on a solid core door without damaging the door or the jamb?",
+  "answer": "To install a new strike plate on a solid core door, first, ensure the door is in the closed position. Use a pencil to mark the center of the door frame, then use a level to draw a line along the top of the strike plate's mounting screws. Drill pilot holes into the door frame at the marked screw positions. Use a screwdriver to drive the screws into the pilot holes. Align the strike plate with the screw holes and use a screwdriver to secure it in place. Tighten the screws firmly, but avoid overtightening, which can damage the door.",
+  "equipment_problem": "installing a door strike plate",
   "tools_required": [
-    "hinge pin puller",
+    "level",
+    "pencil",
     "screwdriver",
-    "screw extractor or drill with screw extractor bit",
-    "new screws (if necessary)"
+    "drill",
+    "screwdriver bits",
+    "strike plate"
   ],
   "steps": [
-    "Remove the screws holding the hinges in place",
-    "Use a hinge pin puller to remove the pin from the hinge",
-    "Remove any remaining rust from the screw holes",
-    "Reattach the pin and reattach the hinge to the cabinet door",
-    "Tighten the screws securely",
-    "Test the door to ensure it closes properly"
+    "Mark the center of the door frame with a pencil",
+    "Draw a line along the top of the strike plate's mounting screws using a level",
+    "Drill pilot holes into the door frame at the marked screw positions",
+    "Drive the screws into the pilot holes",
+    "Align the strike plate with the screw holes",
+    "Secure the strike plate with a screwdriver"
   ],
-  "safety_info": "Specific hazard: Stripping the screw head with a rusty screw. Specific precaution: Use a screw extractor or a drill with a screw extractor bit to remove the rusty screw.",
+  "safety_info": "Specific hazard: Striking the door frame or solid core door with a screwdriver or drill bit can cause damage. Specific precaution: Use a pencil to mark the screw positions and a level to ensure accurate alignment, and drill pilot holes before driving screws to avoid damage to the door or jamb. ",
   "tips": [
-    "If the screw is severely rusted, consider replacing it with a new screw",
-    "Use a hinge pin puller with a long handle to avoid straining your back"
+    "Use a level to ensure accurate alignment of the strike plate",
+    "Use pilot holes to prevent screw splits in the door frame"
   ],
   "chosen_subcategory": "basic carpentry"
 }

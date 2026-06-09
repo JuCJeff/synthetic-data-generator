@@ -1,30 +1,27 @@
 {
-  "question": "How do I fix uneven deck boards that are only about 1 inch out of alignment?",
-  "answer": "To fix uneven deck boards, start by checking the deck frame for any signs of damage or rot. If the frame is damaged, you'll need to replace it before proceeding. Next, use a spirit level to determine the high and low points of the deck. Then, mark the location of the high point with a pencil. Use a pry bar to carefully lift the high point, and insert shims underneath it to level it out. Repeat this process for each high point, working your way across the deck. Once the deck is level, use a hammer and nails to secure the boards in place. Finally, apply a coat of deck stain to protect the wood.",
-  "equipment_problem": "uneven deck boards",
+  "question": "I recently installed two adjacent 4x8 plywood panels in my garage and now I notice that the joint between them is uneven. How do I fix this?",
+  "answer": "To fix an uneven joint between two plywood panels, start by cleaning the area of any debris or old adhesive. Then, apply a bead of construction adhesive to the back of the panel with the uneven edge and press it firmly into place against the adjacent panel. Use clamps to hold the panels together while the adhesive dries. Once the adhesive is dry, use a router to trim the edges of the panels and create a flush joint. Finally, sand the area to smooth out any excess material and apply a finish coat of paint or stain to match the surrounding area.",
+  "equipment_problem": "uneven joint between two adjacent plywood panels",
   "tools_required": [
-    "spirit level",
-    "pry bar",
-    "shims",
-    "hammer",
-    "nails",
-    "deck stain",
-    "ladder stabilizer"
+    "construction adhesive",
+    "router",
+    "router bits",
+    "clamps",
+    "sander",
+    "sanding block"
   ],
   "steps": [
-    "Check the deck frame for damage or rot",
-    "Determine the high and low points of the deck using a spirit level",
-    "Mark the location of the high point with a pencil",
-    "Use a pry bar to carefully lift the high point and insert shims underneath",
-    "Repeat the process for each high point, working your way across the deck",
-    "Secure the boards in place with a hammer and nails",
-    "Apply a coat of deck stain to protect the wood"
+    "Clean the area of any debris or old adhesive",
+    "Apply a bead of construction adhesive to the back of the panel with the uneven edge",
+    "Press the panel into place against the adjacent panel and use clamps to hold it in place",
+    "Allow the adhesive to dry completely",
+    "Use a router to trim the edges of the panels and create a flush joint",
+    "Sand the area to smooth out any excess material"
   ],
-  "safety_info": "Specific hazard: Falling from the deck. Specific precaution: Always use a ladder stabilizer and consider hiring a professional if you're not comfortable with heights. Wear gloves and safety glasses to protect yourself from falling debris.",
+  "safety_info": "When using a router, be aware of the risk of kickback and keep your hands away from the spinning blade. Always wear safety glasses and a dust mask when routing to protect yourself from debris and dust.",
   "tips": [
-    "Use a laser level to help you find the high and low points of the deck",
-    "Consider using deck screws instead of nails for a more secure hold",
-    "If the deck is badly damaged, consider hiring a professional to repair it"
+    "To ensure a strong bond between the panels, make sure the surface is clean and dry before applying the adhesive",
+    "Consider using a self-tapping screw to secure the panel to the adjacent panel for added stability"
   ],
   "chosen_subcategory": "basic carpentry"
 }

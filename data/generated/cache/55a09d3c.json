@@ -1,29 +1,30 @@
 {
-  "question": "My window unit's condensate drain is clogged, and I'm getting water damage on the floor. How do I fix this problem?",
-  "answer": "Clear the clog by using a wire coat hanger or a drain snake to remove any blockages. Next, mix equal parts water and white vinegar in the drain, and let it sit for 30 minutes. After soaking, use a soft brush to scrub the sides of the drain, then rinse with clean water. Reassemble the drain and check for leaks. To prevent future clogs, make sure the drain is level and the unit is installed correctly.",
-  "equipment_problem": "condensate drain clog",
+  "question": "My whole-house fan in the attic has stopped working. I believe the motor is faulty. How can I replace it?",
+  "answer": "To replace a faulty motor in a whole-house fan, first disconnect the power to the fan at the circuit breaker or fuse box. Then, remove the screws holding the fan housing in place and gently pull it away from the ceiling. Next, disconnect the electrical connections to the motor and remove the old motor. Install the new motor, reconnect the electrical connections, and replace the fan housing. Lastly, turn the power back on at the circuit breaker or fuse box and test the fan.",
+  "equipment_problem": "whole-house fan motor failure",
   "tools_required": [
-    "wire coat hanger",
-    "drain snake",
-    "soft brush",
-    "bucket or tray",
-    "water",
-    "white vinegar"
+    "screwdriver",
+    "voltage tester",
+    "needle-nose pliers",
+    "torx driver"
   ],
   "steps": [
-    "Disconnect the power to the unit and let it cool completely",
-    "Use a wire coat hanger or drain snake to remove any blockages from the condensate drain",
-    "Mix equal parts water and white vinegar in the drain and let it sit for 30 minutes",
-    "Use a soft brush to scrub the sides of the drain",
-    "Rinse the drain with clean water",
-    "Reassemble the drain and check for leaks",
-    "Ensure the drain is level and the unit is installed correctly"
+    "Disconnect the power to the fan at the circuit breaker or fuse box.",
+    "Remove the screws holding the fan housing in place.",
+    "Gently pull the fan housing away from the ceiling.",
+    "Disconnect the electrical connections to the motor.",
+    "Remove the old motor.",
+    "Install the new motor.",
+    "Reconnect the electrical connections.",
+    "Replace the fan housing.",
+    "Turn the power back on at the circuit breaker or fuse box.",
+    "Test the fan"
   ],
-  "safety_info": "The specific hazard for this repair is electrical shock from getting water near electrical components. The specific precaution is to unplug the unit and ensure it is completely dry before starting the repair.",
+  "safety_info": "When working with electrical systems, always turn off the power at the circuit breaker or fuse box to avoid electrical shock. When removing the fan housing, be careful not to damage the surrounding drywall or insulation.",
   "tips": [
-    "Make sure to check the drain regularly to prevent clogs from building up",
-    "Consider using a drain screen or filter to catch debris and prevent clogs",
-    "Use a bucket or tray to catch any water that may leak out during the repair"
+    "Use a voltage tester to ensure the power is off before starting work.",
+    "Take photos of the electrical connections before disconnecting them to help with reassembly.",
+    "Consider hiring a professional if you are not comfortable working with electrical systems."
   ],
   "chosen_subcategory": "vent cleaning"
 }

@@ -1,23 +1,21 @@
 {
-  "question": "My outdoor AC unit has been malfunctioning, and I suspect it's because the condenser coils are clogged with debris. What should I do to fix it?",
-  "answer": "Inspect and clean the condenser coils on your outdoor AC unit to ensure proper airflow and temperature regulation. This is typically a straightforward process that can be completed in under an hour.",
-  "equipment_problem": "clogged condenser coils",
+  "question": "How do I clear a clog in my central air system's return air duct that's causing poor airflow?",
+  "answer": "Clearing a clog in a return air duct requires careful planning and execution to avoid damaging the ductwork or releasing contaminated air into your home. Start by shutting off the power to your HVAC system at the circuit breaker or fuse box. Then, use a vacuum cleaner or a specialized duct cleaning tool to gently remove any debris or dust from the return air duct. If the clog persists, you may need to use a longer cleaning rod or a specialized tool to reach the blocked area.",
+  "equipment_problem": "ductwork clogs",
   "tools_required": [
-    "soft-bristled brush",
-    "garden hose",
-    "screwdriver"
+    "Vacuum cleaner",
+    "Duct cleaning tool",
+    "Longer cleaning rod (if necessary)"
   ],
   "steps": [
-    "Locate the outdoor unit and access the condenser coils, typically located at the back or bottom of the unit.",
-    "Remove any debris, leaves, or dirt from the coils using a soft brush or a garden hose.",
-    "Inspect the coils for any signs of damage or corrosion, and replace them if necessary.",
-    "Reassemble the outdoor unit and ensure all connections are secure.",
-    "Turn on the HVAC system and check for proper airflow and temperature regulation."
+    "Shut off the power to the HVAC system",
+    "Use a vacuum cleaner or duct cleaning tool to remove debris from the return air duct",
+    "If necessary, use a longer cleaning rod or specialized tool to reach the blocked area"
   ],
-  "safety_info": "When handling refrigerant, avoid direct skin contact and inhalation of vapors; use protective gloves and a face mask.",
+  "safety_info": "Specific hazard: Releasing contaminated air into your home. Specific precaution: Wear a dust mask and eye protection when clearing the clog to avoid inhaling dust and debris.",
   "tips": [
-    "Check your local weather forecast to ensure you're not cleaning the coils during a heatwave, which can cause the unit to work harder and potentially overheat.",
-    "Consider using a coil cleaning brush with soft bristles to prevent damaging the coils."
+    "Consider using a camera to inspect the ductwork before attempting to clear the clog",
+    "Use a lint roller or a damp cloth to remove any remaining dust or debris from the ductwork"
   ],
   "chosen_subcategory": "vent cleaning"
 }

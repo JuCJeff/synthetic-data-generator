@@ -1,23 +1,24 @@
 {
-  "question": "How do I repair a small hole in my drywall?",
-  "answer": "To repair a small hole in your drywall, start by marking the area around the hole with a pencil. Then, cut a drywall patch slightly larger than the hole. Apply joint compound to the patch and press it into place. Finally, smooth the compound with a putty knife. For best results, use a drywall repair kit and apply multiple thin coats of compound for a smoother finish.",
-  "equipment_problem": "repairing a small hole",
+  "question": "How do I fix a large hole in my drywall? The hole is about the size of a grapefruit and is near a corner.",
+  "answer": "To fix a large hole in your drywall, start by marking the area around the hole with a pencil to define the repair zone. Next, cut a drywall patch slightly larger than the hole using a drywall saw. Apply joint compound to the back of the patch and press it firmly into place. Apply additional joint compound to the edges of the patch and smooth it out. Allow the compound to dry completely before sanding it down using a drywall sanding block. To ensure a tight seal, press the patch firmly into place and then use a putty knife to apply even pressure. Finally, for a seamless repair, use a drywall sanding block to smooth out the edges.",
+  "equipment_problem": "repairing a large hole in drywall",
   "tools_required": [
-    "drywall patch",
-    "joint compound",
+    "drywall saw",
     "putty knife",
+    "drywall sanding block",
     "dust mask"
   ],
   "steps": [
-    "Mark the area around the hole with a pencil",
-    "Cut a drywall patch slightly larger than the hole",
-    "Apply joint compound to the patch and press it into place",
-    "Smooth the compound with a putty knife"
+    "Mark the area around the hole with a pencil to define the repair zone",
+    "Cut a drywall patch slightly larger than the hole using a drywall saw",
+    "Apply joint compound to the back of the patch and press it firmly into place",
+    "Apply additional joint compound to the edges of the patch and smooth it out",
+    "Allow the compound to dry completely before sanding it down"
   ],
-  "safety_info": "Risk of drywall dust inhalation; use a dust mask and keep the area well-ventilated.",
+  "safety_info": "Specific hazard: Inhaling drywall dust. Precaution: Wear a dust mask to prevent inhaling drywall particles when sanding and drilling.",
   "tips": [
-    "Use a drywall repair kit for best results",
-    "Apply multiple thin coats of compound for a smoother finish"
+    "To ensure a tight seal, press the patch firmly into place and then use a putty knife to apply even pressure",
+    "For a seamless repair, use a drywall sanding block to smooth out the edges"
   ],
   "chosen_subcategory": "drywall"
 }

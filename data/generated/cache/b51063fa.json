@@ -1,27 +1,26 @@
 {
-  "question": "My heat pump is running but the air blowing through the vents is barely warm, and the compressor is making a weird humming noise. What could be wrong?",
-  "answer": "A low air flow condition on a heat pump is often caused by a dirty or clogged air filter, a malfunctioning blower motor, or a clogged condenser coil. First, check and replace the air filter. If that doesn't resolve the issue, inspect the blower motor for any blockages or worn-out bearings. If the issue persists, locate the condenser coil and inspect it for any blockages or debris. If it's dirty, clean it with a garden hose. If the humming noise persists, it may be a sign of a more serious issue, such as a faulty compressor or capacitor, and it's recommended to call a professional.",
-  "equipment_problem": "a low air flow condition on a heat pump",
+  "question": "My clothes are taking longer to dry than usual and the clothes dryer is making a loud rattling noise. What could be causing this and how do I fix it?",
+  "answer": "To fix a clogged dryer vent, start by disconnecting the dryer from its power source. Use a vacuum cleaner with a flexible hose to remove lint and debris from the dryer vent. Next, use a specialized dryer vent cleaning brush to clean the vent and ensure it is clear. Reconnect the dryer to its power source and test the dryer to ensure it is working properly. Regular cleaning or replacement of the dryer vent can help prevent clogs and maintain efficiency. Additionally, check and clean the lint filter after every use and clean the exterior of the dryer regularly to prevent lint buildup.",
+  "equipment_problem": "clogged dryer vent",
   "tools_required": [
-    "multimeter",
-    "screwdriver",
-    "garden hose",
-    "thermometer",
-    "protective gloves and eyewear"
+    "Vacuum cleaner with flexible hose",
+    "Dryer vent cleaning brush",
+    "Circuit breaker tester",
+    "Screwdriver"
   ],
   "steps": [
-    "Turn off the power to the heat pump at the circuit breaker or fuse box.",
-    "Locate and inspect the air filter, and replace it if dirty.",
-    "Inspect the blower motor for any blockages or worn-out bearings.",
-    "Locate and inspect the condenser coil, and clean it with a garden hose if dirty.",
-    "Check the compressor and capacitor for any signs of malfunction.",
-    "Call a professional if the issue persists or if you're unsure about any part of the process."
+    "Disconnect the dryer from its power source before starting the repair.",
+    "Use a vacuum cleaner with a flexible hose to remove lint and debris from the dryer vent.",
+    "Use a specialized dryer vent cleaning brush to clean the vent and ensure it is clear.",
+    "Reconnect the dryer to its power source and test the dryer to ensure it is working properly.",
+    "Consider cleaning or replacing the dryer vent every 1-2 years to prevent clogs and maintain efficiency.",
+    "Check and clean the lint filter after every use and clean the exterior of the dryer regularly to prevent lint buildup."
   ],
-  "safety_info": "Specific hazard: Electrical shock from exposed wiring when inspecting the blower motor. Specific precaution: Turn off the power to the heat pump at the circuit breaker or fuse box before inspecting the blower motor. Wear protective gloves and eyewear when handling electrical components.",
+  "safety_info": "Specific hazard: Fire hazard from lint buildup. Specific precaution: Turn off power to the dryer at the circuit breaker before starting and use a vacuum with a flexible hose to avoid pushing flammable lint further into the vent.",
   "tips": [
-    "Use a multimeter to check for voltage at the blower motor before attempting to replace it.",
-    "When cleaning the condenser coil, use a gentle spray and avoid using high-pressure washes, which can damage the coil.",
-    "Consider using a thermometer to measure the air flow temperature before and after cleaning the condenser coil to ensure it's within the recommended range."
+    "Use a lint-catching bag or a dedicated lint vacuum cleaner to collect lint and debris during the cleaning process.",
+    "Consider using a dryer vent cleaning kit that includes a brush and a flexible rod for easier cleaning.",
+    "If you have a particularly long or complex dryer vent, consider hiring a professional for assistance."
   ],
-  "chosen_subcategory": "basic troubleshooting"
+  "chosen_subcategory": "vent cleaning"
 }

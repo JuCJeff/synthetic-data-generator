@@ -1,27 +1,24 @@
 {
-  "question": "I have an old oak bookshelf that I inherited from my grandparents, but the shelf edge is uneven and slightly sagging. How can I fix this?",
-  "answer": "To fix an uneven shelf edge, start by inspecting the area and identifying the problem section. Remove the old shelf supports and set them aside. Apply wood glue to the uneven section and clamp it in place, letting it dry for 30 minutes before sanding the area smooth. Use a wood filler to fill any gaps or holes, and let it dry according to the manufacturer's instructions. Reinstall the shelf supports, making sure they are evenly spaced and securely tightened. Finally, test the shelf by placing a heavy object on it to ensure it is stable.",
-  "equipment_problem": "uneven shelf edge",
+  "question": "My home office has a shelving unit that's been sagging for months. How can I secure it?",
+  "answer": "To secure unstable shelving in a home office, you'll need to install wall anchors to support the weight. Start by measuring the width of the shelving unit and mark the spot where you want to install the anchor. Next, drill a pilot hole into the wall and insert the anchor. Then, screw the anchor into place, making sure it's level. Finally, attach the shelf to the anchor using screws. This will provide the necessary support to prevent the shelving unit from sagging. ",
+  "equipment_problem": "securing unstable shelving in a home office",
   "tools_required": [
-    "wood glue",
-    "wood filler",
-    "clamps",
-    "screwdriver",
-    "level"
+    "wall anchor",
+    "drill",
+    "screws",
+    "level",
+    "stud finder"
   ],
   "steps": [
-    "Inspect the shelf edge and identify the uneven section",
-    "Remove the old shelf supports and set them aside",
-    "Apply wood glue to the uneven section and clamp it in place",
-    "Let the glue dry for 30 minutes before sanding the area smooth",
-    "Use a wood filler to fill any gaps or holes, and let it dry according to the manufacturer's instructions",
-    "Reinstall the shelf supports, making sure they are evenly spaced and securely tightened",
-    "Test the shelf by placing a heavy object on it to ensure it is stable"
+    "Measure the width of the shelving unit and mark the spot where you want to install the anchor.",
+    "Drill a pilot hole into the wall and insert the anchor.",
+    "Screw the anchor into place, making sure it's level.",
+    "Attach the shelf to the anchor using screws."
   ],
-  "safety_info": "Specific hazard: Over-tightening the shelf supports can cause the wood to crack. Specific precaution: Use a level and tighten the supports in small increments to ensure the shelf is properly aligned.",
+  "safety_info": "Specific hazard: anchor can cause wall damage if not installed correctly. Specific precaution: Use a level to ensure the anchor is straight and a stud finder to locate the stud behind the wall before drilling.",
   "tips": [
-    "To prevent the shelf from sagging in the future, consider adding additional supports or bracing the shelf to the wall",
-    "When working with old wood, it's often helpful to use a wood conditioner or filler to restore the natural color and texture"
+    "Use a wall stud finder to locate the stud behind the wall before drilling to avoid damaging the wall.",
+    "Consider using a French cleat to add extra support to the shelving unit."
   ],
   "chosen_subcategory": "basic carpentry"
 }

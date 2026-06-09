@@ -1,23 +1,22 @@
 {
-  "question": "My oven is baking some foods unevenly. I've checked the temperature and it's correct, but the heat seems to be concentrated on one side. Why is this happening and how can I fix it?",
-  "answer": "Oven heating elements can degrade over time, causing uneven heating. Check the heating elements for signs of wear or damage. If they're damaged, replace them. Make sure the oven racks are properly aligned and that the oven door is closing properly. If the issue persists, check the oven's thermostat for accuracy.",
-  "equipment_problem": "uneven oven heating",
+  "question": "My oven won't light and I've checked the gas line and burner. What could be the problem?",
+  "answer": "To replace the oven igniter, first disconnect the power to the oven. Then, remove the oven racks and shelves. Next, remove the oven door and any other obstructions. Locate the igniter and disconnect the electrical connector. Remove the screws holding the igniter in place and gently pull it out. Install the new igniter by reversing the process.",
+  "equipment_problem": "failed oven igniter",
   "tools_required": [
     "screwdriver",
-    "wrench",
-    "multimeter"
+    "wrench"
   ],
   "steps": [
-    "Turn off the power to the oven at the circuit breaker or fuse box.",
-    "Remove the oven racks and shelves.",
-    "Check the heating elements for signs of wear or damage. If they're damaged, replace them.",
-    "Check the oven's thermostat for accuracy.",
-    "Realign the oven racks and ensure the oven door is closing properly."
+    "Disconnect the power to the oven",
+    "Remove the oven racks and shelves",
+    "Remove the oven door and any other obstructions",
+    "Locate the igniter and disconnect the electrical connector",
+    "Remove the screws holding the igniter in place and gently pull it out"
   ],
-  "safety_info": "Electrical shock hazard. Turn off the power to the oven at the circuit breaker or fuse box before attempting any repairs. Wear protective gloves and safety glasses when handling electrical components.",
+  "safety_info": "When working with electrical and gas components, make sure to turn off the power and gas supply to the oven. Wear protective gloves and safety glasses to avoid injury from sharp edges or flying debris.",
   "tips": [
-    "To prevent uneven heating, make sure to rotate your food while it's baking.",
-    "Check the oven's user manual for recommended maintenance and cleaning procedures."
+    "Use a wrench to loosen any stubborn screws",
+    "Make sure the new igniter is properly seated before reassembling the oven"
   ],
   "chosen_subcategory": "ovens"
 }

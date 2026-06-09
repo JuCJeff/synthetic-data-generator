@@ -1,21 +1,26 @@
 {
-  "question": "My washing machine is leaking water all over the floor. What should I do?",
-  "answer": "To fix a leaky washing machine, start by unplugging the machine and locating the leak. Check the hoses and connections for any signs of damage or wear. If the leak is coming from a hose, replace it with a new one. If the leak is coming from a connection, tighten the connection or replace it if necessary.",
-  "equipment_problem": "leaking washing machine",
+  "question": "My gas oven's burners won't light, and I'm not sure why. They used to work fine, but now I just get a faint click when I turn the knob. Help!",
+  "answer": "This issue is often caused by a faulty igniter or a clogged burner port. Check the igniter for any visible signs of wear or damage. If it looks good, try cleaning the burner port with a small brush or a toothpick to remove any food residue or debris. If that doesn't work, you may need to replace the igniter.",
+  "equipment_problem": "igniting issue with the oven's gas burner",
   "tools_required": [
-    "Socket wrench",
-    "Teflon tape",
-    "New hose or connection"
+    "screwdriver",
+    "small brush",
+    "toothpick",
+    "needle-nose pliers"
   ],
   "steps": [
-    "Unplug the washing machine from the power outlet.",
-    "Locate the leak and identify the source.",
-    "Replace the hose or connection as needed."
+    "Turn off the oven and let it cool completely.",
+    "Disconnect the power supply to the oven.",
+    "Remove the burner cap to access the igniter and burner port.",
+    "Inspect the igniter for any signs of wear or damage.",
+    "Clean the burner port with a small brush or a toothpick.",
+    "Replace the igniter if necessary."
   ],
-  "safety_info": "Electrical shock hazard: Be careful not to touch any electrical components while working on the machine. Water hazard: Make sure the area around the machine is clear of any flammable materials or electrical appliances.",
+  "safety_info": "Be careful when working with gas appliances, as they can be hazardous if not properly maintained. Always ensure the oven is turned off and the gas supply is shut off before attempting any repairs.",
   "tips": [
-    "Use a bucket to catch any water that may leak out while you're working on the machine.",
-    "Consider replacing the entire machine if it's old or has other problems."
+    "Make sure the igniter is properly seated and not loose.",
+    "If you're not comfortable working with gas appliances, consider hiring a professional.",
+    "When cleaning the burner port, be gentle to avoid damaging the surrounding components."
   ],
-  "chosen_subcategory": "washing machines"
+  "chosen_subcategory": "ovens"
 }

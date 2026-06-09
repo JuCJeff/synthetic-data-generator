@@ -1,25 +1,26 @@
 {
-  "question": "How do I replace a GFCI outlet in my kitchen that keeps tripping?",
-  "answer": "To replace a GFCI outlet, first turn off the power to the outlet at the main electrical panel. Remove the outlet cover plate and any screws holding the outlet in place. Carefully pull the outlet out of the electrical box. Disconnect the wires from the old outlet and connect them to the new outlet. Make sure to match the wires to the correct terminals. Replace the outlet in the electrical box and secure it with screws. Finally, replace the outlet cover plate and turn the power back on at the main electrical panel.",
-  "equipment_problem": "Faulty GFCI outlet",
+  "question": "How do I install a pendant light in a vaulted ceiling without causing any electrical shock or damage to the drywall?",
+  "answer": "To install a pendant light in a vaulted ceiling, you'll need to first turn off the power to the circuit at the main electrical panel. Next, use a stud finder to locate the ceiling joists and mark their location with a pencil. Then, use a drill bit to make a hole in the drywall at the marked location, about 1 inch from the edge of the drywall. Insert the pendant light's mounting bracket into the hole and screw it into place. Make sure the bracket is securely fastened to the ceiling joist. Finally, hang the pendant light from the bracket and turn the power back on at the main electrical panel.",
+  "equipment_problem": "Installing a new pendant light in a vaulted ceiling",
   "tools_required": [
-    "Non-contact voltage tester",
-    "Screwdriver",
-    "Needle-nose pliers",
-    "Wire nuts"
+    "voltage tester",
+    "stud finder",
+    "drill with stop collar",
+    "level",
+    "drywall anchors",
+    "pendant light mounting bracket"
   ],
   "steps": [
-    "Turn off the power to the outlet at the main electrical panel",
-    "Remove the outlet cover plate and any screws holding the outlet in place",
-    "Carefully pull the outlet out of the electrical box",
-    "Disconnect the wires from the old outlet and connect them to the new outlet",
-    "Replace the outlet in the electrical box and secure it with screws",
-    "Finally, replace the outlet cover plate and turn the power back on at the main electrical panel"
+    "Turn off the power to the circuit at the main electrical panel",
+    "Locate the ceiling joists and mark their location with a pencil",
+    "Drill a hole in the drywall at the marked location",
+    "Insert the pendant light's mounting bracket into the hole and screw it into place",
+    "Hang the pendant light from the bracket"
   ],
-  "safety_info": "When working with electrical systems, always turn off the power at the main electrical panel to avoid electrical shock. When removing the outlet cover plate, be careful not to touch any of the electrical components inside.",
+  "safety_info": "Specific hazard: Electrical shock from exposed wiring or a faulty fixture. Precaution: Use a voltage tester to ensure the power is off before starting the repair, and always turn off the power to the circuit at the main electrical panel before working on electrical systems.",
   "tips": [
-    "When replacing a GFCI outlet, make sure to test it after installation to ensure it is working properly",
-    "If you are not comfortable working with electrical systems, consider hiring a licensed electrician"
+    "To avoid damaging the drywall, use a drill bit with a stop collar to control the depth of the hole",
+    "Use a level to ensure the pendant light is hung straight"
   ],
   "chosen_subcategory": "light fixture installation"
 }

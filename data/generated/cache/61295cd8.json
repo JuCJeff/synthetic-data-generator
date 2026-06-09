@@ -1,21 +1,22 @@
 {
-  "question": "How do I replace the filter in my HVAC system?",
-  "answer": "To replace the filter, locate it in your HVAC system, pull it out, and discard the old filter. Install a new filter in the same direction as the old one, making sure it is securely fastened. Check your filter every 1-3 months to ensure optimal air quality and system efficiency.",
-  "equipment_problem": "HVAC system filter needs replacement",
+  "question": "How do I replace the air filter in my HVAC system?",
+  "answer": "To replace the air filter, first switch off the power to the HVAC system at the circuit breaker. Open the filter compartment by releasing the latch and pulling it open. Remove the old filter and discard it. Install a new filter, making sure it is properly seated and the latch is secure. Then turn the power back on at the circuit breaker.",
+  "equipment_problem": "air filter needs replacement",
   "tools_required": [
     "screwdriver",
     "filter removal tool"
   ],
   "steps": [
-    "Locate the filter in your HVAC system.",
-    "Pull out the old filter and discard it.",
-    "Install a new filter in the same direction as the old one.",
-    "Secure the new filter firmly in place."
+    "Switch off the power to the HVAC system at the circuit breaker.",
+    "Open the filter compartment by releasing the latch and pulling it open.",
+    "Remove the old filter and discard it.",
+    "Install a new filter, making sure it is properly seated and the latch is secure.",
+    "Then turn the power back on at the circuit breaker."
   ],
-  "safety_info": "When handling the filter, be aware of potential allergens and dust. Wear a mask and gloves to prevent exposure. ",
+  "safety_info": "Electrical shock hazard: switch off the power to the HVAC system at the circuit breaker before starting work. Inhalation of dust and debris: wear a dust mask when removing the old filter and cleaning the filter compartment.",
   "tips": [
-    "Use a filter with a MERV rating suitable for your home's needs.",
-    "Consider upgrading to a smart filter that monitors its condition and alerts you when it needs replacement."
+    "Use a filter with a MERV rating of 11 or higher for better air quality.",
+    "Consider installing a filter with a built-in antimicrobial treatment to reduce dust mites and other allergens."
   ],
   "chosen_subcategory": "filter changes"
 }

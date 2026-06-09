@@ -1,22 +1,24 @@
 {
-  "question": "My oven is not heating evenly - some parts of my dishes are overcooked while others are undercooked. What could be the cause and how can I fix it?",
-  "answer": "If your oven is not heating evenly, it may be due to a faulty thermostat, a blocked air vent, or unevenly spaced heating elements. To fix the issue, start by checking the oven temperature with a thermometer to ensure it's accurate. Then, clean the oven racks and shelves to prevent food residue from affecting heat distribution. Next, inspect the oven's heating elements for any signs of wear or damage. If you find any issues, replace the oven thermostat if necessary or adjust the heating elements to ensure even spacing.",
-  "equipment_problem": "uneven oven heating",
+  "question": "My oven is not heating evenly, and I think it might be due to the racks. How can I fix this issue?",
+  "answer": "To fix an unbalanced oven rack causing uneven heating, you'll need to adjust or replace the racks. First, ensure the racks are in their proper positions. If they're uneven or warped, replace them with new ones. If the racks are in good condition, you can try adjusting their positions. Check the oven manual for specific guidelines on rack placement. If you're still experiencing issues, consider replacing the racks or consulting a professional.",
+  "equipment_problem": "unbalanced oven racks causing uneven heating",
   "tools_required": [
-    "oven thermometer",
-    "screwdriver",
-    "wrench"
+    "Oven manual",
+    "Level",
+    "Oven mitts or gloves",
+    "New oven racks (if necessary)"
   ],
   "steps": [
-    "Check the oven temperature with a thermometer to ensure it's accurate",
-    "Clean the oven racks and shelves to prevent food residue from affecting heat distribution",
-    "Inspect the oven's heating elements for any signs of wear or damage",
-    "Replace the oven thermostat if necessary"
+    "Check the oven manual for rack placement guidelines",
+    "Inspect the racks for any signs of damage or warping",
+    "Adjust or replace the racks as needed",
+    "Test the oven to ensure even heating",
+    "Consult a professional if issues persist"
   ],
-  "safety_info": "Be aware of the risk of burns when working with electrical appliances and take precautions to avoid electrical shock by turning off the power supply to the oven before starting the repair.",
+  "safety_info": "Hazard: Improperly adjusted oven racks can cause food to burn or not cook evenly, and may also lead to a fire. Precaution: Ensure the racks are in their proper positions and not warped or damaged before using the oven. Use oven mitts or gloves when handling hot racks.",
   "tips": [
-    "Use a thermometer to calibrate the oven's temperature before starting the repair",
-    "Check the oven's user manual for specific instructions on how to replace the thermostat"
+    "Use a level to ensure the racks are perfectly horizontal",
+    "Consider using oven racks with adjustable feet for more precise placement"
   ],
   "chosen_subcategory": "ovens"
 }

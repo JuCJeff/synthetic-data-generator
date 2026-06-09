@@ -1,24 +1,24 @@
 {
-  "question": "My oven won't light, and I've checked the power cord and outlet. What could be causing the problem and how can I fix it?",
-  "answer": "A broken oven igniter is a common issue that can be caused by a faulty igniter or a clogged burner. To fix this, you'll need to replace the igniter or clean the burner. Start by turning off the power to the oven and letting it cool down. Next, remove the burner grates and clean the burner caps with a soft brush to remove any debris. If this doesn't work, you'll need to replace the igniter. This involves removing the oven knobs, disconnecting the electrical connections, and removing the screws that hold the igniter in place. Once you've removed the old igniter, take the new one and connect the electrical connections, replace the screws, and put the oven knobs back on. Turn the power back on and test the oven.",
-  "equipment_problem": "broken oven igniter",
+  "question": "How do I replace a faulty oven igniter in my electric oven?",
+  "answer": "To replace a faulty oven igniter, first disconnect the power to the oven and remove the back panel. Then, locate the igniter and disconnect the electrical connection. Next, remove the igniter screw and gently pull the igniter out. Clean the igniter electrode and replace it with a new one. Finally, reconnect the electrical connection and replace the back panel.",
+  "equipment_problem": "faulty oven igniter",
   "tools_required": [
-    "voltage tester",
     "screwdriver",
-    "soft brush",
-    "new igniter"
+    "wire brush",
+    "needle-nose pliers"
   ],
   "steps": [
-    "Turn off the power to the oven and let it cool down.",
-    "Remove the burner grates and clean the burner caps with a soft brush.",
-    "Replace the igniter by disconnecting the electrical connections, removing the screws that hold it in place, and taking out the old igniter.",
-    "Connect the electrical connections to the new igniter, replace the screws, and put the oven knobs back on.",
-    "Turn the power back on and test the oven."
+    "Disconnect the power to the oven.",
+    "Remove the back panel.",
+    "Locate the igniter and disconnect the electrical connection.",
+    "Remove the igniter screw and gently pull the igniter out.",
+    "Clean the igniter electrode and replace it with a new one.",
+    "Reconnect the electrical connection and replace the back panel."
   ],
-  "safety_info": "When working with electrical components, always turn off the power to the appliance and let it cool down before starting the repair. The specific hazard in this case is electrical shock, and the specific precaution is to use a voltage tester to ensure the power is off before starting the repair.",
+  "safety_info": "Risk of electrical shock from exposed wiring. Wear gloves and safety glasses when working with electrical components.",
   "tips": [
-    "Use a voltage tester to ensure the power is off before starting the repair.",
-    "Make sure to purchase a replacement igniter that matches the specifications of your oven model."
+    "Use a screwdriver with a magnetic tip to pick up small screws.",
+    "Use a wire brush to clean the igniter electrode."
   ],
   "chosen_subcategory": "ovens"
 }

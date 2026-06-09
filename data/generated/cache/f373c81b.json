@@ -1,26 +1,27 @@
 {
-  "question": "My bedroom is getting colder than the rest of the house, and I noticed the supply vent has a thick layer of dust. How do I clean the clogged supply vent?",
-  "answer": "Cleaning the clogged supply vent is a relatively simple process that can be done with basic tools. First, turn off the HVAC system and let it cool down. Next, remove the vent cover by unscrewing the screws and gently pulling it away from the wall. Use a soft-bristled brush or a vacuum cleaner with a flexible hose to remove the dust and debris from the vent. If the clog is severe, you may need to use a long-handled brush or a specialized vent cleaning tool. Finally, reassemble the vent and turn the HVAC system back on. This should improve airflow and heat distribution in your bedroom.",
-  "equipment_problem": "clogged supply vent",
+  "question": "My air conditioner is not cooling properly and I suspect the condenser coils are clogged. What do I need to do to clean them?",
+  "answer": "To replace a faulty condenser fan motor, first disconnect the power to the unit at the circuit breaker or fuse box. Then, remove the screws holding the fan housing in place and gently pull it away from the condenser coils. Next, disconnect the electrical connector from the fan motor and remove the screws holding it in place. Carefully lift the motor out of the housing and discard it. Install the new motor by reversing the steps above, making sure to secure it tightly with screws. Finally, reconnect the power to the unit and test the fan to ensure it's working properly.",
+  "equipment_problem": "clogged condenser coils",
   "tools_required": [
-    "Soft-bristled brush",
-    "Vacuum cleaner",
-    "Flexible hose",
-    "Dust mask or respirator",
-    "Long-handled brush",
-    "Specialized vent cleaning tool"
+    "screwdriver",
+    "wrench",
+    "gloves",
+    "safety glasses",
+    "soft-bristled brush"
   ],
   "steps": [
-    "Turn off the HVAC system and let it cool down",
-    "Remove the vent cover by unscrewing the screws and gently pulling it away from the wall",
-    "Use a soft-bristled brush or a vacuum cleaner with a flexible hose to remove the dust and debris from the vent",
-    "If the clog is severe, use a long-handled brush or a specialized vent cleaning tool",
-    "Reassemble the vent and turn the HVAC system back on"
+    "Disconnect the power to the unit at the circuit breaker or fuse box.",
+    "Remove the screws holding the fan housing in place and gently pull it away from the condenser coils.",
+    "Disconnect the electrical connector from the fan motor and remove the screws holding it in place.",
+    "Carefully lift the motor out of the housing and discard it.",
+    "Install the new motor by reversing the steps above, making sure to secure it tightly with screws.",
+    "Reconnect the power to the unit and test the fan to ensure it's working properly."
   ],
-  "safety_info": "Specific hazard: Dust and allergens may become airborne during vent cleaning. Specific precaution: Wear a dust mask or respirator to prevent inhaling dust and allergens. Additionally, use a vacuum cleaner with a HEPA filter to trap 99.97% of particles as small as 0.3 microns.",
+  "safety_info": "When working with electrical systems, always turn off the power at the circuit breaker or fuse box to avoid electrical shock. Wear gloves and safety glasses to protect yourself from sharp edges and debris.",
   "tips": [
-    "Consider using a camera or a flashlight to inspect the vent and identify the source of the clog",
-    "If you have a pet, consider using a pet hair remover or a lint roller to remove pet hair from the vent"
+    "Use a soft-bristled brush to gently remove any debris or dirt from the coils.",
+    "If the coils are severely clogged, consider using a garden hose with a spray nozzle to rinse them clean.",
+    "Make sure to inspect the coils regularly to prevent clogging and maintain proper airflow."
   ],
   "chosen_subcategory": "vent cleaning"
 }

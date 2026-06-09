@@ -1,24 +1,23 @@
 {
-  "question": "How do I replace a light switch that doesn't work?",
-  "answer": "To replace a light switch, first turn off the power to the switch at the main electrical panel. Then, remove the faceplate and any screws holding the switch in place. Gently pull the switch out of the electrical box. Disconnect the wires from the old switch and connect them to the new switch. Make sure the wires are securely attached and the connections are tight. Finally, put everything back together in the reverse order that you took it apart.",
-  "equipment_problem": "non-functional light switch",
+  "question": "How do I replace a faulty outlet in my home?",
+  "answer": "To replace a faulty outlet, first turn off the power to the outlet at the main electrical panel. Then, remove the outlet cover plate and any screws holding the outlet in place. Gently pull the outlet out of the electrical box. Disconnect the wires from the old outlet and connect them to the new outlet. Make sure the wires are securely attached and not touching any metal parts. Finally, put the new outlet back in the electrical box and replace the outlet cover plate.",
+  "equipment_problem": "faulty outlet",
   "tools_required": [
+    "voltmeter",
     "screwdriver",
-    "needle-nose pliers",
-    "voltage tester"
+    "needle-nose pliers"
   ],
   "steps": [
-    "Turn off the power to the switch at the main electrical panel.",
-    "Remove the faceplate and any screws holding the switch in place.",
-    "Gently pull the switch out of the electrical box.",
-    "Disconnect the wires from the old switch and connect them to the new switch.",
-    "Make sure the wires are securely attached and the connections are tight.",
-    "Put everything back together in the reverse order that you took it apart."
+    "Turn off the power to the outlet at the main electrical panel",
+    "Remove the outlet cover plate and any screws holding the outlet in place",
+    "Pull the outlet out of the electrical box",
+    "Disconnect the wires from the old outlet and connect them to the new outlet",
+    "Put the new outlet back in the electrical box and replace the outlet cover plate"
   ],
-  "safety_info": "Electrical shock hazard. Turn off power to the switch at the main electrical panel before starting the repair.",
+  "safety_info": "Electrical shock hazard. Turn off the power to the outlet at the main electrical panel before starting work.",
   "tips": [
-    "Use a voltage tester to ensure the power is off before starting the repair.",
-    "Consider hiring a licensed electrician if you're not comfortable with electrical repairs."
+    "Use a voltage tester to ensure the power is off before starting work",
+    "Label the wires before disconnecting them to ensure they are connected correctly"
   ],
-  "chosen_subcategory": "switch repair"
+  "chosen_subcategory": "outlet replacement"
 }

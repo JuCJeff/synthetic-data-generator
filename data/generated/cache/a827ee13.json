@@ -1,23 +1,26 @@
 {
-  "question": "My shower head is leaking and I need to replace it. How do I do it?",
-  "answer": "To replace a shower head, first shut off the water supply to the shower by locating the shut-off valves under the sink and turning them clockwise. Then, use a wrench to loosen the nut holding the shower head in place. Once loose, lift the shower head off the stem and remove any old Teflon tape from the threads. Apply new Teflon tape to the threads of the new shower head and screw it back onto the stem. Finally, turn the water supply back on and test the shower for leaks.",
-  "equipment_problem": "shower head",
+  "question": "Why does my kitchen sink pipe squeak every time I turn on the water? How can I fix it?",
+  "answer": "A squeaky pipe is usually due to the pipe's metal hanger rubbing against the wall or other pipes, causing friction. To fix it, you'll need to secure the pipe with a new clamp or strap. Make sure to tighten it enough to stop the squeak, but not so tight that it restricts water flow. If the squeak persists, try adding some pipe insulation to reduce friction.",
+  "equipment_problem": "squeaky pipe under kitchen sink",
   "tools_required": [
-    "wrench",
-    "Teflon tape"
+    "Adjustable wrench",
+    "Teflon tape",
+    "Pipe clamp or strap",
+    "Safety glasses",
+    "Protective gloves"
   ],
   "steps": [
-    "Shut off the water supply to the shower",
-    "Loosen the nut holding the shower head in place",
-    "Lift the shower head off the stem and remove old Teflon tape",
-    "Apply new Teflon tape to the threads of the new shower head",
-    "Screw the new shower head back onto the stem",
-    "Turn the water supply back on and test the shower for leaks"
+    "Turn off the water supply to the kitchen sink",
+    "Locate the squeaky pipe and identify the source of the noise",
+    "Remove any existing clamps or straps and inspect the pipe for damage",
+    "Apply a new clamp or strap to secure the pipe",
+    "Tighten the clamp or strap firmly, but not too tightly",
+    "Test the pipe by turning on the water supply and checking for the squeak"
   ],
-  "safety_info": "Hazard: Scalding water. Precaution: Make sure the water supply is turned off before starting the repair.",
+  "safety_info": "Specific hazard: Exposed sharp edges on pipe clamps and straps. Precaution: Wear protective gloves and safety glasses when handling these tools to avoid injury.",
   "tips": [
-    "Use a wrench to loosen the nut to avoid rounding the threads",
-    "Apply new Teflon tape in a clockwise direction to ensure it seals properly"
+    "Check your pipes regularly for signs of wear and tear to prevent squeaks from developing in the first place",
+    "Consider using a pipe wrap or sleeve to reduce friction and prevent squeaks"
   ],
-  "chosen_subcategory": "fixture repairs"
+  "chosen_subcategory": "pipe problems"
 }

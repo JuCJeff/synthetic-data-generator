@@ -1,26 +1,25 @@
 {
-  "question": "I need to install a motion-sensitive security light outside my back door. The old fixture was damaged in a storm, and I want to make sure I do it safely. Can you walk me through the process?",
-  "answer": "To install a new outdoor security light with a motion sensor, start by turning off the power to the circuit at the main electrical panel. Verify the power is off using a non-contact voltage tester. Next, remove the old fixture by taking out the screws that hold it in place. Be cautious of any sharp edges or broken glass. Once the old fixture is removed, identify the correct wiring configuration for your new fixture. Typically, it will be a simple loop-through setup. Connect the wires according to the manufacturer's instructions, making sure to match the color-coded wires. Secure the new fixture with the provided screws. Finally, test the light and motion sensor to ensure they're working properly. It's essential to note that this type of fixture often requires a GFCI-protected circuit to prevent electrical shock. Check your local electrical codes for specific requirements. Also, consider hiring a licensed electrician if you're unsure about any part of the process.",
-  "equipment_problem": "installing a new outdoor security light with a motion sensor",
+  "question": "I need to replace a GFCI outlet in my kitchen that keeps tripping. Can I do this myself?",
+  "answer": "To replace a GFCI outlet, first turn off the power to the outlet at the main electrical panel. Then, remove the outlet cover plate and any screws holding the outlet in place. Carefully pull the outlet out of the electrical box. Disconnect the wires from the old outlet and connect them to the new outlet. Mount the new outlet in the electrical box and replace the screws. Finally, turn the power back on at the main electrical panel and test the new outlet.",
+  "equipment_problem": "GFCI outlet failure",
   "tools_required": [
-    "Non-contact voltage tester",
+    "Voltage tester",
     "Screwdriver",
-    "Wire nuts or connectors",
-    "New security light fixture"
+    "Needle-nose pliers",
+    "Wire strippers"
   ],
   "steps": [
-    "Turn off the power to the circuit at the main electrical panel",
-    "Verify the power is off using a non-contact voltage tester",
-    "Remove the old fixture by taking out the screws that hold it in place",
-    "Identify the correct wiring configuration for your new fixture",
-    "Connect the wires according to the manufacturer's instructions",
-    "Secure the new fixture with the provided screws",
-    "Test the light and motion sensor to ensure they're working properly"
+    "Turn off the power to the outlet at the main electrical panel",
+    "Remove the outlet cover plate and any screws holding the outlet in place",
+    "Carefully pull the outlet out of the electrical box",
+    "Disconnect the wires from the old outlet and connect them to the new outlet",
+    "Mount the new outlet in the electrical box and replace the screws",
+    "Turn the power back on at the main electrical panel and test the new outlet"
   ],
-  "safety_info": "Specific hazard: Electrical shock from a live wire. Specific precaution: Use a non-contact voltage tester to verify the power is off before starting work.",
+  "safety_info": "When working with electrical systems, it's essential to turn off the power at the main electrical panel to avoid electrical shock. Wear protective gloves and safety glasses to prevent injury from falling objects or electrical components.",
   "tips": [
-    "Use a level to ensure the new fixture is properly aligned",
-    "Consider using a weatherproof enclosure to protect the motion sensor from the elements"
+    "Use a voltage tester to ensure the power is off before starting the repair",
+    "Label the wires before disconnecting them to make reconnection easier"
   ],
   "chosen_subcategory": "light fixture installation"
 }

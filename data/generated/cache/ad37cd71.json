@@ -1,24 +1,29 @@
 {
-  "question": "I have a ceiling fan with a new dimmer switch that I want to install. The fan is controlled by a chain, and I'm not sure how to wire it to the dimmer switch.",
-  "answer": "To install a dimmer switch on a ceiling fan, you'll need to first turn off the power to the circuit at the main electrical panel. Then, remove the old switch and any existing wiring. Next, identify the three wires coming from the ceiling: the black wire (hot), the white wire (neutral), and the copper wire (ground). Connect the black wire to the dimmer switch's hot terminal, the white wire to the dimmer switch's neutral terminal, and the copper wire to the dimmer switch's ground terminal. Finally, replace the ceiling fan's chain control with the new dimmer switch and turn the power back on at the main electrical panel. Test the dimmer switch to make sure it's working properly.",
-  "equipment_problem": "installing a dimmer switch on a ceiling fan",
+  "question": "How do I replace a GFCI outlet in my bathroom that keeps tripping the circuit?",
+  "answer": "To replace a GFCI outlet that keeps tripping, turn off the power to the circuit at the main electrical panel. Remove the outlet cover and any screws holding the outlet in place. Pull the outlet out of the wall and disconnect the wires. Remove the old GFCI outlet and replace it with a new one. Make sure to connect the wires to the correct terminals and set the GFCI to test mode. Test the outlet by pressing the \"Test\" button and then the \"Reset\" button. Once the outlet passes the test, set it to normal mode and replace the outlet cover.",
+  "equipment_problem": "Replacing a GFCI outlet in a bathroom with a ground fault circuit interrupter outlet",
   "tools_required": [
     "non-contact voltage tester",
-    "wire strippers",
+    "screwdriver",
     "needle-nose pliers",
-    "screwdriver"
+    "wire strippers"
   ],
   "steps": [
     "Turn off the power to the circuit at the main electrical panel",
-    "Remove the old switch and any existing wiring",
-    "Identify the three wires coming from the ceiling and connect them to the dimmer switch's terminals",
-    "Replace the ceiling fan's chain control with the new dimmer switch",
-    "Turn the power back on at the main electrical panel and test the dimmer switch"
+    "Remove the outlet cover and any screws holding the outlet in place",
+    "Pull the outlet out of the wall and disconnect the wires",
+    "Remove the old GFCI outlet",
+    "Replace the old GFCI outlet with a new one",
+    "Make sure to connect the wires to the correct terminals",
+    "Set the GFCI to test mode",
+    "Test the outlet by pressing the \"Test\" button and then the \"Reset\" button",
+    "Once the outlet passes the test, set it to normal mode",
+    "Replace the outlet cover"
   ],
-  "safety_info": "Hazard: Electric shock from incorrect wiring. Precaution: Turn off the power to the circuit at the main electrical panel before starting the repair.",
+  "safety_info": "Specific hazard: Electrocution from faulty wiring. Specific precaution: Use a voltage tester to ensure the power is off before starting the repair.",
   "tips": [
-    "Use a non-contact voltage tester to ensure the power is off before starting the repair",
-    "Label the wires before connecting them to the dimmer switch to avoid confusion"
+    "Use a GFCI outlet tester to ensure the new outlet is functioning correctly",
+    "Label the wires before disconnecting them to ensure they are connected to the correct terminals"
   ],
-  "chosen_subcategory": "light fixture installation"
+  "chosen_subcategory": "outlet replacement"
 }

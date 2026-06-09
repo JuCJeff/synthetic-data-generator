@@ -1,29 +1,27 @@
 {
-  "question": "I have a house built in the 1950s and I recently had to turn off the water main due to a burst pipe in my basement. I'm not sure how to fix it, but I think the pipe is corroded and needs to be replaced.",
-  "answer": "Replacing a corroded copper pipe requires some effort and specialized tools. First, shut off the main water supply to the house. Next, drain the water from the pipe by opening a nearby faucet. Use a pipe wrench to loosen the corroded connections, taking care to avoid damaging the surrounding drywall. Remove the corroded pipe section and dispose of it properly. Clean the area with a wire brush to remove any remaining corrosion. Cut a new copper pipe to length and connect it to the surrounding pipes using a pipe wrench and corrosion-resistant couplings. Finally, turn the water supply back on and test the connection for leaks. If you encounter any difficulties, consider consulting a professional plumber for assistance.",
-  "equipment_problem": "corroded copper pipe",
+  "question": "My toilet is constantly running and wasting water. I've checked the chain and made sure it's not too long, but the problem persists. What's the fix?",
+  "answer": "To replace a toilet flapper, first shut off the water supply to the toilet by locating the shut-off valve behind the toilet and turning it clockwise. Next, flush the toilet to drain the tank. Then, disconnect the chain from the flapper and lift the flapper off the overflow tube. Remove the old flapper and take the new one out of its packaging. Align the new flapper with the overflow tube and secure it with the chain. Finally, turn the water supply back on and test the flapper by flushing the toilet.",
+  "equipment_problem": "toilet flapper not sealing properly",
   "tools_required": [
-    "Pipe wrench",
-    "Wire brush",
-    "Corrosion-resistant couplings",
-    "Dust mask",
-    "Protective gloves",
-    "Copper pipe"
+    "adjustable wrench",
+    "plumber's tape",
+    "new toilet flapper"
   ],
   "steps": [
-    "Shut off the main water supply to the house",
-    "Drain the water from the pipe by opening a nearby faucet",
-    "Use a pipe wrench to loosen the corroded connections",
-    "Remove the corroded pipe section and dispose of it properly",
-    "Clean the area with a wire brush to remove any remaining corrosion",
-    "Cut a new copper pipe to length",
-    "Connect the new pipe to the surrounding pipes using a pipe wrench and corrosion-resistant couplings",
-    "Turn the water supply back on and test the connection for leaks"
+    "Shut off the water supply to the toilet.",
+    "Flush the toilet to drain the tank.",
+    "Disconnect the chain from the flapper.",
+    "Lift the flapper off the overflow tube.",
+    "Remove the old flapper.",
+    "Align the new flapper with the overflow tube.",
+    "Secure the new flapper with the chain.",
+    "Turn the water supply back on.",
+    "Test the flapper by flushing the toilet."
   ],
-  "safety_info": "Specific hazard: Copper dust and debris can cause respiratory problems and skin irritation. Specific precaution: Wear a dust mask and protective gloves when working with corroded copper pipes.",
+  "safety_info": "When working with toilet flappers, be mindful of the risk of waterborne pathogens and take necessary precautions to avoid exposure. Wear gloves and a face mask when handling the old flapper, and make sure to clean and disinfect the area thoroughly after completion.",
   "tips": [
-    "Use a pipe wrench with a rubber grip to prevent slipping and damaging the pipes",
-    "Apply a layer of corrosion-resistant tape to the new pipe connections for added protection"
+    "Use a wrench to loosen any stubborn connections.",
+    "Consider replacing the entire flapper assembly if the problem persists after replacing the flapper."
   ],
-  "chosen_subcategory": "pipe problems"
+  "chosen_subcategory": "fixture repairs"
 }

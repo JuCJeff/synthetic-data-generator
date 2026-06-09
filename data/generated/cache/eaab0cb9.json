@@ -1,29 +1,21 @@
 {
-  "question": "I have a wooden picture frame that has an uneven joint where two pieces of wood meet. How can I fix it so that it looks like new?",
-  "answer": "To fix an uneven joint in a wooden frame, start by disassembling the frame and cleaning the affected area. Then, apply a small amount of wood glue to the joint and clamp it together using bar clamps or a C-clamp. Let it dry for several hours or overnight. Once dry, use a fine-grit sandpaper to smooth out the joint. If necessary, use a wood filler to fill any gaps. Finally, reassemble the frame and apply a coat of clear wood finish to protect the repair. The key to a successful repair is to make sure the joint is securely clamped and the glue is fully dry before sanding.",
-  "equipment_problem": "uneven joint in a wooden frame",
+  "question": "I have a hole in my drywall that I need to repair. What do I do?",
+  "answer": "To repair a hole in your drywall, first use a drywall saw to cut around the hole in a circular motion, creating a smooth edge. Then, use a putty knife to apply joint compound to the area, spreading it smoothly and evenly. Finally, use a drywall sanding sponge to sand the area until it's smooth and even with the rest of the drywall.\n",
+  "equipment_problem": "repairing a hole in drywall",
   "tools_required": [
-    "bar clamps",
-    "C-clamp",
-    "fine-grit sandpaper",
-    "wood glue",
-    "wood filler",
-    "clear wood finish"
+    "drywall saw",
+    "putty knife",
+    "drywall sanding sponge"
   ],
   "steps": [
-    "Disassemble the frame and clean the affected area",
-    "Apply a small amount of wood glue to the joint",
-    "Clamp the joint together using bar clamps or a C-clamp",
-    "Let it dry for several hours or overnight",
-    "Use a fine-grit sandpaper to smooth out the joint",
-    "If necessary, use a wood filler to fill any gaps",
-    "Reassemble the frame",
-    "Apply a coat of clear wood finish to protect the repair"
+    "Cut around the hole in a circular motion with a drywall saw",
+    "Apply joint compound to the area with a putty knife",
+    "Sand the area until it's smooth and even with the rest of the drywall"
   ],
-  "safety_info": "Specific hazard: Exposure to wood glue fumes. Specific precaution: Work in a well-ventilated area and avoid inhaling the fumes. Specific hazard: Sharp edges or splinters from the sandpaper. Specific precaution: Wear protective gloves and safety glasses when sanding.",
+  "safety_info": "Specific hazard: Drywall dust can cause respiratory problems. Specific precaution: Wear a dust mask when sanding.\n",
   "tips": [
-    "To ensure a strong bond, make sure the wood surfaces are completely clean and free of dust before applying glue. If the joint is particularly stubborn, try applying a small amount of glue to the surrounding area to help hold it in place while it dries.",
-    "When reassembling the frame, use a rubber mallet to gently tap the pieces into place to avoid applying too much pressure and causing further damage."
+    "Use a drywall repair kit for easier repair",
+    "Apply multiple thin layers of joint compound for a smoother finish"
   ],
-  "chosen_subcategory": "basic carpentry"
+  "chosen_subcategory": "drywall"
 }

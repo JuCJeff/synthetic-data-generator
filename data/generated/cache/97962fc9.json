@@ -1,24 +1,24 @@
 {
-  "question": "How do I clean a clogged dryer vent on my gas dryer that's causing my clothes to take longer to dry?",
-  "answer": "Cleaning a clogged dryer vent is a relatively simple process that can be done with basic tools. First, unplug the dryer and locate the venting system. You'll need to remove the vent cover and use a vacuum cleaner or a specialized dryer vent brush to remove any lint and debris that's clogging the vent. Be careful not to push any debris further into the vent. Next, use a cloth or a brush to clean out the venting system, making sure to remove any remaining lint and debris. Finally, reassemble the venting system and plug the dryer back in. This should solve the problem and get your clothes drying in no time. Remember to check and clean your dryer vent regularly to prevent clogs and ensure safe operation.",
-  "equipment_problem": "cleaning a clogged dryer vent",
+  "question": "How do I clean the ductwork in my crawl space to improve air quality and efficiency?",
+  "answer": "To clean ductwork in a crawl space, start by shutting off the power to the HVAC system and ensuring the area is well-ventilated. Use a vacuum with a hose attachment to gently remove large debris and dust from the ducts. Next, use a duct cleaning brush to scrub the interior surfaces of the ducts. Finally, use a vacuum to remove any remaining debris and inspect the ducts for any remaining blockages. If you have a complex duct system or are unsure about any aspect of the process, consider hiring a professional.",
+  "equipment_problem": "ductwork in a crawl space",
   "tools_required": [
-    "Vacuum cleaner",
-    "Dryer vent brush",
-    "Cloth or brush",
-    "Tape measure or ruler",
-    "Screwdriver or nut driver"
+    "Vacuum with hose attachment",
+    "Duct cleaning brush",
+    "Dust mask",
+    "Eye protection"
   ],
   "steps": [
-    "Unplug the dryer and locate the venting system",
-    "Remove the vent cover and use a vacuum cleaner or a specialized dryer vent brush to remove any lint and debris",
-    "Use a cloth or a brush to clean out the venting system",
-    "Reassemble the venting system and plug the dryer back in"
+    "Shut off power to HVAC system",
+    "Vacuum large debris from ducts",
+    "Use duct cleaning brush to scrub interior surfaces",
+    "Vacuum remaining debris from ducts",
+    "Inspect ducts for blockages"
   ],
-  "safety_info": "Specific hazard: Fire hazard due to lint buildup in the dryer vent. Specific precaution: Make sure to unplug the dryer before starting the cleaning process to avoid any accidental starts. Also, be careful not to push any debris further into the vent, as this can cause a blockage that can lead to a fire.",
+  "safety_info": "Specific hazard: inhaling dust and debris, Specific precaution: wear a dust mask and eye protection when cleaning ducts",
   "tips": [
-    "Use a dryer vent brush with flexible bristles to reach into tight spaces and clean the vent more effectively",
-    "Consider using a dryer vent cleaning kit that includes a brush, vacuum, and other tools to make the process easier"
+    "Use a flexible duct cleaning brush to reach tight spaces",
+    "Consider using a camera to inspect ducts and locate blockages"
   ],
   "chosen_subcategory": "vent cleaning"
 }

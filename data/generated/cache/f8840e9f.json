@@ -1,29 +1,26 @@
 {
-  "question": "I have a loose stair tread on my second floor stairs. How do I tighten it so it doesn't keep coming loose?",
-  "answer": "To tighten a loose stair tread, first, ensure you have the correct screws for your stair tread type. If using a screw-in tread, remove the existing screws and replace them with longer screws. If using a nail-in tread, you'll need to tap new screws into place. Use a drill to countersink the screws for a flush finish. Apply wood glue to the screw holes for added stability. Tighten the screws firmly, but avoid overtightening, which can damage the tread or surrounding wood. If your stair tread is held by nails, you'll need to remove the old nails and replace them with screws for a more secure hold. For both types, it's a good idea to add wood shims under the loose tread to fill any gaps and provide extra support.",
-  "equipment_problem": "loose stair tread",
+  "question": "I need to repair a loose floor joist in my backyard shed, but the joist is 12 feet long and I don't have any help to lift it into place. What should I do?",
+  "answer": "To secure a long floor joist without a partner, you'll need to use a combination of techniques and equipment. First, prepare the joist by drilling a series of evenly spaced holes along its length, about 6 inches apart. Next, use a piece of 2x4 lumber and some 3-inch screws to create a makeshift 'joist dolly' - this will allow you to support the joist while you move it into place. Once you have the dolly in place, use a hand saw or a reciprocating saw to carefully cut the joist to a length that can be easily handled by one person. Finally, use some clamps and some wood glue to secure the joist in place. Be careful not to damage the surrounding structure or the joist itself, as this can lead to further instability and potentially catastrophic failure. Specifically, be aware of the risk of the joist slipping out of the dolly and causing injury, so take care to secure it firmly before starting to move it. To mitigate this risk, make sure to use a stable and level surface for the dolly, and consider enlisting a second person to hold the dolly in place while you cut the joist to length.",
+  "equipment_problem": "securing a long floor joist without a partner",
   "tools_required": [
     "drill",
-    "screwdriver",
-    "hammer",
-    "tape measure",
-    "level",
-    "ladder or step stool"
+    "hand saw or reciprocating saw",
+    "2x4 lumber",
+    "3-inch screws",
+    "clamps",
+    "wood glue",
+    "laser level"
   ],
   "steps": [
-    "Remove any furniture or rugs from the area to ensure a clear working space",
-    "Identify the type of stair tread you have and the type of fasteners used",
-    "Remove the existing screws or nails from the loose tread",
-    "Replace the screws or nails with the correct type for your tread",
-    "Apply wood glue to the screw holes for added stability",
-    "Tighten the screws firmly but avoid overtightening",
-    "Add wood shims under the loose tread to fill any gaps and provide extra support"
+    "Drill holes along the length of the joist, about 6 inches apart",
+    "Create a makeshift joist dolly using a 2x4 and some 3-inch screws",
+    "Cut the joist to a length that can be easily handled by one person",
+    "Use clamps and wood glue to secure the joist in place"
   ],
-  "safety_info": "Specific hazard: Falling from the stairs due to a loose tread. Specific precaution: Use a ladder or step stool with a secure base and always maintain three points of contact (two hands and one foot, or two feet and one hand).",
+  "safety_info": "Risk of joist slipping out of dolly and causing injury; use a stable and level surface and consider enlisting a second person to hold the dolly in place.",
   "tips": [
-    "Consider using a stair tread reinforcement kit for added stability and peace of mind",
-    "If your stair tread is particularly old or damaged, it may be best to replace it entirely",
-    "When working with power tools, always wear safety glasses and keep loose clothing tied back"
+    "Use a laser level to ensure the joist is perfectly level before securing it in place",
+    "Consider using a floor joist repair kit, which can include specialized fasteners and a template for making precise cuts"
   ],
   "chosen_subcategory": "basic carpentry"
 }

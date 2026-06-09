@@ -1,23 +1,24 @@
 {
-  "question": "My front door is making a creaking noise when I open or close it. What can I do to fix it?",
-  "answer": "To fix a creaky door, you'll need to adjust the hinges. First, remove the hinge pins using a punch or a screwdriver. Then, loosen the screws that hold the hinges to the door and the frame. Next, use a hinge adjustment tool to change the hinge alignment. Finally, reattach the hinges with the screws and replace the hinge pins.",
-  "equipment_problem": "creaking door",
+  "question": "My floorboard is loose and creaky. How can I fix it?",
+  "answer": "To fix a loose floorboard, first, ensure the floor is clear of any debris or furniture. Then, use a pry bar to carefully lift the loose board and check if it's loose due to worn-out nails or a damaged subfloor. If the nails are loose, hammer them back into place. If the subfloor is damaged, you may need to replace the board entirely. Finally, use a hammer to tap the board back into place, ensuring it's secure.",
+  "equipment_problem": "loose floorboard",
   "tools_required": [
-    "punch or screwdriver",
-    "hinge adjustment tool",
-    "screwdriver",
-    "silicone spray or powder"
+    "p Pry bar",
+    "Hammer",
+    "Nails"
   ],
   "steps": [
-    "Remove the hinge pins using a punch or a screwdriver.",
-    "Loosen the screws that hold the hinges to the door and the frame.",
-    "Use a hinge adjustment tool to change the hinge alignment.",
-    "Reattach the hinges with the screws and replace the hinge pins."
+    "Ensure the floor is clear of any debris or furniture.",
+    "Use a pry bar to carefully lift the loose board.",
+    "Check if the nails are loose or the subfloor is damaged.",
+    "If the nails are loose, hammer them back into place.",
+    "If the subfloor is damaged, replace the board entirely.",
+    "Tap the board back into place with a hammer, ensuring it's secure."
   ],
-  "safety_info": "Be aware of the door's weight and make sure the hinge pins are securely in place to avoid any accidents. Use a hinge adjustment tool to avoid damaging the hinges.",
+  "safety_info": "Specific hazard: Falling debris. Precaution: Clear the area of any debris or furniture, and use a pry bar with caution to avoid damaging the surrounding boards.",
   "tips": [
-    "Use a lubricant like silicone spray or powder to reduce friction between the door and the frame.",
-    "Consider replacing the hinges if they're old or worn out."
+    "Use a pry bar with caution to avoid damaging the surrounding boards.",
+    "If the subfloor is damaged, consider replacing the entire floor to ensure stability and safety."
   ],
-  "chosen_subcategory": "basic carpentry"
+  "chosen_subcategory": "flooring"
 }

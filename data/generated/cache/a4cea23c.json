@@ -1,33 +1,29 @@
 {
-  "question": "My oven won't light. I've tried replacing the igniter, but it still won't turn on. What could be the problem?",
-  "answer": "To troubleshoot an oven that won't light, check for any signs of damage or wear on the igniter and verify it's properly connected to the oven's wiring. Also, check for any blockages in the igniter's airflow and clean the igniter's electrodes. If the issue persists, check the oven's thermostat for proper function and the igniter control module for any issues. If none of these steps resolve the issue, replace the igniter.",
-  "equipment_problem": "burnt-out oven igniter",
+  "question": "My dishwasher's ice maker has stopped dispensing ice cubes. What could be the cause and how do I fix it?",
+  "answer": "To fix your dishwasher's ice maker not dispensing ice, first turn off power to the appliance. Remove the lower rack and locate the ice maker assembly. Remove the screws holding it in place and carefully pull out the assembly. Inspect the dispenser tube for kinks or blockages and straighten or replace it as needed. Reassemble the ice maker assembly, reattach it to the dishwasher, and plug it in to test the ice maker. If it still doesn't work, check the water supply line for blockages or kinks and clear any debris. Test the ice maker again to ensure it's working properly.",
+  "equipment_problem": "ice maker not dispensing ice",
   "tools_required": [
     "screwdriver",
-    "wrench",
-    "multimeter",
-    "pliers",
-    "soldering iron"
+    "torx driver",
+    "flashlight",
+    "soft brush"
   ],
   "steps": [
-    "Remove the oven range top to access the igniter",
-    "Check for any signs of damage or wear on the igniter",
-    "Verify the igniter is properly connected to the oven's wiring",
-    "Check for any blockages in the igniter's airflow",
-    "Clean the igniter's electrodes",
-    "Check the oven's thermostat for proper function",
-    "Check for any issues with the oven's igniter control module",
-    "Replace the igniter if necessary",
-    "Reassemble the oven range top",
-    "Test the oven's igniter",
-    "Verify the oven is working properly",
-    "Check for any error codes on the oven's display"
+    "Turn off power to the dishwasher at the circuit breaker or fuse box.",
+    "Open the dishwasher door and remove the lower rack.",
+    "Locate the ice maker assembly and remove the screws holding it in place.",
+    "Carefully pull out the ice maker assembly and inspect the dispenser tube for kinks or blockages.",
+    "Straighten or replace the dispenser tube as needed.",
+    "Reassemble the ice maker assembly and reattach it to the dishwasher.",
+    "Plug in the dishwasher and test the ice maker.",
+    "If the ice maker still doesn't work, check the water supply line for blockages or kinks.",
+    "Clear any blockages and test the ice maker again."
   ],
-  "safety_info": "Specific hazard: Electrical shock from improper handling of wires. Precaution: When handling wires, always turn off the power to the oven at the circuit breaker or fuse box and verify the wires are de-energized before working on them.",
+  "safety_info": "Caution: Be aware of sharp edges on internal components and avoid electrical shock by turning off power to the appliance before starting repairs.",
   "tips": [
-    "When cleaning the igniter's electrodes, use a small brush to gently remove any debris or food particles",
-    "When checking the oven's thermostat, make sure it's set to the correct temperature range",
-    "When replacing the igniter, make sure to properly dispose of the old igniter to avoid any electrical shock hazards"
+    "Use a flashlight to illuminate the repair area and reduce eye strain.",
+    "Take photos of the repair steps to reference later when reassembling the dishwasher.",
+    "Use a soft brush to clean out any debris or dust from the dispenser tube."
   ],
-  "chosen_subcategory": "ovens"
+  "chosen_subcategory": "dishwashers"
 }

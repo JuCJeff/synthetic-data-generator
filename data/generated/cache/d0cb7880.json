@@ -1,29 +1,23 @@
 {
-  "question": "How do I replace the light kit on my ceiling fan?",
-  "answer": "Replacing a ceiling fan light kit is a relatively straightforward process that requires a few basic tools and some caution. First, make sure to turn off the power to the ceiling fan at the electrical panel or breaker box. Remove the glass cover or shade from the light kit, and then take out the screws that hold the light kit to the fan. Gently pull the light kit away from the fan, taking care not to touch any of the electrical components. Disconnect the old light kit from the fan's electrical terminals, and then connect the new light kit in the same manner. Replace the screws and glass cover, and turn the power back on at the electrical panel or breaker box. Test the light kit to make sure it's working properly.",
-  "equipment_problem": "replacing a ceiling fan light kit",
+  "question": "My dimmer switch for the living room lights is not turning off completely, and I'm worried it's going to cause a fire. What should I do?",
+  "answer": "First, make sure to turn off the power to the switch at the circuit breaker panel or fuse box. Then, remove the faceplate and take out the dimmer switch. Next, identify the wires connected to the dimmer switch and take note of their colors and locations. Use a multimeter to check if there's a short circuit or faulty wiring. Finally, replace the dimmer switch with a new one, making sure to connect the wires correctly. It's also a good idea to check the wiring diagram for your specific dimmer switch to ensure you're connecting the wires correctly.",
+  "equipment_problem": "dimmer switch not turning off",
   "tools_required": [
+    "non-contact voltage tester",
     "screwdriver",
-    "needle-nose pliers",
-    "voltage tester",
     "wire strippers"
   ],
   "steps": [
-    "Turn off the power to the ceiling fan at the electrical panel or breaker box",
-    "Remove the glass cover or shade from the light kit",
-    "Take out the screws that hold the light kit to the fan",
-    "Gently pull the light kit away from the fan",
-    "Disconnect the old light kit from the fan's electrical terminals",
-    "Connect the new light kit to the fan's electrical terminals",
-    "Replace the screws and glass cover",
-    "Turn the power back on at the electrical panel or breaker box",
-    "Test the light kit to make sure it's working properly"
+    "Turn off the power to the switch at the circuit breaker panel or fuse box",
+    "Remove the faceplate and take out the dimmer switch",
+    "Identify the wires connected to the dimmer switch and take note of their colors and locations",
+    "Use a multimeter to check if there's a short circuit or faulty wiring",
+    "Replace the dimmer switch with a new one, making sure to connect the wires correctly"
   ],
-  "safety_info": "The specific hazard for this repair is electrical shock from the ceiling fan's electrical components. The specific precaution to take is to turn off the power to the ceiling fan at the electrical panel or breaker box before starting work.",
+  "safety_info": "Specific hazard: Electrical shock from faulty wiring. Specific precaution: Use a non-contact voltage tester to ensure the power is off before starting work on the switch.",
   "tips": [
-    "Use a voltage tester to ensure the power is off before starting work",
-    "Label the wires and electrical components before disconnecting the old light kit",
-    "Make sure the new light kit is compatible with the ceiling fan's electrical system"
+    "Use a multimeter to measure the voltage at the switch to confirm it's off before starting work",
+    "Take a photo of the wiring diagram before removing the switch so you can refer to it later"
   ],
-  "chosen_subcategory": "light fixture installation"
+  "chosen_subcategory": "switch repair"
 }

@@ -1,24 +1,25 @@
 {
-  "question": "My oven's burner igniter isn't clicking when I turn the knob.  Can you tell me how to fix it?",
-  "answer": "To fix your oven's burner igniter not clicking, first, remove the lower panel to access the igniter circuit. Then, disconnect the electrical connector from the igniter and loosen the gas shut-off valve. Check the spark gap and clean or replace it if necessary. Finally, reassemble everything in reverse order and test the igniter.",
-  "equipment_problem": "burner igniter not clicking",
+  "question": "My dryer's been making a loud rattling noise and has been vibrating all over the place. What could be causing this? And how do I fix it?",
+  "answer": "The likely cause of your dryer's excessive vibration is a loose or worn-out belt pulley. To fix this, you'll need to replace the pulley and tighten any loose screws or bolts. First, unplug the dryer and let it cool down. Next, remove the back panel to access the belt pulley. Use a wrench to loosen the screws holding the pulley in place, then remove the old pulley and discard it. Install the new pulley and hand tighten the screws. Finally, reassemble everything, plug the dryer back in, and test it out.",
+  "equipment_problem": "excessive vibration",
   "tools_required": [
-    "screwdriver",
     "wrench",
-    "voltage tester",
-    "needle-nose pliers"
+    "screwdriver",
+    "new belt pulley"
   ],
   "steps": [
-    "Remove the oven's lower panel to access the igniter circuit. This usually involves removing screws and gently prying the panel off.",
-    "Identify and disconnect the igniter's electrical connector. Use a wrench to loosen the gas shut-off valve.",
-    "Check the igniter's spark gap and clean or replace it as needed. A dirty or worn-out spark gap can prevent the igniter from clicking.",
-    "Reassemble everything in reverse order, reconnecting the igniter's electrical connector and restoring power to the oven.",
-    "Test the igniter to ensure it's working properly."
+    "Unplug the dryer and let it cool down",
+    "Remove the back panel to access the belt pulley",
+    "Loosen the screws holding the pulley in place",
+    "Remove the old pulley and discard it",
+    "Install the new pulley and hand tighten the screws",
+    "Reassemble everything",
+    "Plug the dryer back in and test it out"
   ],
-  "safety_info": "Be aware of the electrical shock hazard from the igniter circuit. Turn off the oven's power at the circuit breaker before starting this repair. Use a voltage tester to ensure the power is off.",
+  "safety_info": "Specific hazard: Risk of injury from a falling dryer due to vibration. Specific precaution: Ensure the dryer is securely fastened to the floor or wall before attempting any repairs.",
   "tips": [
-    "Make sure the oven is cool before starting this repair to avoid burns. Use a wrench to loosen the gas shut-off valve to avoid stripping the threads.",
-    "If you're not comfortable working with electrical circuits or gas appliances, it's recommended to hire a professional for this repair."
+    "To prevent future vibrations, check the dryer's leveling and make sure it's balanced properly",
+    "If you notice any other unusual noises or vibrations, investigate and address them promptly to avoid further damage"
   ],
-  "chosen_subcategory": "ovens"
+  "chosen_subcategory": "dryers"
 }

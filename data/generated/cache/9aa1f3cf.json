@@ -1,22 +1,24 @@
 {
-  "question": "I have a forced-air heating system and I've been noticing that the air coming out of my vents has been smelling musty. I want to clean my ducts but I'm not sure where to start. Can you walk me through the process?",
-  "answer": "Cleaning your ducts can be a bit of a process, but it's a great way to improve the air quality in your home. First, turn off the power to your heating system at the circuit breaker or fuse box. Then, use a vacuum cleaner with a brush attachment to gently sweep away any loose debris from the vent covers. Next, use a duct cleaning brush or a long-handled brush to scrub away any buildup in the ducts. Be careful not to push too hard, as you don't want to damage the ducts. Finally, use a vacuum cleaner to remove any remaining dust and debris from the ducts.",
-  "equipment_problem": "ductwork buildup in a forced-air heating system",
+  "question": "How do I clean the ductwork in my attic to improve airflow and air quality in my home?",
+  "answer": "Cleaning the ductwork in your attic can be a bit of a challenge, but it's a crucial step in maintaining a healthy HVAC system. First, turn off the power to the furnace and any other HVAC equipment. Then, use a vacuum cleaner with a flexible hose to gently vacuum out any debris or dust from the ducts. Next, use a specialized duct cleaning brush to scrub the interior of the ducts and remove any stubborn buildup. Finally, use a HEPA-filter vacuum to clean up any dust or debris that falls to the floor.",
+  "equipment_problem": "ductwork buildup",
   "tools_required": [
-    "vacuum cleaner with a brush attachment",
-    "duct cleaning brush or a long-handled brush",
-    "dust mask"
+    "Vacuum cleaner with flexible hose",
+    "Duct cleaning brush",
+    "HEPA-filter vacuum",
+    "Camera",
+    "Protective gear"
   ],
   "steps": [
-    "Turn off the power to your heating system at the circuit breaker or fuse box.",
-    "Use a vacuum cleaner with a brush attachment to gently sweep away any loose debris from the vent covers.",
-    "Use a duct cleaning brush or a long-handled brush to scrub away any buildup in the ducts.",
-    "Use a vacuum cleaner to remove any remaining dust and debris from the ducts."
+    "Turn off power to the furnace and any other HVAC equipment",
+    "Vacuum out debris and dust from the ducts",
+    "Use a duct cleaning brush to scrub the interior of the ducts",
+    "Clean up dust and debris that falls to the floor"
   ],
-  "safety_info": "Specific hazard: inhaling dust and debris from the ducts. Specific precaution: Wear a dust mask when cleaning the ducts to avoid inhaling dust and debris.",
+  "safety_info": "When cleaning the ductwork, be aware of the potential for asbestos or lead-based paint to be disturbed. Wear a HEPA-filter mask and protective gear to minimize exposure. Additionally, be cautious of sharp edges and points on the ducts.",
   "tips": [
-    "Consider using a duct cleaning kit, which usually includes a brush and a vacuum cleaner attachment.",
-    "If you have a lot of buildup in your ducts, you may want to consider hiring a professional to do the job."
+    "Consider hiring a professional if you have complex or hard-to-reach ductwork",
+    "Use a camera to inspect the ducts before cleaning to identify any potential issues"
   ],
   "chosen_subcategory": "vent cleaning"
 }

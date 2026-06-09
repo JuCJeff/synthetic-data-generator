@@ -1,26 +1,28 @@
 {
-  "question": "How do I replace a GFCI outlet in my kitchen?",
-  "answer": "To replace a GFCI outlet, first turn off the power to the outlet at your main electrical panel. Then, remove the outlet cover plate and any screws holding the outlet in place. Gently pull the outlet out of the electrical box. Disconnect the wires from the old outlet and connect them to the new outlet, making sure to match the wire colors. Finally, screw the new outlet into place and replace the outlet cover plate.",
-  "equipment_problem": "GFCI outlet not working",
+  "question": "How do I replace the dimmer switch in my ceiling fan to make it brighter?",
+  "answer": "To replace the dimmer switch in your ceiling fan, start by turning off the power to the circuit at the main electrical panel. Remove the glass cover of the ceiling fan and take out the screws holding the fan to the mounting bracket. Gently lower the fan to access the dimmer switch. Disconnect the wires from the old switch and connect them to the new one, making sure to match the color-coding. Finally, replace the fan and reattach it to the mounting bracket. Test the new switch to ensure it's working properly.",
+  "equipment_problem": "replacing a dimmer switch in a ceiling fan",
   "tools_required": [
-    "Voltage tester",
-    "Screwdriver",
-    "Needle-nose pliers",
-    "Wire strippers"
+    "screwdriver",
+    "wire strippers",
+    "voltage tester",
+    "wire nuts"
   ],
   "steps": [
-    "Turn off power to the outlet at your main electrical panel.",
-    "Remove the outlet cover plate and any screws holding the outlet in place.",
-    "Gently pull the outlet out of the electrical box.",
-    "Disconnect the wires from the old outlet and connect them to the new outlet, making sure to match the wire colors.",
-    "Screw the new outlet into place.",
-    "Replace the outlet cover plate."
+    "Turn off the power to the circuit at the main electrical panel",
+    "Remove the glass cover of the ceiling fan",
+    "Take out the screws holding the fan to the mounting bracket",
+    "Gently lower the fan to access the dimmer switch",
+    "Disconnect the wires from the old switch",
+    "Connect the wires to the new switch",
+    "Replace the fan and reattach it to the mounting bracket",
+    "Test the new switch"
   ],
-  "safety_info": "Electrical shock hazard. Turn off power to the outlet at the main electrical panel before starting work.",
+  "safety_info": "Specific hazard: electrical shock from live wires. Specific precaution: Verify the power is off at the main electrical panel before starting work.",
   "tips": [
-    "Use a voltage tester to ensure the power is off before starting work.",
-    "Make sure to purchase a GFCI outlet that matches the amperage rating of the circuit.",
-    "Consider hiring a licensed electrician if you are not comfortable with electrical work."
+    "Use a voltage tester to ensure the power is off before starting work",
+    "Label the wires before disconnecting them to avoid confusion",
+    "Use a wire nut to secure any exposed wires"
   ],
   "chosen_subcategory": "light fixture installation"
 }

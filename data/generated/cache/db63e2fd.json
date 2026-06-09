@@ -1,26 +1,26 @@
 {
-  "question": "How do I replace a standard light fixture with a dimmer switch that integrates with my smart home system?",
-  "answer": "To replace a standard light fixture with a dimmer switch that integrates with your smart home system, start by turning off the power to the circuit at the main electrical panel. Remove the old light fixture and any existing dimmer switch. Next, connect the smart dimmer switch to your smart home hub according to the manufacturer's instructions. Mount the dimmer switch in the same location as the old light fixture, making sure it is securely fastened. Finally, connect the dimmer switch to the new smart light bulb and test the system to ensure proper function.",
-  "equipment_problem": "installing a dimmer switch with a smart home hub",
+  "question": "My GFCI outlet in the kitchen is not working and I need to replace it. Can you walk me through the steps?",
+  "answer": "To replace a GFCI outlet, first turn off the power to the outlet at the main electrical panel. Then, remove the outlet cover plate and any screws holding the outlet in place. Carefully pull the outlet out of the electrical box. Disconnect the wires from the old outlet and connect them to the new outlet. Make sure the new outlet is properly seated in the electrical box and screw it in place. Finally, turn the power back on at the main electrical panel and test the outlet to make sure it's working properly.",
+  "equipment_problem": "outlet not working",
   "tools_required": [
     "non-contact voltage tester",
     "screwdriver",
-    "wire strippers",
-    "smart dimmer switch",
-    "smart light bulb"
+    "pliers",
+    "wire nuts"
   ],
   "steps": [
-    "Turn off the power to the circuit at the main electrical panel",
-    "Remove the old light fixture and any existing dimmer switch",
-    "Connect the smart dimmer switch to your smart home hub according to the manufacturer's instructions",
-    "Mount the dimmer switch in the same location as the old light fixture, making sure it is securely fastened",
-    "Connect the dimmer switch to the new smart light bulb",
-    "Test the system to ensure proper function"
+    "Turn off the power to the outlet at the main electrical panel.",
+    "Remove the outlet cover plate and any screws holding the outlet in place.",
+    "Carefully pull the outlet out of the electrical box.",
+    "Disconnect the wires from the old outlet and connect them to the new outlet.",
+    "Make sure the new outlet is properly seated in the electrical box and screw it in place.",
+    "Turn the power back on at the main electrical panel and test the outlet to make sure it's working properly."
   ],
-  "safety_info": "Hazard: Electrical shock from live wires. Precaution: Use a non-contact voltage tester to verify the power is off before starting work.",
+  "safety_info": "When working with electrical systems, always turn off the power to the circuit before starting work. Use a voltage tester to ensure the power is off. Wear protective gloves and safety glasses to prevent injury from electrical shock or flying debris.",
   "tips": [
-    "Use a dimmer switch with a built-in smart home hub to simplify the installation process",
-    "Make sure to update the smart home hub software before installing the dimmer switch"
+    "Use a non-contact voltage tester to ensure the power is off before starting work.",
+    "Take photos of the wiring before disconnecting it to help with reconnection later.",
+    "Consider hiring a licensed electrician if you're not comfortable working with electrical systems."
   ],
   "chosen_subcategory": "light fixture installation"
 }

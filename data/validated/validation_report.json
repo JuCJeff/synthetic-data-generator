@@ -1,19 +1,17 @@
 {
   "total_records": 50,
   "structural_failure_count": 0,
-  "valid_count": 45,
-  "rejected_count": 5,
+  "valid_count": 50,
+  "rejected_count": 0,
   "duplicate_count": 0,
-  "success_rate": "90.0%",
-  "field_error_frequency": {
-    "safety_info": 5
-  },
+  "success_rate": "100.0%",
+  "field_error_frequency": {},
   "category_distribution": {
-    "Appliance Repair": 8,
+    "Appliance Repair": 10,
     "Plumbing Repair": 10,
-    "Electrical Repair": 9,
-    "HVAC Maintenance": 9,
-    "General Home Repair": 9
+    "Electrical Repair": 10,
+    "HVAC Maintenance": 10,
+    "General Home Repair": 10
   },
   "distribution_ok": true
 }

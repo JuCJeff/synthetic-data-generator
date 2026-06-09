@@ -1,28 +1,27 @@
 {
-  "question": "My home was built on a hill, and the water pressure is low in the upstairs bathroom. I noticed that the toilet is constantly running and the tank is filling with water from the supply lines. I need to install a pressure-balancing valve to stabilize the water pressure. What are the steps to install this valve?",
-  "answer": "To install a pressure-balancing valve, you'll need to shut off the water supply to the bathroom and drain the supply lines. Next, locate the supply lines under the sink and identify the correct orientation for the pressure-balancing valve. Install the valve, making sure to secure it to the wall with the provided mounting bracket. Then, reconnect the supply lines and turn on the water supply. Test the valve by flushing the toilet and checking the pressure gauge. Finally, adjust the valve as needed to achieve a balanced water pressure. It's essential to note that this repair may require additional plumbing connections or modifications, so ensure you're comfortable with the task before proceeding. Consider consulting a professional if you're unsure.",
-  "equipment_problem": "low water pressure due to a high-rise home",
+  "question": "My toilet is leaking from the flange, and I'm not sure how to fix it. Can you provide some guidance on repairing a leaky toilet flange?",
+  "answer": "To repair a leaky toilet flange, you'll need to remove the old flange and replace it with a new one. First, disconnect the water supply line and flush the toilet to drain the tank. Next, use a wrench to loosen the nuts holding the old flange in place. Once the nuts are removed, lift the flange off the toilet and inspect the area for any mineral buildup or old adhesive. Use a scraper or putty knife to remove any debris, then apply a bead of silicone sealant to the new flange. Place the new flange over the toilet's horn and secure it with the provided nuts. Tighten the nuts in a star pattern to avoid damaging the toilet.",
+  "equipment_problem": "leaking toilet flange",
   "tools_required": [
-    "adjustable wrench",
-    "Teflon tape",
-    "pipe cutter (if necessary)",
-    "pressure-balancing valve"
+    "wrench",
+    "putty knife",
+    "scraper",
+    "silicone sealant",
+    "new toilet flange"
   ],
   "steps": [
-    "Shut off the water supply to the bathroom",
-    "Drain the supply lines",
-    "Locate the supply lines under the sink",
-    "Identify the correct orientation for the pressure-balancing valve",
-    "Install the valve",
-    "Secure the valve to the wall with the provided mounting bracket",
-    "Reconnect the supply lines",
-    "Turn on the water supply",
-    "Test the valve by flushing the toilet and checking the pressure gauge",
-    "Adjust the valve as needed"
+    "Disconnect the water supply line",
+    "Flush the toilet to drain the tank",
+    "Loosen the nuts holding the old flange in place",
+    "Remove the old flange and inspect the area for mineral buildup or old adhesive",
+    "Apply a bead of silicone sealant to the new flange",
+    "Place the new flange over the toilet's horn and secure it with the provided nuts"
   ],
-  "safety_info": "When working with water supply lines, be aware of the risk of water hammer, which can cause pipes to burst or water to spray unexpectedly. To mitigate this, use a wrench to slowly open the shut-off valve and avoid sudden movements.",
+  "safety_info": "When working with toilets, be aware of the risk of electrocution from the water supply line. Always turn off the water supply before starting work, and use a non-contact voltage tester to ensure the line is de-energized.",
   "tips": [
-    "When selecting a pressure-balancing valve, consider the flow rate and pressure rating to ensure it's suitable for your bathroom's specific needs. Also, keep in mind that installing a pressure-balancing valve may require additional plumbing connections or modifications, so be prepared to adapt your plumbing setup as needed."
+    "Use a wrench to loosen the nuts, as they can be stubborn",
+    "Inspect the area carefully before applying the new flange to ensure a proper seal",
+    "Tighten the nuts in a star pattern to avoid damaging the toilet"
   ],
   "chosen_subcategory": "pipe problems"
 }

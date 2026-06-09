@@ -1,26 +1,27 @@
 {
-  "question": "How do I replace a corroded galvanized water supply pipe under my house that's causing low water pressure?",
-  "answer": "To replace a corroded galvanized water supply pipe under your house, you'll need to first shut off the main water supply and drain the system. Next, locate the corroded section and disconnect the pipes from the corroded pipe. Use a pipe cutter to cut the corroded pipe, then use a pipe wrench to remove the corroded section. Install new PVC pipe and reconnect the pipes to the new section, making sure to use pipe tape and fittings. Finally, turn on the water supply and check for leaks. Safety info: Be aware of gas and electricity lines that may be nearby, and take necessary precautions to avoid damaging them. Use a non-contact voltage tester to ensure the area is safe to work in. Tips: Use a pipe wrench with a long handle to gain more leverage when removing corroded pipe sections. Apply pipe sealant to the threads of the new fittings to prevent leaks. Tools required: pipe cutter, pipe wrench, PVC pipe, pipe tape, non-contact voltage tester",
-  "equipment_problem": "corroded galvanized water supply pipe under the house",
+  "question": "Why isn't my toilet flushing properly? It's taking a long time to drain and I'm worried it's going to overflow.",
+  "answer": "A slow-draining toilet is often caused by a clogged toilet drain line. To fix this, you'll need to use a toilet auger to clear out any blockages. First, turn off the water supply to the toilet by locating the shut-off valve behind the toilet and turning it clockwise. Next, use a bucket to scoop out any water from the toilet bowl. Then, insert the auger into the drain and use the handle to feed the cable into the pipe. Keep pushing the cable in until you feel resistance, which indicates that the auger has reached the clog. Use the auger to break up the clog, then pull it back out and repeat the process until the water drains freely.",
+  "equipment_problem": "troubleshooting a slow-draining toilet",
   "tools_required": [
-    "pipe cutter",
-    "pipe wrench",
-    "PVC pipe",
-    "pipe tape",
-    "non-contact voltage tester"
+    "toilet auger",
+    "bucket",
+    "shut-off valve key",
+    "plumber's snake (optional)"
   ],
   "steps": [
-    "Shut off the main water supply and drain the system",
-    "Locate the corroded section and disconnect the pipes from the corroded pipe",
-    "Use a pipe cutter to cut the corroded pipe",
-    "Use a pipe wrench to remove the corroded section",
-    "Install new PVC pipe and reconnect the pipes to the new section",
-    "Turn on the water supply and check for leaks"
+    "Turn off the water supply to the toilet by locating the shut-off valve behind the toilet and turning it clockwise.",
+    "Scoop out any water from the toilet bowl using a bucket.",
+    "Insert the toilet auger into the drain and use the handle to feed the cable into the pipe.",
+    "Keep pushing the cable in until you feel resistance, which indicates that the auger has reached the clog.",
+    "Use the auger to break up the clog, then pull it back out and repeat the process until the water drains freely.",
+    "Flush the toilet to test the repair.",
+    "If the toilet still doesn't drain properly, you may need to use a plumber's snake or call a professional for assistance."
   ],
-  "safety_info": "Be aware of nearby gas and electricity lines, and use a non-contact voltage tester to ensure the area is safe to work in.",
+  "safety_info": "Specific hazard: Overexertion from using a toilet auger. Specific precaution: Use a bucket to scoop out water from the toilet bowl to avoid slipping and falling on the wet floor.",
   "tips": [
-    "Use a pipe wrench with a long handle to gain more leverage when removing corroded pipe sections",
-    "Apply pipe sealant to the threads of the new fittings to prevent leaks"
+    "To avoid using too much force and stripping the toilet flange, use a toilet auger with an adjustable handle that allows you to control the amount of force applied.",
+    "If you have a toilet with a low water level, you may need to use a higher-powered auger to reach the clog.",
+    "Consider using a drain snake with a flexible cable to navigate tight bends in the drain pipe."
   ],
-  "chosen_subcategory": "pipe problems"
+  "chosen_subcategory": "fixture repairs"
 }

@@ -1,23 +1,26 @@
 {
-  "question": "How do I fix a door that is sagging and almost falling off its hinges?",
-  "answer": "To fix a loose door hinge, first loosen the hinge pins with a screwdriver and pull the hinge away from the door frame. Then, use a drill to screw in new hinge screws and reattach the hinge to the door frame.",
-  "equipment_problem": "loose door hinge",
+  "question": "My floor creaks loudly whenever I walk across it. I've recently had some new furniture delivered, and I think the weight of it might have caused the floorboards to become uneven. How can I fix this issue?",
+  "answer": "To fix uneven floorboards, you'll need to use a combination of shims and wood screws. First, locate the areas where the floorboards are separated from the subfloor. Then, place a shim underneath each board, ensuring it's level and secure. Next, use a drill to pre-drill holes for the wood screws. Insert the screws through the pre-drilled holes and into the subfloor. Tighten the screws until the floorboards are secure and even. Finally, check the floor for any remaining creaks and repeat the process as needed.",
+  "equipment_problem": "uneven floorboards",
   "tools_required": [
-    "screwdriver",
+    "shims",
+    "wood screws",
     "drill",
-    "hinge screws"
+    "level",
+    "laser level",
+    "stud finder"
   ],
   "steps": [
-    "Loosen the hinge pins with a screwdriver.",
-    "Pull the hinge away from the door frame.",
-    "Use a drill to screw in new hinge screws.",
-    "Reattach the hinge to the door frame.",
-    "Test the door to make sure it is securely attached."
+    "Locate the areas where the floorboards are separated from the subfloor.",
+    "Place a shim underneath each board, ensuring it's level and secure.",
+    "Pre-drill holes for the wood screws using a drill.",
+    "Insert the screws through the pre-drilled holes and into the subfloor.",
+    "Tighten the screws until the floorboards are secure and even."
   ],
-  "safety_info": "When working with power tools, always wear safety goggles to protect your eyes from flying debris. Additionally, make sure the door is securely blocked in place to avoid it falling and causing injury.",
+  "safety_info": "The specific hazard for this repair is that the weight of the furniture may have caused the floorboards to become loose, which can lead to tripping hazards. The specific precaution is to use a level to ensure the shims are placed correctly and the floorboards are secure.",
   "tips": [
-    "Use a level to ensure the door is properly aligned before reattaching the hinge.",
-    "Consider replacing the old hinge screws with longer ones for added stability."
+    "Consider using a laser level to ensure the shims are placed correctly and the floorboards are level.",
+    "Use a stud finder to locate the subfloor joists before drilling into them."
   ],
-  "chosen_subcategory": "basic carpentry"
+  "chosen_subcategory": "flooring"
 }

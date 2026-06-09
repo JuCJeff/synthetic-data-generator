@@ -1,23 +1,24 @@
 {
-  "question": "My GFCI outlet in my kitchen is not working and I need to replace it. What are the steps I need to take?",
-  "answer": "To replace a GFCI outlet, first turn off the power to the outlet at the circuit breaker panel. Then, remove the outlet cover plate and any screws holding the outlet in place. Carefully pull the outlet out of the electrical box and disconnect the wires. Connect the wires to the new outlet, making sure to match the color-coding of the wires. Finally, screw the new outlet into place and replace the outlet cover plate.",
-  "equipment_problem": "GFCI outlet not working",
+  "question": "I have a dim and flickering light in my kitchen. I think it might be the light fixture itself. How do I replace it?",
+  "answer": "To replace a GFCI outlet, first turn off the power to the outlet at the main electrical panel. Then remove the outlet cover plate and any screws holding the outlet in place. Carefully pull the outlet out of the electrical box. Disconnect the wires from the old outlet and connect them to the new GFCI outlet. Make sure to match the wire colors and tighten any screws securely. Finally, put the new outlet back in the electrical box and replace the outlet cover plate.",
+  "equipment_problem": "dim and flickering light",
   "tools_required": [
-    "Voltage tester",
-    "Screwdriver",
-    "Needle-nose pliers"
+    "screwdriver",
+    "wire strippers",
+    "voltage tester"
   ],
   "steps": [
-    "Turn off the power to the outlet at the circuit breaker panel",
-    "Remove the outlet cover plate and any screws holding the outlet in place",
-    "Carefully pull the outlet out of the electrical box and disconnect the wires",
-    "Connect the wires to the new outlet, making sure to match the color-coding of the wires",
-    "Screw the new outlet into place and replace the outlet cover plate"
+    "Turn off the power to the light fixture at the main electrical panel.",
+    "Remove the light fixture by unscrewing it from the ceiling or wall.",
+    "Disconnect the wires from the old light fixture and connect them to the new one.",
+    "Make sure the new light fixture is securely fastened to the ceiling or wall.",
+    "Turn the power back on at the main electrical panel and test the light fixture."
   ],
-  "safety_info": "When working with electrical outlets, always turn off the power to the circuit at the breaker panel to avoid electrical shock. Wear protective gloves and safety glasses to prevent injury from electrical shock or flying debris.",
+  "safety_info": "When working with electrical systems, always turn off the power at the main electrical panel to avoid electrical shock. Use a non-contact voltage tester to ensure the power is off before starting work.",
   "tips": [
-    "Use a voltage tester to ensure the power is off before starting the repair",
-    "Label the wires before disconnecting them to make it easier to connect them to the new outlet"
+    "Use a ladder or step stool only on a firm, level surface.",
+    "Have a friend hold the ladder for you, if possible.",
+    "Consider hiring a licensed electrician if you're not comfortable working with electrical systems."
   ],
   "chosen_subcategory": "light fixture installation"
 }

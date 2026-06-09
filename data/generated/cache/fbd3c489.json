@@ -1,23 +1,24 @@
 {
-  "question": "How do I replace the thermostat in my oven if it's not working correctly?",
-  "answer": "To replace the thermostat in your oven, first disconnect the power to the oven at the circuit breaker or fuse box. Next, remove the oven knobs and faceplate to access the thermostat. Use a screwdriver to remove the screws holding the thermostat in place, then carefully lift it out. Install the new thermostat, making sure it's securely fastened with screws. Finally, reconnect the power and test the oven to ensure the new thermostat is working correctly.",
-  "equipment_problem": "faulty thermostat",
+  "question": "My oven burner won't ignite, but the igniter glows orange. What could be the problem? I just replaced the burner cap. Should I try cleaning the igniter or replacing the burner itself?",
+  "answer": "After replacing the burner cap, inspect the burner orifice for blockages or mineral buildup. Cleaning or replacing the igniter may not solve the issue if the orifice is clogged. Use a small brush or a toothpick to clear the orifice, and check if the burner lights up. If not, try replacing the burner. Ensure the igniter is securely connected to the burner and the gas supply lines are not kinked or blocked.",
+  "equipment_problem": "igniting oven burner issues",
   "tools_required": [
+    "gas leak detector",
     "screwdriver",
-    "non-contact voltage tester",
-    "multimeter"
+    "needle-nose pliers",
+    "small brush or toothpick"
   ],
   "steps": [
-    "Disconnect the power to the oven at the circuit breaker or fuse box.",
-    "Remove the oven knobs and faceplate to access the thermostat.",
-    "Use a screwdriver to remove the screws holding the thermostat in place, then carefully lift it out.",
-    "Install the new thermostat, making sure it's securely fastened with screws.",
-    "Reconnect the power and test the oven to ensure the new thermostat is working correctly."
+    "Turn off the oven gas supply and allow the appliance to cool.",
+    "Inspect the burner orifice for blockages or mineral buildup.",
+    "Clean or replace the burner orifice as needed.",
+    "Check if the burner lights up after clearing the orifice.",
+    "If the burner still doesn't light, inspect the igniter and burner connections, and replace the burner if necessary."
   ],
-  "safety_info": "When working with electrical appliances, always disconnect the power first to avoid electrical shock. Wear oven mitts or gloves to protect your hands from burns when handling hot components.",
+  "safety_info": "Specific hazard: Gas leaks from a faulty burner or igniter. Precaution: Turn off the oven gas supply and allow the appliance to cool before attempting repairs, and use a gas leak detector during the process.",
   "tips": [
-    "Use a multimeter to test the thermostat before replacing it to ensure it's not just a faulty sensor.",
-    "When handling electrical components, always use a non-contact voltage tester to ensure the power is off."
+    "Use a gas leak detector during the repair process to ensure the oven is leak-free.",
+    "When cleaning the burner orifice, use a soft-bristled brush or a toothpick to avoid damaging the orifice or surrounding parts."
   ],
   "chosen_subcategory": "ovens"
 }

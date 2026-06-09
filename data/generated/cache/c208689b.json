@@ -1,24 +1,25 @@
 {
-  "question": "My bathroom faucet is dripping constantly and I don't know how to fix it. Can you help me?",
-  "answer": "To fix a dripping faucet, you'll need to disassemble the faucet and inspect the O-rings and gaskets for signs of wear or damage. If they're damaged, replace them with new ones. Apply a small amount of plumber's grease to the new O-rings and gaskets, and then reassemble the faucet in the reverse order that it was disassembled. Finally, turn the water supply back on and check for leaks.",
-  "equipment_problem": "dripping faucet",
+  "question": "My faucet is leaking and I don't know how to fix it. Can you help me?",
+  "answer": "To fix a leaky faucet, first turn off the water supply to the faucet by locating the shut-off valves under the sink and turning them clockwise. Then, disassemble the faucet by removing the handle or knob and any other visible parts. Next, locate the source of the leak, which is usually a worn-out O-ring or gasket. Replace the O-ring or gasket with a new one and reassemble the faucet in the reverse order that it was disassembled. Finally, turn the water supply back on and check the faucet for leaks.",
+  "equipment_problem": "leaky faucet",
   "tools_required": [
-    "adjustable wrench",
-    "plumber's tape",
-    "O-ring or gasket replacement kit"
+    "Adjustable wrench",
+    "Plumber's grease",
+    "Needle-nose pliers",
+    "Teflon tape"
   ],
   "steps": [
-    "Turn off the water supply to the faucet by locating the shut-off valves under the sink and turning them clockwise.",
-    "Disassemble the faucet by removing the handle and any decorative caps or escutcheons.",
-    "Inspect the O-rings and gaskets for signs of wear or damage, and replace them if necessary.",
-    "Apply a small amount of plumber's grease to the new O-rings and gaskets.",
-    "Reassemble the faucet in the reverse order that it was disassembled, making sure to tighten any loose connections.",
-    "Turn the water supply back on and check for leaks."
+    "Turn off the water supply to the faucet",
+    "Disassemble the faucet",
+    "Locate the source of the leak",
+    "Replace the O-ring or gasket",
+    "Reassemble the faucet",
+    "Turn the water supply back on"
   ],
-  "safety_info": "Excessive water usage can lead to flooding, so turn off the water supply to the faucet before starting the repair. Use a bucket or tray to catch any water that may still leak during the repair.",
+  "safety_info": "Be careful not to slip on any water that may have accumulated under the sink. Use a bucket to catch any water that may leak out during the repair. Wear gloves to protect your hands from coming into contact with any sharp edges or rough surfaces.",
   "tips": [
-    "Make sure to use a bucket or tray to catch any water that may still leak during the repair, as this can help prevent flooding.",
-    "Consider replacing the entire faucet if it's old or damaged, as this can be a more cost-effective solution in the long run."
+    "Use a pair of needle-nose pliers to remove any small parts, such as O-rings or gaskets.",
+    "Apply a small amount of plumber's grease to the new O-ring or gasket to ensure a smooth operation."
   ],
   "chosen_subcategory": "leaks"
 }

@@ -1,28 +1,24 @@
 {
-  "question": "My gas range oven igniter is not lighting, and I need to replace it. Can you guide me through the process?",
-  "answer": "To replace the oven igniter on a gas range, first ensure the oven is cool and disconnected from power. Remove the oven racks and bottom panel. Locate the igniter, which is usually a small ceramic or metal rod near the burners. Disconnect the electrical connection and remove any screws holding it in place. Pull out the old igniter and discard. Install the new igniter, ensuring it's securely fastened and the electrical connection is reattached. Reassemble the oven in reverse order. Finally, turn the oven on and check for proper ignition.",
-  "equipment_problem": "igniter not lighting",
+  "question": "My dual-fuel oven won't light. I've checked the gas supply and it's turned on. What could be the issue?",
+  "answer": "To troubleshoot a dual-fuel oven that won't light, start by checking the igniter for proper installation and ensuring it's securely connected to the oven's gas valve. Next, verify the igniter is receiving the proper voltage (usually 3.2-4.5V DC). Inspect the igniter circuit for signs of wear or damage, and replace if necessary. Test the igniter by applying power to it and verifying it produces a spark. If the igniter still doesn't light, check the gas valve for proper function and adjust or replace as needed.",
+  "equipment_problem": "dual-fuel oven won't light",
   "tools_required": [
-    "screwdriver",
-    "needle-nose pliers",
-    "torx screwdriver"
+    "voltage tester",
+    "multimeter",
+    "screwdrivers",
+    "wrenches"
   ],
   "steps": [
-    "Disconnect the oven from power",
-    "Remove the oven racks and bottom panel",
-    "Locate the igniter and disconnect the electrical connection",
-    "Remove any screws holding the igniter in place",
-    "Pull out the old igniter and discard",
-    "Install the new igniter, ensuring it's securely fastened",
-    "Reattach the electrical connection",
-    "Reassemble the oven in reverse order",
-    "Turn the oven on and check for proper ignition"
+    "Check the igniter for proper installation and ensure it's securely connected to the oven's gas valve.",
+    "Verify the igniter is receiving the proper voltage (usually 3.2-4.5V DC).",
+    "Inspect the igniter circuit for signs of wear or damage, and replace if necessary.",
+    "Test the igniter by applying power to it and verifying it produces a spark.",
+    "If the igniter still doesn't light, check the gas valve for proper function and adjust or replace as needed."
   ],
-  "safety_info": "When working with electrical components, avoid touching any metal parts to prevent short circuits. Also, be cautious when handling sharp objects like screws and panel edges.",
+  "safety_info": "Risk of electrical shock from frayed wiring or incorrect installation of oven igniter. Use a voltage tester to ensure the igniter circuit is de-energized before proceeding.",
   "tips": [
-    "Use a screwdriver with a magnetic tip to retrieve dropped screws",
-    "Take photos of the igniter's electrical connection for reference during reassembly",
-    "Consider replacing the igniter's spark module if it's malfunctioning"
+    "Use a multimeter to measure the igniter's resistance and verify it's within the manufacturer's specified range.",
+    "When replacing the igniter, ensure the new one is rated for the correct voltage and wattage to avoid overheating or electrical shock."
   ],
   "chosen_subcategory": "ovens"
 }

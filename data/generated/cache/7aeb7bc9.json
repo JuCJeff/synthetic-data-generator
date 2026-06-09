@@ -1,26 +1,26 @@
 {
-  "question": "The toilet in my guest bathroom is draining very slowly, and I'm starting to smell a bad odor coming from it. How do I fix this problem?",
-  "answer": "Check the flapper valve for mineral buildup or a faulty seal. Remove the old flapper and clean or replace it as needed. Next, inspect the fill valve for proper function and adjust or replace it if necessary. If the issue persists, consider replacing the entire toilet flapper assembly. Always turn off the water supply to the toilet before starting this repair and wear rubber gloves to protect yourself from bacteria and other contaminants. Wear protective eyewear when handling any sharp objects or chemicals.",
-  "equipment_problem": "slow draining toilet",
+  "question": "How do I replace a worn-out shut-off valve under my kitchen sink?",
+  "answer": "To replace a worn-out shut-off valve, first shut off the water supply to the valve by locating the main shut-off valve and turning it clockwise. Then, disconnect the water supply lines from the valve and remove the valve from the pipe. Next, apply penetrating oil to the old valve's threads and let it sit for a few minutes to loosen any corrosion. Use a valve removal tool to remove the old valve, taking care not to damage the pipe. Install the new valve, ensuring it is properly seated and secured. Finally, reconnect the water supply lines and turn on the water supply to test the new valve.",
+  "equipment_problem": "worn-out shut-off valve",
   "tools_required": [
-    "Adjustable wrench",
-    "Channel-type pliers",
-    "Rubber gloves",
-    "Safety glasses",
-    "Toilet plunger"
+    "adjustable wrench",
+    "pipe wrench",
+    "valve removal tool",
+    "penetrating oil"
   ],
   "steps": [
-    "Turn off the water supply to the toilet by locating the shut-off valve behind the toilet and turning it clockwise.",
-    "Flush the toilet to drain the tank and bowl.",
-    "Remove the old flapper valve by lifting it off the overflow tube.",
-    "Clean or replace the flapper as needed, making sure it's properly seated on the flush valve.",
-    "Inspect the fill valve for proper function, adjusting or replacing it if necessary.",
-    "Replace the entire toilet flapper assembly if the issue persists."
+    "Shut off the water supply to the valve",
+    "Disconnect the water supply lines from the valve",
+    "Remove the valve from the pipe",
+    "Apply penetrating oil to the old valve's threads",
+    "Use a valve removal tool to remove the old valve",
+    "Install the new valve",
+    "Reconnect the water supply lines"
   ],
-  "safety_info": "Specific hazard: Exposures to bacteria and other contaminants in the toilet water. Specific precaution: Wear rubber gloves to protect yourself.",
+  "safety_info": "When working with plumbing, be aware of the risk of water shock, which can occur when the water supply is turned back on and can cause injury or damage. To mitigate this risk, turn on the water supply slowly and check for leaks.",
   "tips": [
-    "To avoid mineral buildup on the flapper, consider installing a water softener or a flapper designed for mineral-resistant materials.",
-    "When replacing the flapper, make sure to purchase a compatible replacement to avoid any further issues."
+    "Use a valve removal tool to avoid damaging the pipe",
+    "Apply penetrating oil to the old valve's threads to loosen any corrosion"
   ],
-  "chosen_subcategory": "fixture repairs"
+  "chosen_subcategory": "pipe problems"
 }

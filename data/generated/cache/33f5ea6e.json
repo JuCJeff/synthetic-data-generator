@@ -1,25 +1,24 @@
 {
-  "question": "I recently bought a dimmable smart light fixture and want to replace my existing kitchen light. However, I have no experience with electrical work. Can I install this new fixture myself?",
-  "answer": "Replacing a light fixture can be a bit tricky, but it's definitely doable with the right steps. First, turn off the power to the circuit at the main electrical panel. Then, remove the old fixture by taking out the screws that hold it in place. Next, disconnect the wires from the old fixture and connect them to the new fixture, making sure to match the wire colors. Finally, screw the new fixture into place and turn the power back on. If you're not comfortable with this process, it's always best to hire a licensed electrician.",
-  "equipment_problem": "Installing a dimmable smart light fixture in a kitchen",
+  "question": "I need to install a new dimmer switch with a smart home hub in my living room, but the smart home hub is not compatible with the existing dimmer switch. What do I need to do?",
+  "answer": "To install a new dimmer switch with a smart home hub, turn off the power to the circuit at the main electrical panel. Remove the old dimmer switch and disconnect the wires. Identify the smart home hub's compatibility requirements and match them to the new dimmer switch. Connect the wires to the new dimmer switch, following the manufacturer's instructions. Finally, mount the new dimmer switch and reconnect the power to the circuit.",
+  "equipment_problem": "installing a new dimmer switch with a smart home hub",
   "tools_required": [
-    "Voltage tester",
-    "Screwdriver",
-    "Wire strippers",
-    "Needle-nose pliers"
+    "voltage tester",
+    "screwdriver",
+    "wire strippers",
+    "needle-nose pliers"
   ],
   "steps": [
     "Turn off the power to the circuit at the main electrical panel",
-    "Remove the old fixture by taking out the screws that hold it in place",
-    "Disconnect the wires from the old fixture",
-    "Connect the wires to the new fixture, matching the wire colors",
-    "Screw the new fixture into place",
-    "Turn the power back on"
+    "Remove the old dimmer switch and disconnect the wires",
+    "Identify the smart home hub's compatibility requirements and match them to the new dimmer switch",
+    "Connect the wires to the new dimmer switch, following the manufacturer's instructions",
+    "Mount the new dimmer switch"
   ],
-  "safety_info": "Specific hazard: Electric shock from misconnected wires. Specific precaution: Use a voltage tester to ensure the power is off before starting the repair.",
+  "safety_info": "The specific hazard for this repair is electrical shock due to incorrect wiring. The specific precaution is to verify the compatibility of the smart home hub and dimmer switch before making any connections.",
   "tips": [
-    "Use a wiring diagram to ensure you're connecting the wires correctly",
-    "Make sure to purchase a smart light fixture that's compatible with your home's electrical system"
+    "Make sure to consult the smart home hub's manual for specific instructions on compatibility and wiring",
+    "Use a voltage tester to ensure the circuit is completely powered off before starting the repair"
   ],
   "chosen_subcategory": "light fixture installation"
 }

@@ -1,29 +1,24 @@
 {
-  "question": "My pipe under my slab has burst due to freezing temperatures, how do I repair it?",
-  "answer": "To repair a burst copper pipe under a concrete slab, first, you'll need to locate the leak. You may need to use a thermal imaging camera to detect the heat loss from the damaged pipe. Once you've found the leak, shut off the water supply and drain the system. You'll then need to remove the concrete slab using a jackhammer or sawzall to expose the pipe. Use a pipe cutter to remove the damaged section of pipe. Clean and deburr the ends of the cut pipe, then apply flux to the ends and solder a new copper coupling in place. Replace the concrete slab and refill the area with concrete.",
-  "equipment_problem": "Frozen and burst copper pipe under a concrete slab",
+  "question": "My toilet is constantly running and I can hear water leaking from the fill valve. How do I fix it?",
+  "answer": "To fix a leaky toilet fill valve, you'll need to replace the faulty float arm and adjust the float height. First, turn off the water supply to the toilet by locating the shut-off valve behind the toilet and turning it clockwise. Next, disconnect the water supply line from the fill valve and drain the water from the tank. Remove the old float arm and discard it. Install a new float arm, making sure it's securely attached to the fill valve. Adjust the float height by bending the arm slightly until the water level in the tank is at the recommended level. Finally, reconnect the water supply line and turn the water supply back on.",
+  "equipment_problem": "leaking toilet fill valve",
   "tools_required": [
-    "Thermal imaging camera",
-    "Pipe cutter",
-    "Soldering iron and flux",
-    "Jackhammer or sawzall",
-    "Concrete saw or diamond blade",
-    "HEPA respirator and protective gear"
+    " adjustable wrench",
+    " Channel-type pliers",
+    " Needle-nose pliers"
   ],
   "steps": [
-    "Locate the leak using a thermal imaging camera",
-    "Shut off the water supply and drain the system",
-    "Remove the concrete slab using a jackhammer or sawzall",
-    "Use a pipe cutter to remove the damaged section of pipe",
-    "Clean and deburr the ends of the cut pipe",
-    "Apply flux to the ends and solder a new copper coupling in place",
-    "Replace the concrete slab and refill the area with concrete"
+    "Turn off the water supply to the toilet by locating the shut-off valve behind the toilet and turning it clockwise.",
+    "Disconnect the water supply line from the fill valve and drain the water from the tank.",
+    "Remove the old float arm and discard it.",
+    "Install a new float arm, making sure it's securely attached to the fill valve.",
+    "Adjust the float height by bending the arm slightly until the water level in the tank is at the recommended level.",
+    "Reconnect the water supply line and turn the water supply back on."
   ],
-  "safety_info": "specific hazard: Asbestos may be present in older homes and can be disturbed during the repair process, specific precaution: Use a HEPA respirator and protective gear when disturbing asbestos-containing materials.",
+  "safety_info": "When working with toilet plumbing, be aware of the risk of water-borne pathogens and take precautions to avoid exposure. Wear gloves and a mask to prevent coming into contact with contaminated water.",
   "tips": [
-    "Use a thermal imaging camera to detect heat loss and locate the leak more efficiently",
-    "Consider using a pipe repair kit with a flexible coupling to make the repair easier",
-    "If you're not comfortable with soldering, consider hiring a professional plumber"
+    "Use a bucket to catch any water that may spill out when you turn off the water supply.",
+    "Consider replacing the entire fill valve if it's old or damaged beyond repair."
   ],
   "chosen_subcategory": "pipe problems"
 }

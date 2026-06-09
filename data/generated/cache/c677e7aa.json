@@ -1,27 +1,28 @@
 {
-  "question": "How can I replace a GFCI outlet in my laundry room that's been tripping constantly and won't reset?",
-  "answer": "To replace a GFCI outlet, first ensure the power is off at the circuit breaker or fuse box. Remove the outlet cover plate and take a photo of the wires' layout for reference. Disconnect the black (hot) wire from the old outlet, then the white (neutral) and copper (ground) wires. Remove the old outlet and discard. Install the new GFCI outlet, ensuring the test and reset buttons are facing the correct direction. Reconnect the wires in the same order they were disconnected and replace the outlet cover plate. Test the GFCI to ensure it's working correctly.",
-  "equipment_problem": "GFCI outlet tripping constantly",
+  "question": "How do I replace a GFCI outlet that is not working in my bathroom?",
+  "answer": "To replace a GFCI outlet, first switch off the power to the outlet at the main electrical panel. Remove the outlet cover plate, then use a screwdriver to release the screws holding the outlet in place. Gently pull the outlet out of the electrical box. Disconnect the wires from the old outlet and connect them to the new outlet. Make sure to match the wire colors. Replace the outlet in the electrical box and secure it with the screws. Finally, replace the outlet cover plate and turn the power back on at the main electrical panel.\n\nSafety Info: Electroshock from exposed wires. Use insulated pliers and wire nuts to prevent electrical shock.\n\nSteps:\n1. Switch off the power to the outlet at the main electrical panel.\n2. Remove the outlet cover plate and use a screwdriver to release the screws holding the outlet in place.\n3. Gently pull the outlet out of the electrical box.\n4. Disconnect the wires from the old outlet and connect them to the new outlet.\n5. Replace the outlet in the electrical box and secure it with the screws.\n6. Replace the outlet cover plate.\n7. Turn the power back on at the main electrical panel.\n\nTips: Use a voltage tester to ensure the power is off before starting the repair. Consider replacing the electrical box if it is old or damaged.\n\nTools Required: Screwdriver, insulated pliers, wire nuts, voltage tester, new GFCI outlet, new electrical box (if necessary).\n\nChosen Subcategory: outlet replacement\n\nQuestion: How do I replace a GFCI outlet that is not working in my bathroom?\n\nEquipment Problem: Faulty GFCI outlet in a bathroom.",
+  "equipment_problem": "Faulty GFCI outlet in a bathroom",
   "tools_required": [
-    "Non-contact voltage tester",
-    "Needle-nose pliers",
     "Screwdriver",
-    "Wire strippers"
+    "insulated pliers",
+    "wire nuts",
+    "voltage tester",
+    "new GFCI outlet",
+    "new electrical box (if necessary)"
   ],
   "steps": [
-    "Turn off power at the circuit breaker or fuse box",
-    "Remove the outlet cover plate and take a photo of the wires' layout",
-    "Disconnect the black (hot) wire from the old outlet",
-    "Disconnect the white (neutral) and copper (ground) wires",
-    "Remove the old outlet and discard",
-    "Install the new GFCI outlet",
-    "Reconnect the wires in the same order they were disconnected",
-    "Replace the outlet cover plate"
+    "Switch off the power to the outlet at the main electrical panel.",
+    "Remove the outlet cover plate and use a screwdriver to release the screws holding the outlet in place.",
+    "Gently pull the outlet out of the electrical box.",
+    "Disconnect the wires from the old outlet and connect them to the new outlet.",
+    "Replace the outlet in the electrical box and secure it with the screws.",
+    "Replace the outlet cover plate.",
+    "Turn the power back on at the main electrical panel."
   ],
-  "safety_info": "Specific hazard: Electrical shock from live wires; Specific precaution: Ensure the power is off at the circuit breaker or fuse box before starting the repair",
+  "safety_info": "Electroshock from exposed wires. Use insulated pliers and wire nuts to prevent electrical shock.",
   "tips": [
-    "Use a non-contact voltage tester to verify the power is off before starting the repair",
-    "Label the wires with colored tape for easier identification during reconnection"
+    "Use a voltage tester to ensure the power is off before starting the repair.",
+    "Consider replacing the electrical box if it is old or damaged."
   ],
-  "chosen_subcategory": "Light fixture installation"
+  "chosen_subcategory": "outlet replacement"
 }

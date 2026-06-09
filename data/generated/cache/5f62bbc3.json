@@ -1,27 +1,24 @@
 {
-  "question": "How do I clean the ductwork in my home to improve airflow and reduce energy bills?",
-  "answer": "To clean the ductwork in your home, you'll need a few tools and some elbow grease. First, turn off the power to the HVAC system at the circuit breaker or fuse box. Next, use a vacuum cleaner with a hose attachment to remove any debris or dust from the vents. Then, use a specialized duct cleaning brush to scrub the interior of the ducts, working from the return vents to the supply vents. Finally, use a vacuum cleaner to remove any remaining debris and inspect the ducts for any signs of damage or buildup. Remember to wear a dust mask and safety glasses when cleaning the ducts to avoid inhaling any dust or debris. Also, be sure to clean the entire duct system, including any flex ducts or branch lines.",
-  "equipment_problem": "ductwork buildup",
+  "question": "My gas furnace is making a strange rattling noise and not blowing hot air. I think it might have something to do with the vents. How can I fix it?",
+  "answer": "A clogged heat exchanger can cause poor airflow and strange noises in your gas furnace. To clean it, you'll need to shut off the power to the furnace, remove the access panel, and use a specialized brush to gently scrub away any debris. Be sure to wear a dust mask and safety glasses to protect yourself from potential asbestos fibers and sharp edges. Once you've cleaned the heat exchanger, turn the power back on and check to see if the furnace is working properly. If the rattling noise persists, it may be a sign of a more serious issue, and you should consult a professional.",
+  "equipment_problem": "clogged heat exchanger in a gas furnace",
   "tools_required": [
-    "Vacuum cleaner",
-    "Duct cleaning brush",
-    "Safety glasses",
-    "Dust mask",
-    "Flexible rod or snake",
-    "Camera attachment for smartphone"
+    "screwdriver",
+    "brush",
+    "dust mask",
+    "safety glasses",
+    "vacuum with HEPA filter"
   ],
   "steps": [
-    "Turn off the power to the HVAC system at the circuit breaker or fuse box.",
-    "Remove any register covers or grilles from the supply vents.",
-    "Use a vacuum cleaner with a hose attachment to remove any debris or dust from the vents.",
-    "Use a specialized duct cleaning brush to scrub the interior of the ducts, working from the return vents to the supply vents.",
-    "Vacuum the ducts again to remove any remaining debris and inspect for any signs of damage or buildup."
+    "Shut off the power to the furnace at the circuit breaker or fuse box",
+    "Remove the access panel to the heat exchanger",
+    "Use a specialized brush to gently scrub away any debris from the heat exchanger",
+    "Turn the power back on and check to see if the furnace is working properly"
   ],
-  "safety_info": "Specific hazard: Inhaling dust and debris from the ducts. Specific precaution: Wear a dust mask and safety glasses when cleaning the ducts. ",
+  "safety_info": "Asbestos fibers can be present in older furnace components; wear a dust mask and safety glasses to avoid inhaling or coming into contact with them. Sharp edges can cause cuts; use caution when handling tools and components.",
   "tips": [
-    "Use a flexible rod or snake to reach into tight spaces or corners of the ducts.",
-    "Consider using a camera attachment on your smartphone to inspect the ducts and identify any issues before cleaning.",
-    "If you have a particularly stubborn buildup, try using a mixture of water and vinegar to help loosen it."
+    "Use a vacuum with a HEPA filter to clean up any debris after you've finished cleaning the heat exchanger, to avoid re-depositing dust and debris",
+    "Consider upgrading to a more modern furnace with a cleaner and more efficient design"
   ],
   "chosen_subcategory": "vent cleaning"
 }

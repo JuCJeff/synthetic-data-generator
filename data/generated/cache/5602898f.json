@@ -1,26 +1,24 @@
 {
-  "question": "I have an older oven that has been giving me trouble with inconsistent cooking times. I've checked the thermostat, but nothing seems to be out of place. What could be the issue and how do I fix it?",
-  "answer": "A faulty temperature sensor is the likely culprit. You'll need to replace it with a new one. Be cautious of electrical shock, as you'll be working with exposed wiring. Use a multimeter to verify the sensor's voltage output is within the correct range. If it's not, proceed to replace it with a new one, taking care to disconnect the power supply before making any connections.",
-  "equipment_problem": "oven temperature sensor not working",
+  "question": "How do I replace the tub bearing in my washing machine?",
+  "answer": "To replace the washing machine tub bearing, first disconnect the power and water supply. Next, remove the access panel and take out the old bearing. Then, install the new bearing and reassemble the tub. Finally, reconnect the power and water supply.",
+  "equipment_problem": "washing machine tub bearing failure",
   "tools_required": [
-    "Multimeter",
-    "Needle-nose pliers",
-    "Socket wrench",
-    "Wire cutters"
+    "socket wrench",
+    "tub removal tool",
+    "bearing replacement kit"
   ],
   "steps": [
-    "Disconnect the power supply to the oven",
-    "Locate the temperature sensor, usually marked with a 'T' or 'Temp' label",
-    "Use a multimeter to verify the sensor's voltage output is within the correct range",
-    "Disconnect the sensor's electrical connections",
-    "Remove the old sensor",
-    "Install the new sensor, ensuring it's securely connected",
-    "Reconnect the power supply and test the oven's temperature control"
+    "Disconnect the power and water supply to the washing machine.",
+    "Remove the access panel to the tub.",
+    "Take out the old tub bearing.",
+    "Install the new tub bearing.",
+    "Reassemble the tub and reconnect the access panel.",
+    "Reconnect the power and water supply to the washing machine."
   ],
-  "safety_info": "Electrical shock from exposed wiring; ensure the power supply is disconnected before working on the sensor.",
+  "safety_info": "Electrical shock hazard - ensure the power is disconnected before starting work. Water damage hazard - contain the water supply lines to prevent leaks.",
   "tips": [
-    "Use thermal paste to ensure good thermal contact between the sensor and the oven's heating element",
-    "Check for any signs of wear or damage on the new sensor before installation"
+    "Use a tub removal tool to avoid damaging the tub.",
+    "Apply lubricant to the new bearing to ensure smooth operation."
   ],
-  "chosen_subcategory": "ovens"
+  "chosen_subcategory": "washing machines"
 }
