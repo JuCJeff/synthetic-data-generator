@@ -61,6 +61,19 @@ configure_logfire(_openai_client)
 _client = instructor.from_openai(_openai_client)
 
 
+# --- user prompt factory ---
+# User prompt factory
+def _build_generation_variant_hint(variant: int) -> str:
+    """Encourage the LLM to pick differently across variants for the same category."""
+    if variant == 0:
+        return "This is the first item for this category."
+    return (
+        f"This is item #{variant + 1} for this category. "
+        f"Pick a DIFFERENT subcategory or specific problem than a typical first choice. "
+        f"Vary the equipment and scenario."
+    )
+
+
 def _build_user_prompt(
     category: str,
     subcategory_options: list[str],
@@ -70,7 +83,7 @@ def _build_user_prompt(
     return (
         f"Category: {category}\n"
         f"Choose one subcategory from this list to focus on: {options}\n"
-        f"{build_variant_hint(variant)}\n"
+        f"{_build_generation_variant_hint(variant)}\n"
         f"Generate a complete, realistic DIY repair Q&A item."
     )
 
@@ -152,21 +165,21 @@ def build_generation_plan(items_per_category: int = 10) -> list[GenerationTask]:
 # --- Execution ---
 
 
-def generate_one(task: GenerationTask) -> GeneratedRecord | None:
+def _generate_one_repair_qa(task: GenerationTask) -> GeneratedRecord | None:
     """Generate one item from a planned task. Uses disk cache to skip repeat LLM calls."""
     with logfire.span(
         "generate_one",
         category=task.category,
         variant=task.variant,
     ):
-        prompt_hash = hash_prompt(task)
+        prompt_hash = _hash_prompt(task)
 
-        item = load_from_cache(prompt_hash)
+        item = _load_generation_from_cache(prompt_hash)
 
         if item is not None:
             logfire.info("Cache hit", category=task.category, prompt_hash=prompt_hash)
         else:
-            item = generate_repair_qa(
+            item = _generate_repair_qa(
                 category=task.category,
                 subcategory_options=CATEGORY_SUBCATEGORIES[task.category],
                 variant=task.variant,
@@ -178,7 +191,7 @@ def generate_one(task: GenerationTask) -> GeneratedRecord | None:
                     variant=task.variant,
                 )
                 return None
-            save_to_cache(prompt_hash, item)
+            _save_generation_to_cache(prompt_hash, item)
 
         return GeneratedRecord(
             trace_id=f"qa_{generate_uuid()}",
@@ -207,15 +220,18 @@ def generate_qa_dataset(items_per_category: int = 10) -> list[GeneratedRecord]:
 
         with make_progress_bar() as progress:
             bar = progress.add_task("Generating QA items", total=len(tasks))
+
             for task in tasks:
                 progress.update(
                     bar, description=f"{task.category} (v{task.variant + 1})"
                 )
-                record = generate_one(task)
+                record = _generate_one_repair_qa(task)
+
                 if record is None:
                     failed_count += 1
                 else:
                     results.append(record)
+
                 progress.advance(bar)
 
         print_batch_summary(len(results), failed_count)
@@ -235,6 +251,7 @@ def save_qa_dataset(
     )
 
 
+# --- main ---
 
 
 if __name__ == "__main__":
