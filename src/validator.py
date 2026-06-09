@@ -323,7 +323,7 @@ def save_rejected(records: list[RejectedRecord], path: Path) -> None:
     save_jsonl(records, path, lambda r: json.dumps(r.to_dict()))
 
 
-def load_generated(path: Path) -> tuple[list[GeneratedRecord], int]:
+def load_generated_records(path: Path) -> tuple[list[GeneratedRecord], int]:
     """Returns (records, parse_failure_count). Failures are structural — bad schema or corrupt JSON."""
     if not path.exists():
         return [], 0
@@ -341,12 +341,11 @@ def load_generated(path: Path) -> tuple[list[GeneratedRecord], int]:
     return records, failures
 
 
-
 if __name__ == "__main__":
 
     configure_logfire()
 
-    records, parse_failures = load_generated(GENERATED_OUTPUTS_PATH)
+    records, parse_failures = load_generated_records(GENERATED_OUTPUTS_PATH)
     if not records:
         print_error(
             "Pipeline Dependency Missing",

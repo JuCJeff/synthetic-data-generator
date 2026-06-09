@@ -11,7 +11,7 @@ from src.validator import (
     REJECTED_OUTPUT_PATH,
     VALIDATED_OUTPUT_PATH,
     VALIDATION_REPORT_PATH,
-    load_generated,
+    load_generated_records,
     run_quality_gate,
     save_rejected,
     save_validated,
@@ -61,7 +61,11 @@ def get_status():
 
 @router.get("/step/generation")
 def get_generation():
-    records, _ = load_generated(GENERATED_OUTPUTS_PATH) if GENERATED_OUTPUTS_PATH.exists() else ([], 0)
+    records, _ = (
+        load_generated_records(GENERATED_OUTPUTS_PATH)
+        if GENERATED_OUTPUTS_PATH.exists()
+        else ([], 0)
+    )
     return {"records": [r.model_dump() for r in records]}
 
 
@@ -89,7 +93,7 @@ def get_validation():
         else None
     )
     validated, _ = (
-        load_generated(VALIDATED_OUTPUT_PATH)
+        load_generated_records(VALIDATED_OUTPUT_PATH)
         if VALIDATED_OUTPUT_PATH.exists()
         else ([], 0)
     )
@@ -107,7 +111,7 @@ def run_validation():
         raise HTTPException(
             status_code=400, detail="No generated data found. Run the generation step first."
         )
-    records, parse_failures = load_generated(GENERATED_OUTPUTS_PATH)
+    records, parse_failures = load_generated_records(GENERATED_OUTPUTS_PATH)
     passing, rejected_records, report = run_quality_gate(
         records, structural_failures=parse_failures
     )
