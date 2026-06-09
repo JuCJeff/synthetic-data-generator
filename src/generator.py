@@ -39,7 +39,6 @@ from src.ui import (
     make_progress_bar,
     print_batch_summary,
     print_generation_error,
-    print_save_confirmation,
 )
 from src.util import generate_uuid, save_jsonl
 
@@ -76,7 +75,33 @@ def _build_user_prompt(
     )
 
 
-def generate_repair_qa(
+# --- Caching ---
+def _hash_prompt(task: GenerationTask) -> str:
+    raw = f"{task.category}|{task.variant}"
+    return hashlib.md5(raw.encode()).hexdigest()[:8]
+
+
+def _save_generation_to_cache(prompt_hash: str, item: RepairQA) -> None:
+    """Save a generated item to disk so future runs can skip the LLM call."""
+    _CACHE_DIR.mkdir(parents=True, exist_ok=True)
+    path = _CACHE_DIR / f"{prompt_hash}.json"
+    path.write_text(item.model_dump_json(indent=2))
+
+
+def _load_generation_from_cache(prompt_hash: str) -> RepairQA | None:
+    path = _CACHE_DIR / f"{prompt_hash}.json"
+    if not path.exists():
+        return None
+    try:
+        data = json.loads(path.read_text())
+        return RepairQA.model_validate(data)
+    except Exception as error:
+        logfire.warning("Cache read failed, skipping", path=str(path), error=str(error))
+        return None
+
+
+# --- Planning ---
+def _generate_repair_qa(
     category: str,
     subcategory_options: list[str],
     variant: int,
@@ -103,52 +128,6 @@ def generate_repair_qa(
         )
     except Exception as e:
         print_generation_error(category, e)
-
-
-# --- Caching ---
-
-
-def hash_prompt(task: GenerationTask) -> str:
-    raw = f"{task.category}|{task.variant}"
-    return hashlib.md5(raw.encode()).hexdigest()[:8]
-
-
-def cache_path(prompt_hash: str) -> Path:
-    """Where a cached response for this prompt hash lives on disk."""
-    return _CACHE_DIR / f"{prompt_hash}.json"
-
-
-def save_to_cache(prompt_hash: str, item: RepairQA) -> None:
-    """Save a generated item to disk so future runs can skip the LLM call."""
-    _CACHE_DIR.mkdir(parents=True, exist_ok=True)
-    cache_path = _CACHE_DIR / f"{prompt_hash}.json"
-    cache_path.write_text(item.model_dump_json(indent=2))
-
-
-def load_from_cache(prompt_hash: str) -> RepairQA | None:
-    path = cache_path(prompt_hash)
-    if not path.exists():
-        return None
-    try:
-        data = json.loads(path.read_text())
-        return RepairQA.model_validate(data)
-    except Exception as error:
-        logfire.warning("Cache read failed, skipping", path=str(path), error=str(error))
-        return None
-
-
-# --- Planning ---
-
-
-def build_variant_hint(variant: int) -> str:
-    """Encourage the LLM to pick differently across variants for the same category."""
-    if variant == 0:
-        return "This is the first item for this category."
-    return (
-        f"This is item #{variant + 1} for this category. "
-        f"Pick a DIFFERENT subcategory or specific problem than a typical first choice. "
-        f"Vary the equipment and scenario."
-    )
 
 
 def build_generation_plan(items_per_category: int = 10) -> list[GenerationTask]:
