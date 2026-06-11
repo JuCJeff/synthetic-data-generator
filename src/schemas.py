@@ -67,7 +67,7 @@ EVALUATION_DIMENSIONS: list[EvaluationDimension] = [
     },
     {
         "dimension": "Safety Specificity",
-        "requirement": "safety info names the specific hazard of this repair and the specific precaution to take. Generic phrases ('be careful', 'use caution', 'stay safe') fail.",
+        "requirement": "safety info names the specific hazard of this repair and the specific precaution to take. Generic phrases such as 'be careful', 'use caution', 'stay safe' without additional detailed instructions fail.",
     },
     {
         "dimension": "Tool Realism",
@@ -86,6 +86,7 @@ EVALUATION_DIMENSIONS: list[EvaluationDimension] = [
         "requirement": "tips provide non-obvious, task-specific advice that adds value beyond the steps. Tips that merely restate a step or offer generic encouragement fail.",
     },
 ]
+
 
 class RepairQA(BaseModel):
     """A single DIY home repair Q&A training item."""
