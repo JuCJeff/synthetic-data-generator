@@ -5,7 +5,7 @@ picks a specific subcategory from a provided menu on each call. Validates output
 against the RepairQA Pydantic schema and saves results to JSONL.
 
 Run:
-    uv run python -m src.generator
+    uv run python -m src.pipeline.generator
 """
 
 import hashlib

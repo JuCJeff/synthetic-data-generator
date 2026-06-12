@@ -36,14 +36,14 @@ _MIN_SAFETY_INFO_LENGTH = 15
 
 # Phrases that indicate a generic, non-specific safety info
 _GENERIC_SAFETY_PHRASES = [
-    "be careful",
-    "stay safe",
-    "use caution",
-    "exercise caution",
-    "be cautious",
-    "take care",
-    "be safe",
-    "safety first",
+    "be careful.",
+    "stay safe.",
+    "use caution.",
+    "exercise caution.",
+    "be cautious.",
+    "take care.",
+    "be safe.",
+    "safety first.",
 ]
 
 # Tools that are trade-only, not homeowner realistic
@@ -64,11 +64,6 @@ _DEDUP_SIMILARITY_THRESHOLD = 98
 # Each category must make up at least this fraction of the validated set
 _MIN_CATEGORY_FRACTION = 0.15
 
-# Result paths
-VALIDATION_OUTPUTS_DIR = PROJECT_ROOT / "data" / "validated"
-VALIDATED_OUTPUT_PATH = VALIDATION_OUTPUTS_DIR / "validated_records.jsonl"
-REJECTED_OUTPUT_PATH = VALIDATION_OUTPUTS_DIR / "rejected_records.jsonl"
-VALIDATION_REPORT_PATH = VALIDATION_OUTPUTS_DIR / "validation_report.json"
 
 # --- Result types ---
 
@@ -145,9 +140,8 @@ def _check_safety_info(safety_info: str) -> HeuristicFailure | None:
             field="safety_info",
             reason=f"Too short ({len(safety_info)} chars) — likely a placeholder",
         )
-    lowered = safety_info.lower()
     for phrase in _GENERIC_SAFETY_PHRASES:
-        if phrase in lowered:
+        if phrase in safety_info.lower():
             return HeuristicFailure(
                 field="safety_info",
                 reason=f"Contains generic phrase: '{phrase}'",
