@@ -3,14 +3,20 @@ from pathlib import Path
 # --- File System Setup
 PROJECT_ROOT = Path(__file__).parent.parent
 
-# --- Models ---
 
+# --- API Provider Setups ---
+OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
+DEEPSEEK_BASE_URL = "https://api.deepseek.com"
+
+
+# --- Models ---
+# Synthetic Data generation model
 GENERATION_MODEL_V1 = "meta-llama/llama-3.1-8b-instruct"
 GENERATION_TEMPERATURE_V1 = 0.7
 MAX_RETRIES_V1 = 2
 
 # --- Directory paths ---
-
+# Generation
 GENERATED_OUTPUTS_PATH = Path("data/generated/batch_v1.jsonl")
 
 # Validation
@@ -19,6 +25,8 @@ REJECTED_OUTPUTS_PATH = Path("data/validated/rejected_records.jsonl")
 VALIDATION_REPORT_PATH = Path("data/validated/validation_report.json")
 
 
+# --- Prompts ---
+# Synthetic data generation
 SYSTEM_PROMPT_V1 = """You are a home repair expert generating training data for a DIY repair assistant.
 
 Generate one realistic DIY repair Q&A item for the given repair category.
