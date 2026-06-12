@@ -13,8 +13,11 @@ MAX_RETRIES_V1 = 2
 
 GENERATED_OUTPUTS_PATH = Path("data/generated/batch_v1.jsonl")
 
-# --- LLM Setups ---
-OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
+# Validation
+VALIDATED_OUTPUTS_PATH = Path("data/validated/validated_records.jsonl")
+REJECTED_OUTPUTS_PATH = Path("data/validated/rejected_records.jsonl")
+VALIDATION_REPORT_PATH = Path("data/validated/validation_report.json")
+
 
 SYSTEM_PROMPT_V1 = """You are a home repair expert generating training data for a DIY repair assistant.
 

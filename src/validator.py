@@ -18,7 +18,12 @@ from pathlib import Path
 import logfire
 from rapidfuzz import fuzz
 
-from src.config import PROJECT_ROOT, GENERATED_OUTPUTS_PATH
+from src.config import (
+    GENERATED_OUTPUTS_PATH,
+    VALIDATED_OUTPUTS_PATH,
+    REJECTED_OUTPUTS_PATH,
+    VALIDATION_REPORT_PATH,
+)
 from src.instrumentation import configure_logfire
 from src.schemas import CATEGORY_SUBCATEGORIES, QARecord
 from src.ui import console, print_error
@@ -342,8 +347,8 @@ if __name__ == "__main__":
         records, structural_failures=parse_failures
     )
 
-    save_validated(passing, VALIDATED_OUTPUT_PATH)
-    save_rejected(rejected, REJECTED_OUTPUT_PATH)
+    save_validated(passing, VALIDATED_OUTPUTS_PATH)
+    save_rejected(rejected, REJECTED_OUTPUTS_PATH)
 
     report_path = VALIDATION_REPORT_PATH
     report_path.parent.mkdir(parents=True, exist_ok=True)
