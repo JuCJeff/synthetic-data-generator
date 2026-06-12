@@ -43,7 +43,7 @@ from src.ui import (
 from src.util import generate_uuid, save_jsonl
 
 _GENERATION_DIR = PROJECT_ROOT / "data" / "generated"
-_GENERATION_OUTPUT_PATH = _GENERATION_DIR / "batch_v1.jsonl"
+_OUTPUT_PATH = _GENERATION_DIR / "batch_v1.jsonl"
 _CACHE_DIR = _GENERATION_DIR / "cache"
 
 _PROMPT_VARIANT = "v1"
@@ -243,7 +243,7 @@ def generate_qa_dataset(items_per_category: int = 10) -> list[GeneratedRecord]:
 
 def save_qa_dataset(
     records: list[GeneratedRecord],
-    path: Path = _GENERATION_OUTPUT_PATH,
+    path: Path = _OUTPUT_PATH,
 ) -> None:
     save_jsonl(records, path, lambda r: r.model_dump_json())
     console.print(
