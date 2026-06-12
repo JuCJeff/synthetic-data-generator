@@ -7,6 +7,13 @@ from pydantic import BaseModel
 
 from src.config import GENERATED_OUTPUTS_PATH
 from src.generator import generate_qa_dataset, save_qa_dataset
+from src.human_labeler import (
+    HUMAN_LABELS_PATH,
+    append_label,
+    load_labeled_ids,
+    overwrite_label,
+)
+from src.schemas import LabelRecord
 from src.validator import (
     REJECTED_OUTPUT_PATH,
     VALIDATED_OUTPUT_PATH,
@@ -109,7 +116,8 @@ def get_validation():
 def run_validation():
     if not GENERATED_OUTPUTS_PATH.exists():
         raise HTTPException(
-            status_code=400, detail="No generated data found. Run the generation step first."
+            status_code=400,
+            detail="No generated data found. Run the generation step first.",
         )
     records, parse_failures = load_generated_records(GENERATED_OUTPUTS_PATH)
     passing, rejected_records, report = run_quality_gate(
@@ -120,3 +128,89 @@ def run_validation():
     VALIDATION_REPORT_PATH.parent.mkdir(parents=True, exist_ok=True)
     VALIDATION_REPORT_PATH.write_text(json.dumps(report.summary(), indent=2))
     return report.summary()
+
+
+# --- Step 3: Human Labeling ---
+
+
+def _load_human_labelled_records(path: Path) -> list[dict]:
+    if not path.exists():
+        return []
+    human_labeled_records = []
+    with path.open() as f:
+        for line in f:
+            line = line.strip()
+            if line:
+                try:
+                    human_labeled_records.append(json.loads(line))
+                except Exception:
+                    pass
+    return human_labeled_records
+
+
+class LabelSubmission(BaseModel):
+    trace_id: str
+    answer_completeness: int
+    safety_specificity: int
+    tool_realism: int
+    scope_appropriateness: int
+    context_clarity: int
+    tip_usefulness: int
+    relabel: bool = False
+
+
+@router.get("/step/labeling")
+def get_labeling():
+    records, _ = (
+        load_generated_records(VALIDATED_OUTPUT_PATH)
+        if VALIDATED_OUTPUT_PATH.exists()
+        else ([], 0)
+    )
+    labels = _load_human_labelled_records(HUMAN_LABELS_PATH)
+    labeled_ids = {r["trace_id"] for r in labels}
+    return {
+        "total_validated": len(records),
+        "labeled": len(labels),
+        "remaining": len([r for r in records if r.trace_id not in labeled_ids]),
+        "labels": labels,
+    }
+
+
+@router.get("/step/labeling/next")
+def get_next_item():
+    if not VALIDATED_OUTPUT_PATH.exists():
+        raise HTTPException(
+            status_code=400, detail="No validated data found. Run validation first."
+        )
+    records, _ = load_generated_records(VALIDATED_OUTPUT_PATH)
+    labeled_ids = load_labeled_ids(HUMAN_LABELS_PATH)
+    queue = [r for r in records if r.trace_id not in labeled_ids]
+    if not queue:
+        return {"item": None, "remaining": 0}
+    return {"item": queue[0].model_dump(), "remaining": len(queue)}
+
+
+@router.post("/step/labeling/submit")
+def submit_label(body: LabelSubmission):
+    if not VALIDATED_OUTPUT_PATH.exists():
+        raise HTTPException(status_code=400, detail="No validated data found.")
+    records, _ = load_generated_records(VALIDATED_OUTPUT_PATH)
+    if body.trace_id not in {r.trace_id for r in records}:
+        raise HTTPException(
+            status_code=404,
+            detail=f"trace_id '{body.trace_id}' not found in validated records.",
+        )
+    already_labeled = body.trace_id in load_labeled_ids(HUMAN_LABELS_PATH)
+    if already_labeled and not body.relabel:
+        raise HTTPException(
+            status_code=409, detail=f"trace_id '{body.trace_id}' is already labeled."
+        )
+    label_fields = {
+        field: value for field, value in body.model_dump().items() if field != "relabel"
+    }
+    label = LabelRecord.model_validate({"labeler": "human", **label_fields})
+    if body.relabel:
+        overwrite_label(label, HUMAN_LABELS_PATH)
+    else:
+        append_label(label, HUMAN_LABELS_PATH)
+    return label.model_dump()
