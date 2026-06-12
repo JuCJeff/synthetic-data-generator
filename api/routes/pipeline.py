@@ -6,23 +6,25 @@ from fastapi import APIRouter, BackgroundTasks, HTTPException
 from pydantic import BaseModel
 
 from src.config import GENERATED_OUTPUTS_PATH
-from src.generator import generate_qa_dataset, save_qa_dataset
-from src.human_labeler import (
+from src.pipeline.generator import generate_qa_dataset, save_qa_dataset
+from src.pipeline.human_labeler import (
     HUMAN_LABELS_PATH,
     append_label,
     load_labeled_ids,
     overwrite_label,
 )
 from src.schemas import LabelRecord
-from src.validator import (
-    REJECTED_OUTPUT_PATH,
-    VALIDATED_OUTPUT_PATH,
-    VALIDATION_REPORT_PATH,
+from src.pipeline.validator import (
     run_quality_gate,
     save_rejected,
     save_validated,
 )
 from src.util import load_qa_records
+from src.config import (
+    VALIDATED_OUTPUTS_PATH,
+    REJECTED_OUTPUTS_PATH,
+    VALIDATION_REPORT_PATH,
+)
 
 router = APIRouter()
 
@@ -62,7 +64,7 @@ def _run_generation(job_id: str, items_per_category: int) -> None:
 def get_status():
     return {
         "generated_exists": GENERATED_OUTPUTS_PATH.exists(),
-        "validated_exists": VALIDATED_OUTPUT_PATH.exists(),
+        "validated_exists": VALIDATED_OUTPUTS_PATH.exists(),
     }
 
 
@@ -100,11 +102,11 @@ def get_validation():
         else None
     )
     validated, _ = (
-        load_qa_records(VALIDATED_OUTPUT_PATH)
-        if VALIDATED_OUTPUT_PATH.exists()
+        load_qa_records(VALIDATED_OUTPUTS_PATH)
+        if VALIDATED_OUTPUTS_PATH.exists()
         else ([], 0)
     )
-    rejected = _load_rejected(REJECTED_OUTPUT_PATH)
+    rejected = _load_rejected(REJECTED_OUTPUTS_PATH)
     return {
         "report": report,
         "validated": [r.model_dump() for r in validated],
@@ -123,8 +125,8 @@ def run_validation():
     passing, rejected_records, report = run_quality_gate(
         records, structural_failures=parse_failures
     )
-    save_validated(passing, VALIDATED_OUTPUT_PATH)
-    save_rejected(rejected_records, REJECTED_OUTPUT_PATH)
+    save_validated(passing, VALIDATED_OUTPUTS_PATH)
+    save_rejected(rejected_records, REJECTED_OUTPUTS_PATH)
     VALIDATION_REPORT_PATH.parent.mkdir(parents=True, exist_ok=True)
     VALIDATION_REPORT_PATH.write_text(json.dumps(report.summary(), indent=2))
     return report.summary()
@@ -162,8 +164,8 @@ class LabelSubmission(BaseModel):
 @router.get("/step/labeling")
 def get_labeling():
     records, _ = (
-        load_qa_records(VALIDATED_OUTPUT_PATH)
-        if VALIDATED_OUTPUT_PATH.exists()
+        load_qa_records(VALIDATED_OUTPUTS_PATH)
+        if VALIDATED_OUTPUTS_PATH.exists()
         else ([], 0)
     )
     labels = _load_human_labelled_records(HUMAN_LABELS_PATH)
@@ -178,11 +180,11 @@ def get_labeling():
 
 @router.get("/step/labeling/next")
 def get_next_item():
-    if not VALIDATED_OUTPUT_PATH.exists():
+    if not VALIDATED_OUTPUTS_PATH.exists():
         raise HTTPException(
             status_code=400, detail="No validated data found. Run validation first."
         )
-    records, _ = load_qa_records(VALIDATED_OUTPUT_PATH)
+    records, _ = load_qa_records(VALIDATED_OUTPUTS_PATH)
     labeled_ids = load_labeled_ids(HUMAN_LABELS_PATH)
     queue = [r for r in records if r.trace_id not in labeled_ids]
     if not queue:
@@ -192,9 +194,9 @@ def get_next_item():
 
 @router.post("/step/labeling/submit")
 def submit_label(body: LabelSubmission):
-    if not VALIDATED_OUTPUT_PATH.exists():
+    if not VALIDATED_OUTPUTS_PATH.exists():
         raise HTTPException(status_code=400, detail="No validated data found.")
-    records, _ = load_qa_records(VALIDATED_OUTPUT_PATH)
+    records, _ = load_qa_records(VALIDATED_OUTPUTS_PATH)
     if body.trace_id not in {r.trace_id for r in records}:
         raise HTTPException(
             status_code=404,
