@@ -57,32 +57,39 @@ CATEGORY_SUBCATEGORIES: dict[Category, list[str]] = {
 
 class EvaluationDimension(TypedDict):
     dimension: str
+    field: str  # matching score field on JudgeVerdict / LabelRecord
     requirement: str
 
 
 EVALUATION_DIMENSIONS: list[EvaluationDimension] = [
     {
         "dimension": "Answer Completeness",
+        "field": "answer_completeness",
         "requirement": "The answer contains enough detail for a homeowner to actually complete the repair end to end (tools, concrete steps, safety, a useful tip). Answers that stop short or omit key stages fail.",
     },
     {
         "dimension": "Safety Specificity",
+        "field": "safety_specificity",
         "requirement": "safety info names the specific hazard of this repair and the specific precaution to take. Generic phrases such as 'be careful', 'use caution', 'stay safe' without additional detailed instructions fail.",
     },
     {
         "dimension": "Tool Realism",
+        "field": "tool_realism",
         "requirement": "Every item in tools required is something a typical homeowner already owns or could buy at a general hardware store for under $50. No professional, specialty, or trade-only tools.",
     },
     {
         "dimension": "Scope Appropriateness",
+        "field": "scope_appropriateness",
         "requirement": "The repair is within realistic DIY capability. If professional help is genuinely needed (e.g., gas lines, panel work), the answer says so clearly rather than giving amateur instructions.",
     },
     {
         "dimension": "Context Clarity",
+        "field": "context_clarity",
         "requirement": "question and answer contain enough context to understand the problem, and the answer directly addresses the specific equipment problem.",
     },
     {
         "dimension": "Tip Usefulness",
+        "field": "tip_usefulness",
         "requirement": "tips provide non-obvious, task-specific advice that adds value beyond the steps. Tips that merely restate a step or offer generic encouragement fail.",
     },
 ]
