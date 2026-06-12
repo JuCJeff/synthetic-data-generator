@@ -24,7 +24,7 @@ from rich.progress import (
 from rich.rule import Rule
 from rich.theme import Theme
 
-from src.schemas import GeneratedRecord
+from src.schemas import QARecord
 from src.util import print_root_cause
 
 # Custom theme
@@ -103,7 +103,7 @@ def print_label_session_header(
     )
 
 
-def print_label_item(record: GeneratedRecord, idx: int, total: int) -> None:
+def print_label_item(record: QARecord, idx: int, total: int) -> None:
     qa = record.record
     console.print(
         Rule(

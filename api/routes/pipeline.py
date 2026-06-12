@@ -18,11 +18,11 @@ from src.validator import (
     REJECTED_OUTPUT_PATH,
     VALIDATED_OUTPUT_PATH,
     VALIDATION_REPORT_PATH,
-    load_generated_records,
     run_quality_gate,
     save_rejected,
     save_validated,
 )
+from src.util import load_qa_records
 
 router = APIRouter()
 
@@ -69,7 +69,7 @@ def get_status():
 @router.get("/step/generation")
 def get_generation():
     records, _ = (
-        load_generated_records(GENERATED_OUTPUTS_PATH)
+        load_qa_records(GENERATED_OUTPUTS_PATH)
         if GENERATED_OUTPUTS_PATH.exists()
         else ([], 0)
     )
@@ -100,7 +100,7 @@ def get_validation():
         else None
     )
     validated, _ = (
-        load_generated_records(VALIDATED_OUTPUT_PATH)
+        load_qa_records(VALIDATED_OUTPUT_PATH)
         if VALIDATED_OUTPUT_PATH.exists()
         else ([], 0)
     )
@@ -119,7 +119,7 @@ def run_validation():
             status_code=400,
             detail="No generated data found. Run the generation step first.",
         )
-    records, parse_failures = load_generated_records(GENERATED_OUTPUTS_PATH)
+    records, parse_failures = load_qa_records(GENERATED_OUTPUTS_PATH)
     passing, rejected_records, report = run_quality_gate(
         records, structural_failures=parse_failures
     )
@@ -162,7 +162,7 @@ class LabelSubmission(BaseModel):
 @router.get("/step/labeling")
 def get_labeling():
     records, _ = (
-        load_generated_records(VALIDATED_OUTPUT_PATH)
+        load_qa_records(VALIDATED_OUTPUT_PATH)
         if VALIDATED_OUTPUT_PATH.exists()
         else ([], 0)
     )
@@ -182,7 +182,7 @@ def get_next_item():
         raise HTTPException(
             status_code=400, detail="No validated data found. Run validation first."
         )
-    records, _ = load_generated_records(VALIDATED_OUTPUT_PATH)
+    records, _ = load_qa_records(VALIDATED_OUTPUT_PATH)
     labeled_ids = load_labeled_ids(HUMAN_LABELS_PATH)
     queue = [r for r in records if r.trace_id not in labeled_ids]
     if not queue:
@@ -194,7 +194,7 @@ def get_next_item():
 def submit_label(body: LabelSubmission):
     if not VALIDATED_OUTPUT_PATH.exists():
         raise HTTPException(status_code=400, detail="No validated data found.")
-    records, _ = load_generated_records(VALIDATED_OUTPUT_PATH)
+    records, _ = load_qa_records(VALIDATED_OUTPUT_PATH)
     if body.trace_id not in {r.trace_id for r in records}:
         raise HTTPException(
             status_code=404,

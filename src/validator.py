@@ -20,9 +20,9 @@ from rapidfuzz import fuzz
 
 from src.config import PROJECT_ROOT, GENERATED_OUTPUTS_PATH
 from src.instrumentation import configure_logfire
-from src.schemas import CATEGORY_SUBCATEGORIES, GeneratedRecord
+from src.schemas import CATEGORY_SUBCATEGORIES, QARecord
 from src.ui import console, print_error
-from src.util import save_jsonl
+from src.util import load_qa_records, save_jsonl
 
 # --- Config ---
 
@@ -84,7 +84,7 @@ class ValidationResult:
 
 @dataclass
 class RejectedRecord:
-    record: GeneratedRecord
+    record: QARecord
     rejection_reason: str  # "heuristic" | "duplicate"
     errors: list[str] = field(default_factory=list)
     failed_fields: list[str] = field(default_factory=list)
@@ -161,7 +161,7 @@ def _check_tools(tools: list[str]) -> HeuristicFailure | None:
     return None
 
 
-def check_heuristics(record: GeneratedRecord) -> ValidationResult:
+def check_heuristics(record: QARecord) -> ValidationResult:
     """Fast content checks — catch obviously bad items before the LLM judge."""
     qa = record.record
     failures: list[HeuristicFailure] = []
@@ -194,14 +194,14 @@ def check_heuristics(record: GeneratedRecord) -> ValidationResult:
 
 
 def deduplicate(
-    records: list[GeneratedRecord],
-) -> tuple[list[GeneratedRecord], list[RejectedRecord]]:
+    records: list[QARecord],
+) -> tuple[list[QARecord], list[RejectedRecord]]:
     """
     Remove near-duplicate questions using fuzzy string similarity.
     Returns (deduplicated_records, rejected_records).
     """
     seen_questions: list[str] = []
-    unique: list[GeneratedRecord] = []
+    unique: list[QARecord] = []
     rejected: list[RejectedRecord] = []
 
     for record in records:
@@ -231,7 +231,7 @@ def deduplicate(
 # --- Category distribution ---
 
 
-def check_distribution(records: list[GeneratedRecord]) -> tuple[dict[str, int], bool]:
+def check_distribution(records: list[QARecord]) -> tuple[dict[str, int], bool]:
     """
     Verify each category meets the minimum fraction of the validated set.
     Returns (counts_per_category, distribution_is_ok).
@@ -260,9 +260,9 @@ def check_distribution(records: list[GeneratedRecord]) -> tuple[dict[str, int], 
 
 
 def run_quality_gate(
-    records: list[GeneratedRecord],
+    records: list[QARecord],
     structural_failures: int = 0,
-) -> tuple[list[GeneratedRecord], list[RejectedRecord], ValidationReport]:
+) -> tuple[list[QARecord], list[RejectedRecord], ValidationReport]:
     """
     Run all gate stages. Returns (passing_records, rejected_records, report).
 
@@ -276,7 +276,7 @@ def run_quality_gate(
         total_records=len(records) + structural_failures,
         structural_failure_count=structural_failures,
     )
-    passing: list[GeneratedRecord] = []
+    passing: list[QARecord] = []
     rejected: list[RejectedRecord] = []
 
     with logfire.span("quality_gate", total_input=len(records)):
@@ -315,7 +315,7 @@ def run_quality_gate(
 # --- Persistence ---
 
 
-def save_validated(records: list[GeneratedRecord], path: Path) -> None:
+def save_validated(records: list[QARecord], path: Path) -> None:
     save_jsonl(records, path, lambda r: r.model_dump_json())
 
 
@@ -323,29 +323,11 @@ def save_rejected(records: list[RejectedRecord], path: Path) -> None:
     save_jsonl(records, path, lambda r: json.dumps(r.to_dict()))
 
 
-def load_generated_records(path: Path) -> tuple[list[GeneratedRecord], int]:
-    """Returns (records, parse_failure_count). Failures are structural — bad schema or corrupt JSON."""
-    if not path.exists():
-        return [], 0
-    records = []
-    failures = 0
-    with path.open() as f:
-        for line in f:
-            line = line.strip()
-            if line:
-                try:
-                    records.append(GeneratedRecord.model_validate_json(line))
-                except Exception as e:
-                    failures += 1
-                    logfire.warning("Structural parse failure", error=str(e))
-    return records, failures
-
-
 if __name__ == "__main__":
 
     configure_logfire()
 
-    records, parse_failures = load_generated_records(GENERATED_OUTPUTS_PATH)
+    records, parse_failures = load_qa_records(GENERATED_OUTPUTS_PATH)
     if not records:
         print_error(
             "Pipeline Dependency Missing",

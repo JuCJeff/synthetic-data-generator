@@ -5,6 +5,9 @@ Shared pipeline utilities.
 from pathlib import Path
 from typing import Any, Callable
 import uuid
+import logfire
+
+from src.schemas import QARecord
 
 
 def generate_uuid():
@@ -18,6 +21,28 @@ def save_jsonl(
     with path.open("w") as output_file:
         for record in records:
             output_file.write(serializer(record) + "\n")
+
+
+def load_qa_records(path: Path) -> tuple[list[QARecord], int]:
+    """Parse a JSONL file of QARecords from any pipeline stage.
+
+    Returns (records, parse_failure_count). Failures are structural — bad
+    schema or corrupt JSON.
+    """
+    if not path.exists():
+        return [], 0
+    records = []
+    failures = 0
+    with path.open() as f:
+        for line in f:
+            line = line.strip()
+            if line:
+                try:
+                    records.append(QARecord.model_validate_json(line))
+                except Exception as e:
+                    failures += 1
+                    logfire.warning("Structural parse failure", error=str(e))
+    return records, failures
 
 
 def print_root_cause(error: Exception) -> BaseException:

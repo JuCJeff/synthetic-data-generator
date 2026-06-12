@@ -124,7 +124,7 @@ class RepairQA(BaseModel):
         return v
 
 
-class GeneratedRecord(BaseModel):
+class QARecord(BaseModel):
     """Wrapper that separates pipeline metadata from content"""
 
     trace_id: str = Field(

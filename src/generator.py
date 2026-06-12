@@ -30,7 +30,7 @@ from src.config import (
 from src.instrumentation import configure_logfire
 from src.schemas import (
     CATEGORY_SUBCATEGORIES,
-    GeneratedRecord,
+    QARecord,
     GenerationTask,
     RepairQA,
 )
@@ -165,7 +165,7 @@ def build_generation_plan(items_per_category: int = 10) -> list[GenerationTask]:
 # --- Execution ---
 
 
-def _generate_one_repair_qa(task: GenerationTask) -> GeneratedRecord | None:
+def _generate_one_repair_qa(task: GenerationTask) -> QARecord | None:
     """Generate one item from a planned task. Uses disk cache to skip repeat LLM calls."""
     with logfire.span(
         "generate_one",
@@ -193,7 +193,7 @@ def _generate_one_repair_qa(task: GenerationTask) -> GeneratedRecord | None:
                 return None
             _save_generation_to_cache(prompt_hash, item)
 
-        return GeneratedRecord(
+        return QARecord(
             trace_id=f"qa_{generate_uuid()}",
             category=task.category,
             subcategory=item.chosen_subcategory,
@@ -205,7 +205,7 @@ def _generate_one_repair_qa(task: GenerationTask) -> GeneratedRecord | None:
         )
 
 
-def generate_qa_dataset(items_per_category: int = 10) -> list[GeneratedRecord]:
+def generate_qa_dataset(items_per_category: int = 10) -> list[QARecord]:
     """Build the plan, then execute it. Returns validated records."""
     logfire.info(
         "Starting baseline generation run",
@@ -215,7 +215,7 @@ def generate_qa_dataset(items_per_category: int = 10) -> list[GeneratedRecord]:
 
     with logfire.span("generate_dataset", items_per_category=items_per_category):
         tasks = build_generation_plan(items_per_category)
-        results: list[GeneratedRecord] = []
+        results: list[QARecord] = []
         failed_count = 0
 
         with make_progress_bar() as progress:
@@ -242,7 +242,7 @@ def generate_qa_dataset(items_per_category: int = 10) -> list[GeneratedRecord]:
 
 
 def save_qa_dataset(
-    records: list[GeneratedRecord],
+    records: list[QARecord],
     path: Path = _OUTPUT_PATH,
 ) -> None:
     save_jsonl(records, path, lambda r: r.model_dump_json())
