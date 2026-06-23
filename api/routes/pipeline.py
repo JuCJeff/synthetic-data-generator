@@ -13,7 +13,7 @@ from src.pipeline.human_labeler import (
     load_labeled_ids,
     overwrite_label,
 )
-from src.schemas import LabelRecord
+from src.schemas import EvaluationResults, LabelledRecord
 from src.pipeline.validator import (
     run_quality_gate,
     save_rejected,
@@ -207,10 +207,12 @@ def submit_label(body: LabelSubmission):
         raise HTTPException(
             status_code=409, detail=f"trace_id '{body.trace_id}' is already labeled."
         )
-    label_fields = {
-        field: value for field, value in body.model_dump().items() if field != "relabel"
-    }
-    label = LabelRecord.model_validate({"labeler": "human", **label_fields})
+    score_fields = set(EvaluationResults.model_fields)
+    label = LabelledRecord(
+        trace_id=body.trace_id,
+        labeler="human",
+        results=EvaluationResults(**{f: getattr(body, f) for f in score_fields}),
+    )
     if body.relabel:
         overwrite_label(label, HUMAN_LABELS_PATH)
     else:

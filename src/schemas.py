@@ -57,7 +57,7 @@ CATEGORY_SUBCATEGORIES: dict[Category, list[str]] = {
 
 class EvaluationDimension(TypedDict):
     dimension: str
-    field: str  # matching score field on JudgeVerdict / LabelRecord
+    field: str 
     requirement: str
 
 
@@ -154,19 +154,8 @@ class QARecord(BaseModel):
     record: RepairQA = Field(description="The actual Q&A content")
 
 
-class LabelRecord(BaseModel):
-    """Quality evaluation of a single RepairQA item across 6 dimensions."""
-
-    trace_id: str = Field(
-        description="Unique identifier linking this label to its source RepairQA item"
-    )
-    labeler: Literal["human", "llm_judge"] = Field(
-        description="Who produced this label"
-    )
-    timestamp: str = Field(
-        default_factory=lambda: datetime.now(timezone.utc).isoformat(),
-        description="UTC timestamp when this label was produced",
-    )
+class EvaluationResults(BaseModel):
+    """The 6 binary dimension scores — shared by both human labeler and LLM judge."""
 
     answer_completeness: int = Field(
         description="1 if answer gives enough detail to complete the repair, 0 if it stops short",
@@ -199,19 +188,40 @@ class LabelRecord(BaseModel):
         le=1,
     )
 
+
+class LabelledRecord(BaseModel):
+    """Quality evaluation of a single RepairQA item across 6 dimensions."""
+
+    trace_id: str = Field(
+        description="Unique identifier linking this label to its source RepairQA item"
+    )
+    labeler: Literal["human", "llm_judge"] = Field(
+        description="Who produced this label"
+    )
+    judge_prompt_version: str | None = Field(
+        default=None,
+        description="Judge prompt version that produced this label (llm_judge only)",
+    )
+    timestamp: str = Field(
+        default_factory=lambda: datetime.now(timezone.utc).isoformat(),
+        description="UTC timestamp when this label was produced",
+    )
+    results: EvaluationResults = Field(
+        description="Pass/fail scores across all 6 quality dimensions"
+    )
+
     @computed_field
     @property
     def overall_pass(self) -> bool:
-        return all(
-            [
-                self.answer_completeness,
-                self.safety_specificity,
-                self.tool_realism,
-                self.scope_appropriateness,
-                self.context_clarity,
-                self.tip_usefulness,
-            ]
-        )
+        r = self.results
+        return all([
+            r.answer_completeness,
+            r.safety_specificity,
+            r.tool_realism,
+            r.scope_appropriateness,
+            r.context_clarity,
+            r.tip_usefulness,
+        ])
 
 
 class GenerationTask(BaseModel):
