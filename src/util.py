@@ -2,6 +2,7 @@
 Shared pipeline utilities.
 """
 
+import json
 from pathlib import Path
 from typing import Any, Callable
 import uuid
@@ -21,6 +22,21 @@ def save_jsonl(
     with path.open("w") as output_file:
         for record in records:
             output_file.write(serializer(record) + "\n")
+
+
+def load_labeled_ids(path: Path) -> set[str]:
+    if not path.exists():
+        return set()
+    ids: set[str] = set()
+    with path.open() as f:
+        for line in f:
+            line = line.strip()
+            if line:
+                try:
+                    ids.add(json.loads(line)["trace_id"])
+                except Exception:
+                    pass
+    return ids
 
 
 def append_jsonl(record: Any, path: Path) -> None:
