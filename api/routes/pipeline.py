@@ -9,7 +9,6 @@ from src.config import GENERATED_OUTPUTS_PATH
 from src.pipeline.generator import generate_qa_dataset, save_qa_dataset
 from src.pipeline.human_labeler import (
     HUMAN_LABELS_PATH,
-    append_label,
     load_labeled_ids,
     overwrite_label,
 )
@@ -19,7 +18,7 @@ from src.pipeline.validator import (
     save_rejected,
     save_validated,
 )
-from src.util import load_qa_records
+from src.util import load_qa_records, append_jsonl
 from src.config import (
     VALIDATED_OUTPUTS_PATH,
     REJECTED_OUTPUTS_PATH,
@@ -216,5 +215,5 @@ def submit_label(body: LabelSubmission):
     if body.relabel:
         overwrite_label(label, HUMAN_LABELS_PATH)
     else:
-        append_label(label, HUMAN_LABELS_PATH)
+        append_jsonl(label, HUMAN_LABELS_PATH)
     return label.model_dump()
