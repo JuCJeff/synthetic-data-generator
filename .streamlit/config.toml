@@ -1,0 +1,7 @@
+[theme]
+base = "dark"                        # "light" or "dark"
+primaryColor = "#ff7f50"             # buttons, sliders, active elements
+backgroundColor = "#006d77"          # main page background
+secondaryBackgroundColor = "#0a3d45" # sidebar, expanders, inputs                
+textColor = "#faf3dd"
+font = "sans serif"
