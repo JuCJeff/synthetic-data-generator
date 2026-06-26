@@ -15,6 +15,7 @@ import requests
 import streamlit as st
 
 from src.schemas import EVALUATION_DIMENSIONS
+from src.util import sample_balanced
 
 API_BASE_URL = "http://localhost:8000/api"
 
@@ -292,7 +293,8 @@ def render_human_label() -> None:
         st.info("No validated items. Complete Steps 1 and 2 first.")
         st.stop()
 
-    queue = [item for item in all_items if item["trace_id"] not in labeled_ids][:LABEL_TARGET]
+    unlabeled = [item for item in all_items if item["trace_id"] not in labeled_ids]
+    queue = sample_balanced(unlabeled, LABEL_TARGET, key=lambda r: r.get("record", {}).get("category", ""))
 
     st.progress(
         min(total_labeled, LABEL_TARGET) / LABEL_TARGET,

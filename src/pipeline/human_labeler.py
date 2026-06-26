@@ -15,7 +15,7 @@ Usage:
 import argparse
 import json
 import sys
-from collections import defaultdict
+
 from pathlib import Path
 
 from src.config import HUMAN_LABELER_REPORT_PATH, PROJECT_ROOT, VALIDATED_OUTPUTS_PATH
@@ -29,21 +29,9 @@ from src.ui import (
     print_label_session_complete,
     print_label_session_header,
 )
-from src.util import append_jsonl, load_labeled_ids, load_qa_records
-
+from src.util import append_jsonl, load_labeled_ids, load_qa_records, sample_balanced
 
 # --- Helpers ---
-def sample_balanced(records: list, n: int) -> list:
-    """Round-robin across categories so all 5 are represented"""
-    buckets: dict = defaultdict(list)
-    for r in records:
-        buckets[r.category].append(r)
-    result = []
-    while len(result) < n and any(buckets.values()):
-        for items in list(buckets.values()):
-            if items and len(result) < n:
-                result.append(items.pop(0))
-    return result
 
 
 def overwrite_label(label: LabelledRecord, path: Path) -> None:

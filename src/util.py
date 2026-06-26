@@ -3,9 +3,11 @@ Shared pipeline utilities.
 """
 
 import json
+import uuid
+from collections import defaultdict
 from pathlib import Path
 from typing import Any, Callable
-import uuid
+
 import logfire
 
 from src.schemas import QARecord
@@ -65,6 +67,21 @@ def load_qa_records(path: Path) -> tuple[list[QARecord], int]:
                     failures += 1
                     logfire.warning("Structural parse failure", error=str(e))
     return records, failures
+
+
+def sample_balanced(
+    records: list, n: int, key: Callable = lambda r: r.category
+) -> list:
+    """Round-robin across categories so all are represented."""
+    buckets: dict = defaultdict(list)
+    for r in records:
+        buckets[key(r)].append(r)
+    result = []
+    while len(result) < n and any(buckets.values()):
+        for items in list(buckets.values()):
+            if items and len(result) < n:
+                result.append(items.pop(0))
+    return result
 
 
 def print_root_cause(error: Exception) -> BaseException:
