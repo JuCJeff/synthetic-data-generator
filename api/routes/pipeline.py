@@ -7,22 +7,17 @@ from pydantic import BaseModel
 
 from src.config import GENERATED_OUTPUTS_PATH
 from src.pipeline.generator import generate_qa_dataset, save_qa_dataset
-from src.pipeline.human_labeler import (
-    HUMAN_LABELS_PATH,
-    load_labeled_ids,
-    overwrite_label,
-)
+from src.pipeline.human_labeler import overwrite_label
+from src.pipeline.llm_evaluator import judge_items
+from src.pipeline.validator import run_quality_gate, save_rejected, save_validated
 from src.schemas import EvaluationResults, LabelledRecord
-from src.pipeline.validator import (
-    run_quality_gate,
-    save_rejected,
-    save_validated,
-)
-from src.util import load_qa_records, append_jsonl
+from src.util import append_jsonl, load_labeled_ids, load_qa_records
 from src.config import (
     VALIDATED_OUTPUTS_PATH,
     REJECTED_OUTPUTS_PATH,
     VALIDATION_REPORT_PATH,
+    HUMAN_LABELER_REPORT_PATH,
+    LLM_JUDGE_REPORT_PATH,
 )
 
 router = APIRouter()
@@ -64,6 +59,7 @@ def get_status():
     return {
         "generated_exists": GENERATED_OUTPUTS_PATH.exists(),
         "validated_exists": VALIDATED_OUTPUTS_PATH.exists(),
+        "llm_judge_report_exists": LLM_JUDGE_REPORT_PATH.exists(),
     }
 
 
@@ -167,7 +163,7 @@ def get_labeling():
         if VALIDATED_OUTPUTS_PATH.exists()
         else ([], 0)
     )
-    labels = _load_human_labelled_records(HUMAN_LABELS_PATH)
+    labels = _load_human_labelled_records(HUMAN_LABELER_REPORT_PATH)
     labeled_ids = {r["trace_id"] for r in labels}
     return {
         "total_validated": len(records),
@@ -184,7 +180,7 @@ def get_next_item():
             status_code=400, detail="No validated data found. Run validation first."
         )
     records, _ = load_qa_records(VALIDATED_OUTPUTS_PATH)
-    labeled_ids = load_labeled_ids(HUMAN_LABELS_PATH)
+    labeled_ids = load_labeled_ids(HUMAN_LABELER_REPORT_PATH)
     queue = [r for r in records if r.trace_id not in labeled_ids]
     if not queue:
         return {"item": None, "remaining": 0}
@@ -201,7 +197,7 @@ def submit_label(body: LabelSubmission):
             status_code=404,
             detail=f"trace_id '{body.trace_id}' not found in validated records.",
         )
-    already_labeled = body.trace_id in load_labeled_ids(HUMAN_LABELS_PATH)
+    already_labeled = body.trace_id in load_labeled_ids(HUMAN_LABELER_REPORT_PATH)
     if already_labeled and not body.relabel:
         raise HTTPException(
             status_code=409, detail=f"trace_id '{body.trace_id}' is already labeled."
@@ -213,7 +209,7 @@ def submit_label(body: LabelSubmission):
         results=EvaluationResults(**{f: getattr(body, f) for f in score_fields}),
     )
     if body.relabel:
-        overwrite_label(label, HUMAN_LABELS_PATH)
+        overwrite_label(label, HUMAN_LABELER_REPORT_PATH)
     else:
-        append_jsonl(label, HUMAN_LABELS_PATH)
+        append_jsonl(label, HUMAN_LABELER_REPORT_PATH)
     return label.model_dump()
