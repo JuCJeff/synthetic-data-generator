@@ -32,6 +32,8 @@ VALIDATION_REPORT_PATH = Path("data/validated/validation_report.json")
 
 # Evaluation
 LABELS_DIR = Path("data/labels")
+HUMAN_LABELER_REPORT_PATH = LABELS_DIR / "human_labels.jsonl"
+LLM_JUDGE_REPORT_PATH = LABELS_DIR / "llm_judge_labels.jsonl"
 
 
 # --- Prompts ---

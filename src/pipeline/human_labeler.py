@@ -18,7 +18,7 @@ import sys
 from collections import defaultdict
 from pathlib import Path
 
-from src.config import LABELS_DIR, PROJECT_ROOT, VALIDATED_OUTPUTS_PATH
+from src.config import HUMAN_LABELER_REPORT_PATH, PROJECT_ROOT, VALIDATED_OUTPUTS_PATH
 from src.schemas import EVALUATION_DIMENSIONS, EvaluationResults, LabelledRecord
 from src.ui import (
     ask_dimension,
@@ -30,9 +30,6 @@ from src.ui import (
     print_label_session_header,
 )
 from src.util import append_jsonl, load_labeled_ids, load_qa_records
-
-# --- Paths ---
-HUMAN_LABELS_PATH = LABELS_DIR / "human_labels.jsonl"
 
 
 # --- Helpers ---
@@ -86,7 +83,7 @@ def label_items(n: int = 20) -> None:
         )
         sys.exit(1)
 
-    already_labeled = load_labeled_ids(HUMAN_LABELS_PATH)
+    already_labeled = load_labeled_ids(HUMAN_LABELER_REPORT_PATH)
     queue = [r for r in records if r.trace_id not in already_labeled]
 
     if not queue:
@@ -108,7 +105,10 @@ def label_items(n: int = 20) -> None:
             dimension_field = dimension["field"]
             dimension_label = f"D{dim_idx}  {dimension['dimension']}"
             score = ask_dimension(
-                dimension_label, dimension["requirement"], dim_idx, len(EVALUATION_DIMENSIONS)
+                dimension_label,
+                dimension["requirement"],
+                dim_idx,
+                len(EVALUATION_DIMENSIONS),
             )
             if score is None:
                 console.print("[warning]Item skipped.[/warning]\n")
@@ -121,13 +121,15 @@ def label_items(n: int = 20) -> None:
                 trace_id=qa_record.trace_id,
                 results=EvaluationResults(**dimension_scores),
             )
-            append_jsonl(human_label, HUMAN_LABELS_PATH)
+            append_jsonl(human_label, HUMAN_LABELER_REPORT_PATH)
             labeled_count += 1
             dimension_fields = [d["field"] for d in EVALUATION_DIMENSIONS]
-            print_label_saved(dimension_scores, human_label.overall_pass, dimension_fields)
+            print_label_saved(
+                dimension_scores, human_label.overall_pass, dimension_fields
+            )
 
     print_label_session_complete(
-        labeled_count, len(already_labeled) + labeled_count, HUMAN_LABELS_PATH
+        labeled_count, len(already_labeled) + labeled_count, HUMAN_LABELER_REPORT_PATH
     )
 
 

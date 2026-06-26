@@ -27,7 +27,7 @@ from src.config import (
     JUDGE_PROMPT_VERSION,
     JUDGE_SYSTEM_PROMPT_V1,
     JUDGE_TEMPERATURE,
-    LABELS_DIR,
+    LLM_JUDGE_REPORT_PATH,
     PROJECT_ROOT,
     VALIDATED_OUTPUTS_PATH,
 )
@@ -41,8 +41,6 @@ from src.schemas import (
 )
 from src.ui import console, make_progress_bar, print_error
 from src.util import append_jsonl, load_labeled_ids, load_qa_records
-
-LLM_JUDGE_LABELS_PATH = LABELS_DIR / "llm_judge_labels.jsonl"
 
 load_dotenv()
 
@@ -122,7 +120,7 @@ def judge_items() -> None:
         )
         sys.exit(1)
 
-    already_judged = load_labeled_ids(LLM_JUDGE_LABELS_PATH)
+    already_judged = load_labeled_ids(LLM_JUDGE_REPORT_PATH)
     queue = [r for r in records if r.trace_id not in already_judged]
 
     if not queue:
@@ -150,13 +148,13 @@ def judge_items() -> None:
                 console.print(f"{trace_id} failed to be judged")
                 failed_count += 1
             else:
-                append_jsonl(label, LLM_JUDGE_LABELS_PATH)
+                append_jsonl(label, LLM_JUDGE_REPORT_PATH)
                 judged_count += 1
             progress.advance(bar)
 
     console.print(
         f"Judged [success]{judged_count}[/success], failed [error]{failed_count}[/error] "
-        f"→ [cyan]{LLM_JUDGE_LABELS_PATH}[/cyan]"
+        f"→ [cyan]{LLM_JUDGE_REPORT_PATH}[/cyan]"
     )
 
 
