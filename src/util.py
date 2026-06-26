@@ -23,6 +23,12 @@ def save_jsonl(
             output_file.write(serializer(record) + "\n")
 
 
+def append_jsonl(record: Any, path: Path) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("a") as f:
+        f.write(record.model_dump_json() + "\n")
+
+
 def load_qa_records(path: Path) -> tuple[list[QARecord], int]:
     """Parse a JSONL file of QARecords from any pipeline stage.
 
