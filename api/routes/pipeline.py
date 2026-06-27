@@ -213,3 +213,57 @@ def submit_label(body: LabelSubmission):
     else:
         append_jsonl(label, HUMAN_LABELER_REPORT_PATH)
     return label.model_dump()
+
+
+# --- Step 4: LLM Judge ---
+
+
+def _run_judge(job_id: str) -> None:
+    try:
+        _jobs[job_id]["status"] = "running"
+        judge_items()
+        records, _ = load_qa_records(VALIDATED_OUTPUTS_PATH)
+        judged = load_labeled_ids(LLM_JUDGE_REPORT_PATH)
+        _jobs[job_id].update(
+            {"status": "done", "judged": len(judged), "total": len(records)}
+        )
+    except SystemExit:
+        _jobs[job_id].update(
+            {
+                "status": "error",
+                "error": "No validated records found. Run Step 2 first.",
+            }
+        )
+    except Exception as error:
+        _jobs[job_id].update({"status": "error", "error": str(error)})
+
+
+@router.get("/step/judge")
+def get_judge():
+    records, _ = (
+        load_qa_records(VALIDATED_OUTPUTS_PATH)
+        if VALIDATED_OUTPUTS_PATH.exists()
+        else ([], 0)
+    )
+    judged = load_labeled_ids(LLM_JUDGE_REPORT_PATH)
+    return {
+        "total": len(records),
+        "judged": len(judged),
+        "pending": len([r for r in records if r.trace_id not in judged]),
+    }
+
+
+@router.post("/step/judge/run")
+def run_judge(background_tasks: BackgroundTasks):
+    job_id = uuid.uuid4().hex[:8]
+    _jobs[job_id] = {"status": "pending", "judged": 0}
+    background_tasks.add_task(_run_judge, job_id)
+    return {"job_id": job_id}
+
+
+@router.get("/step/judge/status/{job_id}")
+def get_judge_job_status(job_id: str):
+    job = _jobs.get(job_id)
+    if not job:
+        raise HTTPException(status_code=404, detail="Job not found")
+    return job
