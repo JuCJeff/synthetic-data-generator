@@ -28,12 +28,7 @@ from src.config import (
     SYSTEM_PROMPT_V1,
 )
 from src.instrumentation import configure_logfire
-from src.schemas import (
-    CATEGORY_SUBCATEGORIES,
-    QARecord,
-    GenerationTask,
-    RepairQA,
-)
+from src.schemas import CATEGORY_SUBCATEGORIES, GenerationTask, QARecord, RepairQA
 from src.ui import (
     console,
     make_progress_bar,
